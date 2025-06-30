@@ -22,7 +22,7 @@ const Hero = () => {
       >
         <SwiperSlide className=''>
           <div className="lg:p-20 w-full hero-slide-1 md:p-10 p-9 rounded-3xl overflow-hidden md:mt-8  flex flex-col items-start gap-8 ">
-            <h1 className="lg:text-7xl text-3xl font-family-primary font-bold text-black">Dont miss amazing <br /> grocery deals
+            <h1 className="lg:text-7xl text-2xl font-family-primary font-bold text-black">Dont miss amazing <br /> grocery deals
             </h1>
             <p className="text-[15px] lg:text-3xl text-gray-500 font-family-secondary">Sign Up for Daily newsletter</p>
             <div className="font-family-primary p-1 bg-white flex rounded-full justify-between items-center lg:gap-4 gap-1 md:mt-8 mt-3 overflow-hidden ">
@@ -42,7 +42,7 @@ const Hero = () => {
 
         <SwiperSlide className='w-full '>
           <div className="lg:p-20 w-full hero-slide-2 md:p-10 p-9 rounded-3xl overflow-hidden md:mt-8 flex flex-col items-start gap-8">
-            <h1 className="lg:text-7xl text-3xl font-bold text-black font-family-primary">Fresh Vegetables <br /> Big Discounts
+            <h1 className="lg:text-7xl text-2xl font-bold text-black font-family-primary">Fresh Vegetables <br /> Big Discounts
             </h1>
             <p className="text-[15px] lg:text-3xl text-gray-500 font-family-secondary">Save upto 50% off on your first order</p>
             <div className="font-family-primary p-1 bg-white flex rounded-full justify-center items-center lg:gap-4 gap-1 md:mt-8 mt-3 overflow-hidden ">

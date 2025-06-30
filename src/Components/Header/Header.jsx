@@ -35,6 +35,7 @@ const Header = () => {
 
   const [category, setCategory] = useState("All Categories");
   const [locationStatus, setLocationStatus] = useState("Your Location");
+  const [browserModal, setBrowserModal] = useState(true);
 
 
 
@@ -43,7 +44,6 @@ const Header = () => {
       {/* Nav for lg Device */}
       <div className="lg:block hidden">
         <div className="border-b font-family-secondary text-zinc-500 border-zinc-200 p-2 text-sm">
-
 
           <div className="max-w-screen-2xl font-family-secondary md:mx-auto   mx-10 flex justify-between items-center text-zinc-400">
             <div className="flex gap-2 ">
@@ -84,7 +84,7 @@ const Header = () => {
               <img src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/logo.svg" alt="" />
             </div>
 
-            <div className="w-full">
+            <div className="w-full ">
               <div className="flex justify-center items-center border-2 border-emerald-300  rounded-md">
                 <select
                   value={category}
@@ -149,10 +149,71 @@ const Header = () => {
         <div className="border-y border-zinc-200 hidden md:block">
           <div className="max-w-screen-2xl mx-auto  py-3  flex items-center justify-between ">
             <div className="flex items-center gap-10">
-              <div>
-                <button className="flex items-center gap-2 border py-2.5 px-4 rounded-md bg-emerald-500 hover:bg-emerald-600 cursor-pointer active:scale-95 transition-all text-white font-semibold font-family-primary ">
-                  <MdOutlineGridView className="text-xl font-bold text-white" />Browse All Categories <IoIosArrowDown /></button>
+
+              <div className="relative font-family-primary">
+
+                <button onClick={()=>setBrowserModal(!browserModal)} className="flex items-center gap-2 border py-2.5 px-4 rounded-md bg-emerald-500 hover:bg-emerald-600 cursor-pointer active:scale-95 transition-all text-white font-semibold  ">
+                  <MdOutlineGridView className="text-xl font-bold text-white" />Browse All Categories <IoIosArrowDown />
+                </button>
+
+                {/* Browse Btns container  */}
+                <div onClick={()=>setBrowserModal(!browserModal)}  className={`absolute ${browserModal ? "-z-50 top-22 opacity-0" : "top-18 z-50 opacity-100"}  left-0 w-[480px]  grid grid-cols-2 gap-5 bg-white p-8 transition-all duration-500 border border-emerald-300 rounded-lg`}>
+
+                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
+                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-1.svg" alt="" />
+                    <p> Milks and Dairies</p>
+                  </button>
+
+                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
+                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-6.svg" alt="" />
+                    <p> Wines & Drinks</p>
+                  </button>
+
+                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
+                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-2.svg" alt="" />
+                    <p> Clothing & beauty</p>
+                  </button>
+
+                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
+                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-7.svg" alt="" />
+                    <p> Fresh Seafood</p>
+                  </button>
+
+                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
+                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-3.svg" alt="" />
+                    <p> Pet Foods & Toy</p>
+                  </button>
+
+                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
+                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-8.svg" alt="" />
+                    <p> Fast food</p>
+                  </button>
+
+                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
+                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-4.svg" alt="" />
+                    <p> Baking material</p>
+                  </button>
+
+                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
+                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-9.svg" alt="" />
+                    <p> Vagetable</p>
+                  </button>
+
+                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
+                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-5.svg" alt="" />
+                    <p> Fresh Fruit</p>
+                  </button>
+
+                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
+                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-10.svg" alt="" />
+                    <p> Bread and Juice</p>
+                  </button>
+
+
+                </div>
+
               </div>
+
               <div>
                 <Nav />
               </div>

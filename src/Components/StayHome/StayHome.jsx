@@ -11,7 +11,7 @@ const StayHome = () => {
         <img className="absolute w-full h-full -z-20 transition" src="../../../assets/banner/banner-10.png" alt="" />
 
         <div className="flex flex-col items-start justify-center gap-4 p-10 lg:p-20">
-          <h1 className="lg:text-5xl text-2xl font-semibold">Stay home & get your daily <br /> needs from our shop</h1>
+          <h1 className="lg:text-5xl text-2xl font-semibold">Stay home & get your daily <br className='md:block hidden'/> needs from our shop</h1>
           <p className="lg:text-xl text-sm text-gray-500 font-family-secondary">Start Your Daily Shopping with <span
             className="text-emerald-500">Nest Mart</span> </p>
           <div className="font-family-primary p-1 bg-white flex rounded-full justify-between items-center lg:gap-4 gap-1 md:mt-8 mt-3 overflow-hidden ">

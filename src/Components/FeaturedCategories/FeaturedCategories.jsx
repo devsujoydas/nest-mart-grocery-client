@@ -38,12 +38,12 @@ const FeaturedCategories = () => {
             <section id="feature-categories" className="scroll-smooth font-family-primary">
 
                 <div className=" my-10 flex justify-between litems-center  flex-wrap gap-3 lg:gap-8">
-                    <h1 className="text-4xl font-bold">Featured Categories</h1>
+                    <h1 className="md:text-4xl text-2xl font-bold">Featured Categories</h1>
 
-                    <div className="flex  justify-center items-center font-semibold lg:gap-8 gap-x-4 gap-y-1 flex-wrap">
+                    <div className="flex justify-center items-center font-semibold lg:gap-8 gap-x-4 gap-y-1 flex-wrap md:text-lg text-xs">
                         <a href="#" className="text-black active:scale-95 hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400">Cake & Milk</a>
                         <a href="#" className="text-black active:scale-95 hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400">Coffes & Teas</a>
-                        <a href="#" className="text-black  active:scale-95hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400">Pet Foods</a>
+                        <a href="#" className="text-black active:scale-95hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400">Pet Foods</a>
                         <a href="#" className="text-black active:scale-95 hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400">Vegitables</a>
                     </div>
                 </div>
@@ -79,18 +79,18 @@ const FeaturedCategories = () => {
 
                 {/* Shop Now */}
                 <div className="pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-3 gap-4">
-                    <div className="bg-cover bgOnion  rounded-xl p-12 hover:shadow-lg  transition-all ">
-                        <h1 className="font-bold text-2xl my-8 text-black hover:-translate-y-1 transition-all  ">Everyday Fresh & <br /> Clean with Our <br /> Products</h1>
-                        <button className="bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer text-sm">Shop Now <FaArrowRight className='text-xs' /></button>
+                    <div className="bg-cover bgOnion  rounded-xl md:p-12 p-10 hover:shadow-lg  transition-all ">
+                        <h1 className="font-bold md:text-2xl text-xl my-8md: tex my-5 text-black hover:-translate-y-1 transition-all  ">Everyday Fresh & <br /> Clean with Our <br /> Products</h1>
+                        <button className="bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></button>
                     </div>
-                    <div className="bg-cover bgStroberry  rounded-xl p-12 hover:shadow-lg transition-all">
-                        <h1 className="font-bold text-2xl my-8 text-black hover:-translate-y-1 transition-all">Make your Breakfast <br /> Healthy and Easy </h1>
-                        <button className="bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer text-sm">Shop Now <FaArrowRight className='text-xs' /></button>
+                    <div className="bg-cover bgStroberry  rounded-xl md:p-12 p-10 hover:shadow-lg transition-all">
+                        <h1 className="font-bold md:text-2xl text-xl md:my-8 my-5 text-black hover:-translate-y-1 transition-all">Make your Breakfast <br /> Healthy and Easy </h1>
+                        <button className="bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></button>
                     </div>
-                    <div className=" bg-cover bgVegetable rounded-xl p-12  
+                    <div className=" bg-cover bgVegetable rounded-xl md:p-12 p-10  
                         hover:shadow-lg transition-all">
-                        <h1 className="font-bold text-2xl my-8 text-black hover:-translate-y-1 transition-all">The best Organic <br /> Products Online</h1>
-                        <button className="bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer text-sm">Shop Now <FaArrowRight className='text-xs' /></button>
+                        <h1 className="font-bold md:text-2xl text-xl md:my-8 my-5 text-black hover:-translate-y-1 transition-all">The best Organic <br /> Products Online</h1>
+                        <button className="bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></button>
                     </div>
                 </div>
 

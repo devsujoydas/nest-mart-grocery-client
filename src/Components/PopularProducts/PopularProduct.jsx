@@ -22,7 +22,7 @@ const PopularProduct = () => {
             <div className="flex flex-col mb-1">
                 <a href="#" className="text-gray-400 text-xs hover:text-emerald-400">Coffee</a>
                 <a href="#"
-                    className="font-semibold my-1 leading-none hover:text-emerald-500 transition-colors">Dandy
+                    className="font-semibold my-1 leading-none hover:text-emerald-500 transition-colors md:text-lg text-sm">Dandy
                     Blend
                     Coffee Instand Herbal Dadlelion</a>
             </div>
@@ -34,11 +34,11 @@ const PopularProduct = () => {
                 <IoIosStarHalf/>
             </div>
             <h1 className="mt-2 text-xs">By <span><a href="#"
-                className="text-emerald-500 hover:-translate-x-1 hover:-translate-y-1 hover:text-orange-400">NestFood</a></span>
+                className="text-emerald-500 hover:-translate-x-1 hover:-translate-y-1 hover:text-orange-400 text-xs md:text-sm">NestFood</a></span>
             </h1>
             <div className="flex justify-between items-center mt-3">
-                <h1 className="text-emerald-500 font-bold text-xl">$54.85</h1>
-                <button className="bg-emerald-100 hover:bg-emerald-500 text-emerald-600 hover:text-white font-semibold px-3 lg:px-6 py-2 rounded-md flex justify-between items-center gap-1 hover:-translate-y-1 transition duration-500 text-sm cursor-pointer">
+                <h1 className="text-emerald-500 font-bold md:text-xl text-sm">$54.85</h1>
+                <button className="bg-emerald-100 hover:bg-emerald-500 text-emerald-600 hover:text-white font-semibold px-3 lg:px-6 md:py-2 py-1 rounded-md flex justify-between items-center gap-1 hover:-translate-y-1 transition duration-500 md:text-sm text-xs cursor-pointer">
                     <BsCart3/>
                     <h1 className="">Add</h1>
                 </button>

@@ -7,8 +7,8 @@ const PopularProducts = () => {
     <div className="max-w-screen-2xl lg:mx-auto font-family-primary">
  
       <div className=" my-10 flex justify-between litems-center  flex-wrap gap-3 lg:gap-8">
-        <h1 className="text-4xl font-bold">Popular Product</h1>
-        <div className="flex  justify-normal items-center font-semibold lg:gap-8 gap-x-6 gap-y-1 flex-wrap">
+        <h1 className="md:text-4xl text-2xl font-bold">Popular Product</h1>
+        <div className="flex justify-center items-center font-semibold lg:gap-8 gap-x-4 gap-y-1 flex-wrap md:text-lg text-xs">
           <a href="#" className={btnStyles}>All</a>
           <a href="#" className={btnStyles}>Milks & Dairies</a>
           <a href="#" className={btnStyles}>Coffes & Teas</a>
