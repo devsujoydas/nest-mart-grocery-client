@@ -12,7 +12,7 @@ const Root = () => {
   return (
     <div>
       <Header />
-      <div className="md:mx-20">
+      <div className="md:mx-10 mx-3">
         <Hero />
         <FeaturedCategories />
         <PopularProducts />
