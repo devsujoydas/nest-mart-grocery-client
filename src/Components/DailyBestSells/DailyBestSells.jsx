@@ -10,7 +10,7 @@ import DailyProducts from './DailyProducts';
 
 const DailyBestSells = () => {
 
-  const btnStyles = "text-black active:scale-95 hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400"
+  const btnStyles = "text-black active:scale-95 hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400 active:text-emerald-500"
 
 
   return (
@@ -25,7 +25,7 @@ const DailyBestSells = () => {
         </div>
       </div>
 
-      <div className='lg:grid flex flex-col grid-cols-4 gap-5 my-10'>
+      <div className='lg:grid flex flex-col grid-cols-4 gap-5 my-10 -mt-5'>
 
         <div id='bgLeaf' className="bg-cover rounded-xl p-10 lg:col-span-1 flex justify-between flex-col">
           <h1 className="font-bold text-4xl my-8 text-black hover:-translate-y-1 transition-all">Bring nature into your home </h1>

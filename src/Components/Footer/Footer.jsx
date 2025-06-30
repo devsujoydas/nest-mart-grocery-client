@@ -12,7 +12,7 @@ import { LuPhoneCall } from "react-icons/lu";
 
 
 const Footer = () => {
-  const footerBtnStyle = "hover:text-emerald-500 hover:translate-x-1 text-sm md:text-lg transition text-sm active:scale-95 duration-300"
+  const footerBtnStyle = "hover:text-emerald-500 hover:translate-x-1 text-sm transition text-sm active:scale-95 duration-300"
   const socialBtnStyle = "text-white text-3xl cursor-pointer hover:bg-emerald-400 active:scale-95 transition-all bg-emerald-500 rounded-full p-1.5"
   return (
     <div className="max-w-screen-2xl lg:mx-auto  font-family-primary">
@@ -37,7 +37,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center flex-row gap-2 flex-wrap">
                 <FaRegPaperPlane className="text-xl text-emerald-500" />
-                <p className="font-semibold">Email:</p><span>devsujoydas@gmail.com</span>
+                <p className="font-semibold">Email:</p><Link to={"mailto:devsujoydas@gmail.com"} className={footerBtnStyle}>devsujoydas@gmail.com</Link>
               </div>
               <div className="flex items-center flex-row gap-2">
                 <TbClockHour5 className="text-xl text-emerald-500" />
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
 
           <div className="grid grid-cols-2 md:gap-0 gap-8 md:grid-cols-5 md:col-span-8 ">
-            <div className="flex flex-col gap-2 md:gap-4">
+            <div className="flex flex-col gap-2 md:gap-3 ">
               <h1 className="text-2xl font-semibold">Company</h1>
               <a href="#none" className={footerBtnStyle}>About
                 Us</a>
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
 
 
-            <div className="flex flex-col gap-2 md:gap-4">
+            <div className="flex flex-col gap-2 md:gap-3 ">
               <h1 className="text-2xl font-semibold">Account</h1>
               <a href="#code" className={footerBtnStyle}>Sign
                 In</a>
@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
 
 
-            <div className="flex flex-col gap-2 md:gap-4">
+            <div className="flex flex-col gap-2 md:gap-3 ">
               <h1 className="text-2xl font-semibold">Corporate</h1>
               <a href="#code" className={footerBtnStyle}>Become a
                 Vendor</a>
@@ -102,7 +102,7 @@ const Footer = () => {
             </div>
 
 
-            <div className="flex flex-col gap-2 md:gap-4">
+            <div className="flex flex-col gap-2 md:gap-3 ">
               <h1 className="text-2xl font-semibold">Popular</h1>
               <a href="#code" className={footerBtnStyle}>Milk &
                 Flavoured Milk</a>
@@ -155,20 +155,20 @@ const Footer = () => {
           <div
             className="flex lg:flex-row flex-col-reverse gap-4 justify-between items-center max-w-screen-2xl mx-auto border-emerald-600 border-t py-8 mt-10  ">
             <div className="flex flex-col text-center">
-              <h1 className="text-sm">&copy; 2024, <span>Nest</span> - Ecommerce By <Link to={"https://devsujoydas.vercel.app"}
+              <h1 className="text-sm">&copy; 2025, <span>Nest</span> - Ecommerce By <Link to={"https://devsujoydas.vercel.app"}
                 className="text-emerald-600 hover:text-emerald-500 transition-all  font-bold">Sujoy Das</Link></h1>
               <h1 className="text-sm">All rights reserved</h1>
             </div>
             <div className="flex flex-row md:gap-6 gap-3">
               <div className="flex gap-2 items-center ">
-                <LuPhoneCall className="md:text-4xl text-2xl text-zinc-500" />
+                <LuPhoneCall className="md:text-3xl text-2xl text-zinc-500" />
                 <div className="flex flex-col gap-2 lg:items-start items-center ">
                   <Link to={"tel:+8809638-831422"} className="md:text-2xl text-sm font-semibold text-emerald-500 active:scale-95 transition-all">+8809638-831422</Link>
                   <h1 className="md:text-sm text-xs text-gray-500 -mt-2">Working 8:00 - 22:00</h1>
                 </div>
               </div>
               <div className="flex gap-2 items-center ">
-                <LuPhoneCall className="md:text-4xl text-2xl text-zinc-500" />
+                <LuPhoneCall className="md:text-3xl text-2xl text-zinc-500" />
                 <div className="flex flex-col gap-2 lg:items-start items-center ">
                   <Link to={"tel:+8801303436299"} className="md:text-2xl text-sm font-semibold text-emerald-500 active:scale-95 transition-all">+8801303-436299</Link>
                   <h1 className="md:text-sm text-xs text-gray-500 -mt-2">24/7 Support Center</h1>
