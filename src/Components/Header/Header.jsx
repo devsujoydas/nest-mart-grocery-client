@@ -22,20 +22,23 @@ import { FaFacebookF } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import BrowesCatContainer from "./BrowesCatContainer";
 
 const Header = () => {
-  const { navslide, setNavSlide } = useContext(AuthContext)
+  const { navslide, setNavSlide, megaModal, setMegaModal } = useContext(AuthContext)
 
   const [showAccModal, setShowAccModal] = useState(true)
 
   const socialBtnStyle = "text-white text-3xl cursor-pointer hover:bg-emerald-400 active:scale-95 transition-all bg-emerald-500 rounded-full p-1.5"
   const compareBtnStyle = "flex justify-center items-end gap-1 cursor-pointer active:scale-95 hover:text-emerald-600 transition-all"
   const myAccbtnStyle = "flex cursor-pointer hover:text-emerald-600 active:scale-95 transition-all items-center gap-2 hover:bg-zinc-200 w-full  px-2 py-2 rounded-sm"
+  const megaMenuBtnStyle = "hover:text-emerald-500 font-bold text-zinc-500 text-lg transition text-sm active:scale-95 duration-300"
 
 
   const [category, setCategory] = useState("All Categories");
   const [locationStatus, setLocationStatus] = useState("Your Location");
   const [browserModal, setBrowserModal] = useState(true);
+
 
 
 
@@ -63,13 +66,13 @@ const Header = () => {
               <h1 className="pr-2 border-r border-zinc-300">Need help? </h1>
               <h1 className="pr-2 border-r border-zinc-300 ">Call Us: <Link className="hover:text-black transition-all cursor-pointer" to={`tel:+8801303436299`}>+8801303436299</Link></h1>
 
-              <select className=" outline-none hover:text-black transition-all cursor-pointer text-center" name="" id="">
+              <select className=" outline- hover:text-black transition-all cursor-pointer text-center" name="" id="">
                 <option value="English">English</option>
                 <option value="Bangla">Bangla</option>
                 <option value="Hindi">Hindi</option>
               </select>
 
-              <select className="border-l px-2 border-l-zinc-200  outline-none hover:text-black transition-all cursor-pointer text-center" name="" id="">
+              <select className="border-l px-2 border-l-zinc-200  outline- hover:text-black transition-all cursor-pointer text-center" name="" id="">
                 <option value="USD">USD</option>
                 <option value="BDT">BDT</option>
                 <option value="INR">INR</option>
@@ -89,7 +92,7 @@ const Header = () => {
                 <select
                   value={category}
                   onChange={(e) => setCategory(e.target.value)}
-                  className="outline-none font-family-primary font-semibold text-gray-900 text-sm rounded-lg block p-3.5"
+                  className="outline- font-family-primary font-semibold text-gray-900 text-sm rounded-lg block p-3.5"
                 >
                   <option value="All Categories">All Categories</option>
                   <option value="Wines & Alcohol">Wines & Alcohol</option>
@@ -117,7 +120,7 @@ const Header = () => {
               <select
                 value={locationStatus}
                 onChange={(e) => setLocationStatus(e.target.value)}
-                className="outline-none px-2" name="" id="">
+                className="outline- px-2" name="" id="">
                 <option value="Your Location">Your Location</option>
                 <option value="Dhaka">Dhaka</option>
                 <option value="Mymensingh">Mymensingh</option>
@@ -152,64 +155,13 @@ const Header = () => {
 
               <div className="relative font-family-primary">
 
-                <button onClick={()=>setBrowserModal(!browserModal)} className="flex items-center gap-2 border py-2.5 px-4 rounded-md bg-emerald-500 hover:bg-emerald-600 cursor-pointer active:scale-95 transition-all text-white font-semibold  ">
+                <button onClick={() => setBrowserModal(!browserModal)} className="flex items-center gap-2 border py-2.5 px-4 rounded-md bg-emerald-500 hover:bg-emerald-600 cursor-pointer active:scale-95 transition-all text-white font-semibold  ">
                   <MdOutlineGridView className="text-xl font-bold text-white" />Browse All Categories <IoIosArrowDown />
                 </button>
 
                 {/* Browse Btns container  */}
-                <div onClick={()=>setBrowserModal(!browserModal)}  className={`absolute ${browserModal ? "-z-50 top-22 opacity-0" : "top-18 z-50 opacity-100"}  left-0 w-[480px]  grid grid-cols-2 gap-5 bg-white p-8 transition-all duration-500 border border-emerald-300 rounded-lg`}>
-
-                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
-                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-1.svg" alt="" />
-                    <p> Milks and Dairies</p>
-                  </button>
-
-                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
-                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-6.svg" alt="" />
-                    <p> Wines & Drinks</p>
-                  </button>
-
-                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
-                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-2.svg" alt="" />
-                    <p> Clothing & beauty</p>
-                  </button>
-
-                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
-                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-7.svg" alt="" />
-                    <p> Fresh Seafood</p>
-                  </button>
-
-                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
-                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-3.svg" alt="" />
-                    <p> Pet Foods & Toy</p>
-                  </button>
-
-                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
-                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-8.svg" alt="" />
-                    <p> Fast food</p>
-                  </button>
-
-                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
-                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-4.svg" alt="" />
-                    <p> Baking material</p>
-                  </button>
-
-                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
-                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-9.svg" alt="" />
-                    <p> Vagetable</p>
-                  </button>
-
-                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
-                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-5.svg" alt="" />
-                    <p> Fresh Fruit</p>
-                  </button>
-
-                  <button className="border cursor-pointer active:scale-95 hover:text-emerald-500 transition-all duration-500 hover:border-emerald-300 hover:shadow-lg   border-zinc-200 px-4 py-2 flex items-center gap-2 text-sm rounded-md font-bold">
-                    <img className="w-8" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-10.svg" alt="" />
-                    <p> Bread and Juice</p>
-                  </button>
-
-
+                <div onClick={() => setBrowserModal(!browserModal)} className={`absolute ${browserModal ? "-z-50 top-22 opacity-0" : "top-18 z-50 opacity-100"}  left-0 w-[480px]  grid grid-cols-2 gap-5 bg-white p-8 transition-all duration-500 border border-emerald-300 rounded-lg`}>
+                  <BrowesCatContainer />
                 </div>
 
               </div>
@@ -217,6 +169,69 @@ const Header = () => {
               <div>
                 <Nav />
               </div>
+
+              <div  onMouseEnter={()=>setMegaModal(false)} onMouseLeave={()=>setMegaModal(true)} className={`absolute ${megaModal ? "-z-50 top-62 opacity-0" : " top-59 z-50 opacity-100"}  w-[1536px] bg-white p-10 transition-all duration-500 border border-emerald-300 rounded-lg font-family-primary  `}>
+
+                <div>
+                  <div className="grid grid-cols-2 md:gap-0 gap-8 md:grid-cols-13  ">
+
+                    <div className="flex flex-col gap-4 md:gap-3 col-span-3">
+                      <h1 className="text-xl text-emerald-500 font-bold mb-3">Fruit & Vegetables</h1>
+                      <a href="#" className={megaMenuBtnStyle}>Meat & Poultry </a>
+                      <a href="#" className={megaMenuBtnStyle}>Fresh Vegetables </a>
+                      <a href="#" className={megaMenuBtnStyle}>Herbs & Seasonings </a>
+                      <a href="#" className={megaMenuBtnStyle}>Cuts & Sprouts </a>
+                      <a href="#" className={megaMenuBtnStyle}>Exotic Fruits & Veggies </a>
+                      <a href="#" className={megaMenuBtnStyle}>Packaged Produce </a>
+                    </div>
+                    <div className="flex flex-col gap-4 md:gap-3 col-span-3">
+                      <h1 className="text-xl text-emerald-500 font-bold mb-3">Breakfast & Dairy </h1>
+                      <a href="#" className={megaMenuBtnStyle}>Milk & Flavoured Milk </a>
+                      <a href="#" className={megaMenuBtnStyle}>Butter and Margarine </a>
+                      <a href="#" className={megaMenuBtnStyle}>Eggs Substitutes </a>
+                      <a href="#" className={megaMenuBtnStyle}>Marmalades </a>
+                      <a href="#" className={megaMenuBtnStyle}>Sour Cream </a>
+                      <a href="#" className={megaMenuBtnStyle}>Cheese </a>
+                    </div>
+                    <div className="flex flex-col gap-4 md:gap-3 col-span-3">
+                      <h1 className="text-xl text-emerald-500 font-bold mb-3"> Meat & Seafood </h1>
+                      <a href="#" className={megaMenuBtnStyle}>Breakfast Sausage </a>
+                      <a href="#" className={megaMenuBtnStyle}>Dinner Sausage </a>
+                      <a href="#" className={megaMenuBtnStyle}>Chicken </a>
+                      <a href="#" className={megaMenuBtnStyle}>Sliced Deli Meat </a>
+                      <a href="#" className={megaMenuBtnStyle}>Wild Caught Fillets </a>
+                      <a href="#" className={megaMenuBtnStyle}>Crab and Shellfish </a>
+                    </div>
+
+                    <div 
+                    style={{ backgroundImage: `url("https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-menu.png")` }} className="w-full relative rounded-lg h-66 bg-cover bg-center p-10 col-span-4 flex justify-between">
+                      <div className="space-y-3">
+                        <h1>HOT DEALS</h1>
+                        <h1 className="text-2xl font-bold">Don't miss <br /> Trending</h1>
+                        <h1 className="text-emerald-600 font-bold text-2xl ">Save to 50%</h1>
+
+                        <button className="bg-emerald-500 px-4 py-2 rounded-full text-sm text-white font-bold hover:bg-emerald-400 active:scale-95 transition-all cursor-pointer">Shop Now</button>
+                      </div>
+                      <div className="text-xl bg-yellow-400 h-fit font-bold w-fit py-4 px-6 rounded-full">
+                        <h1>25%</h1>
+                        <h1 className="-mt-1">off</h1>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+              </div>
+
             </div>
             <div className="flex items-center gap-2">
               <div> <IoHeadsetSharp className="text-5xl" /></div>
@@ -262,7 +277,7 @@ const Header = () => {
               <div className="p-7 flex flex-col justify-between h-[85vh]  ">
                 <div>
                   <div className="flex justify-between items-center border border-zinc-200 bg-zinc-200  rounded-md p-2 ">
-                    <input type="text" className="outline-none w-5/6 placeholder:text-sm   border-zinc-300" placeholder=" Search for items..." />
+                    <input type="text" className="outline- w-5/6 placeholder:text-sm   border-zinc-300" placeholder=" Search for items..." />
                     <div className="cursor-pointer text-zinc-500 active:scale-95 transition-all hover:bg-emerald-500 p-2 rounded-md hover:text-white">
                       <SlMagnifier className="w-full h-full" />
                     </div>

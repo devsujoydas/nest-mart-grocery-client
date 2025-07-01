@@ -5,9 +5,12 @@ export const AuthContext = createContext()
 const AuthProvider = ({ children }) => {
 
     const [navslide, setNavSlide] = useState(true)
-
+    const [megaModal, setMegaModal] = useState(true);
     const value = {
-        navslide, setNavSlide
+        navslide,
+        setNavSlide,
+        megaModal,
+        setMegaModal
     }
     return (
         <AuthContext.Provider value={value}>
