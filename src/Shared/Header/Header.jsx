@@ -83,9 +83,9 @@ const Header = () => {
 
         <div className="max-w-screen-2xl  mx-auto flex gap-10 justify-between items-center py-8">
           <div className="flex  items-center gap-10 w-full">
-            <div>
+            <Link to={"/"}>
               <img src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/logo.svg" alt="" />
-            </div>
+            </Link>
 
             <div className="w-full ">
               <div className="flex justify-center items-center border-2 border-emerald-300  rounded-md">

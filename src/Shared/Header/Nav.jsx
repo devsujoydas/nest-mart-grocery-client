@@ -14,6 +14,7 @@ const Nav = () => {
             <button onClick={() => setNavSlide(true)} to={"/"} className={navBtnStyle}>Shop <span><IoIosArrowDown className="-mb-1" /></span></button>
             <button onClick={() => setNavSlide(true)} to={"/"} className={navBtnStyle}>Vendor<span><IoIosArrowDown className="-mb-1" /></span></button>
             <button onClick={() => { setNavSlide(true) }} onMouseEnter={()=>setMegaModal(false)} onMouseLeave={()=>setMegaModal(true)} to={"/"} className={navBtnStyle}>Mega menu  <IoIosArrowDown className="-mb-1" /></button>
+            <button onClick={() => setNavSlide(true)} to={"/"} className={navBtnStyle}>Pages<span><IoIosArrowDown className="-mb-1" /></span></button>
             <button onClick={() => setNavSlide(true)} to={"/"} className={navBtnStyle}>Blog <span><IoIosArrowDown className="-mb-1" /></span></button>
             <button onClick={() => setNavSlide(true)} to={"/"} className={"hover:text-emerald-500 active:scale-95 transition-all flex justify-between md:justify-normal cursor-pointer items-center gap-1 font-bold md:pb-0 pb-3"}>Contact <span className="md:hidden"><IoIosArrowDown className="-mb-1" /></span></button>
         </div>

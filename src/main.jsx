@@ -7,6 +7,9 @@ import Root from './Components/Root/Root.jsx'
 import Hero from './Components/Hero/Hero.jsx'
 import AuthProvider from './AuthProvider/AuthProvider.jsx'
 import Layout from './Layout/Layout.jsx'
+import Home from './Pages/Home/Home.jsx'
+import SignUp from './Pages/SignUp/SignUp.jsx'
+import Login from './Pages/Login/Login.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,8 +18,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Hero />
-      }
+        element: <Home />
+      },
+      {
+        path: '/signup',
+        element: <SignUp />
+      },
+      {
+        path: '/login',
+        element: <Login />
+      },
     ]
   }
 ])

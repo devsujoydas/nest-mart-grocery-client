@@ -1,9 +1,26 @@
-import React from 'react'
+ 
+import Hero from '../../Components/Hero/Hero'
+import FeaturedCategories from '../../Components/FeaturedCategories/FeaturedCategories'
+import PopularProducts from '../../Components/PopularProducts/PopularProducts'
+import DailyBestSells from '../../Components/DailyBestSells/DailyBestSells'
+import TopSellingContainer from '../../Components/TopSelling/TopSellingContainer'
+import StayHome from '../../Components/StayHome/StayHome'
+import Servicess from '../../Components/Servicess/Servicess'
+import Footer from '../../Shared/Footer/Footer'
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
+    return (
+        <div className="md:mx-10 mx-3">
+            <Hero />
+            <FeaturedCategories />
+            <PopularProducts />
+            <DailyBestSells />
+            <TopSellingContainer />
+            <StayHome />
+            <Servicess />
+            <Footer />
+        </div>
+    )
 }
 
 export default Home
