@@ -170,7 +170,7 @@ const Header = () => {
                 <Nav />
               </div>
 
-              <div  onMouseEnter={()=>setMegaModal(false)} onMouseLeave={()=>setMegaModal(true)} className={`absolute ${megaModal ? "-z-50 top-62 opacity-0" : " top-59 z-50 opacity-100"}  w-[1536px] bg-white p-10 transition-all duration-500 border border-emerald-300 rounded-lg font-family-primary  `}>
+              <div onMouseEnter={() => setMegaModal(false)} onMouseLeave={() => setMegaModal(true)} className={`absolute ${megaModal ? "-z-50 top-62 opacity-0" : " top-59 z-50 opacity-100"}  w-[1536px] bg-white p-10 transition-all duration-500 border border-emerald-300 rounded-lg font-family-primary  `}>
 
                 <div>
                   <div className="grid grid-cols-2 md:gap-0 gap-8 md:grid-cols-13  ">
@@ -203,8 +203,8 @@ const Header = () => {
                       <a href="#" className={megaMenuBtnStyle}>Crab and Shellfish </a>
                     </div>
 
-                    <div 
-                    style={{ backgroundImage: `url("https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-menu.png")` }} className="w-full relative rounded-lg h-66 bg-cover bg-center p-10 col-span-4 flex justify-between">
+                    <div
+                      style={{ backgroundImage: `url("https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-menu.png")` }} className="w-full relative rounded-lg h-66 bg-cover bg-center p-10 col-span-4 flex justify-between">
                       <div className="space-y-3">
                         <h1>HOT DEALS</h1>
                         <h1 className="text-2xl font-bold">Don't miss <br /> Trending</h1>
@@ -249,7 +249,7 @@ const Header = () => {
       {/* Nav For sm Device */}
       <div className="block lg:hidden">
         <div className="font-semibold text-white text-center bg-emerald-600 p-2 text-sm">
-          <h1>Grand opening, up to 15% off all items, Only 3days left</h1>
+          <h1 className="font-family-primary text-xs">Grand opening, up to 15% off all items, Only 3days left</h1>
         </div>
 
 
@@ -323,7 +323,7 @@ const Header = () => {
             </div>
 
 
-            <div onClick={() => setNavSlide(true)} className="w-3/12 border h-screen bg-[#000000b2]">
+            <div onClick={() => setNavSlide(true)} className={`w-3/12  h-screen  ${navslide ? " bg-[#00000000] transition-all duration-1000 opacity-0" : "bg-[#000000b2] transition-all duration-1000 opacity-100"} `}>
               {/* Right side black */}
             </div>
           </div>
