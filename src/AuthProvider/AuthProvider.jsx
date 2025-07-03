@@ -6,11 +6,14 @@ const AuthProvider = ({ children }) => {
 
     const [navslide, setNavSlide] = useState(true)
     const [megaModal, setMegaModal] = useState(true);
+    const [pageModal, setPageModal] = useState(false);
     const value = {
         navslide,
         setNavSlide,
         megaModal,
-        setMegaModal
+        setMegaModal,
+        pageModal, 
+        setPageModal
     }
     return (
         <AuthContext.Provider value={value}>

@@ -12,59 +12,60 @@ const SignUp = () => {
     <>
       <NavigationPage />
 
-      <div className=' font-family-primary max-w-screen-2xl mx-auto min-h-screen p-30 grid gap-5'>
-        <h1 className='text-5xl text-zinc-700 font-bold'>Create an Account</h1>
-        <h1 className='-mt-2 text-zinc-600 font-medium font-family-secondary'>Already have an account? <Link className='font-semibold text-emerald-500 hover:text-emerald-400 transition-all ' to={"/login"}>Login</Link></h1>
+      <div className=' font-family-primary max-w-screen-2xl mx-auto min-h-screen md:p-30 p-3 grid gap-5'>
+        <h1 className='md:text-5xl text-2xl text-zinc-700 font-bold'>Create an Account</h1>
+        <h1 className='-mt-2 text-zinc-600 md:text-[16px] text-xs font-medium font-family-secondary'>Already have an account? <Link className='font-semibold text-emerald-500 hover:text-emerald-400 transition-all ' to={"/login"}>Login</Link></h1>
 
-        <div className='grid grid-cols-2 gap-10'>
+        <div className='grid md:grid-cols-2 gap-10'>
           <form className=''>
-            <div className='  space-y-4'>
-              <input className='border border-zinc-200 text-sm px-4 py-4.5 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Username' name='username' />
-              <input className='border border-zinc-200 text-sm px-4 py-4.5 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Email' name='email' />
-              <input className='border border-zinc-200 text-sm px-4 py-4.5 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Password' name='password' />
-              <input className='border border-zinc-200 text-sm px-4 py-4.5 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Confirm password' name='confirmPass' />
+            <div className='  space-y-4 md:text-sm text-xs'>
+              <input className='border border-zinc-200 px-4 md:py-4.5 py-2 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Username' name='username' />
+              <input className='border border-zinc-200 px-4 md:py-4.5 py-2 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Email' name='email' />
+              <input className='border border-zinc-200 px-4 md:py-4.5 py-2 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Password' name='password' />
+              <input className='border border-zinc-200 px-4 md:py-4.5 py-2 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Confirm password' name='confirmPass' />
               <div className='flex justify-between items-center'>
-                <input className='w-1/3 border border-zinc-200 text-sm px-4 py-4.5  rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Security code *' name='securityCode' />
-
-
-
-
-                <div className='bg-emerald-300 py-3 w-30 flex justify-center items-center rounded-lg'>
-                  <h1 className=' font-bold text-blue-800 rounded-lg text-2xl'>{Math.floor(1000 + Math.random() * 9000)}</h1>
+                <input className='w-1/3 border border-zinc-200 px-4 md:py-4.5 py-2 rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Security code *' name='securityCode' />
+ 
+                <div className='bg-emerald-300 md:py-3 py-2 w-30 flex justify-center items-center rounded-lg'>
+                  <h1 className=' font-bold text-blue-800 rounded-lg md:text-2xl text-sm
+                  '>{Math.floor(1000 + Math.random() * 9000)}</h1>
                 </div>
               </div>
               <div className='font-family-secondary'>
                 <CustomerVendor />
               </div>
 
-              <div className='flex items-center gap-2 text-sm font-family-secondary mt-10 text-zinc-500 ' >
+              <div className='flex items-center gap-2 text-sm font-family-secondary md:mt-10 mt-3 text-zinc-500 ' >
                 <input type="checkbox" className='' name="" id="terms" />
                 <label htmlFor="terms" className='cursor-pointer hover:text-emerald-500 duration-500 transition-all'> I agree to terms & Policy.</label>
               </div>
 
-              <div className='mt-12'>
-                <button className='px-8 py-4 bg-emerald-500 rounded-lg font-bold text-white hover:bg-emerald-400 duration-500 cursor-pointer active:scale-95 transition-all '>Submit & Register</button>
+              <div className='md:mt-12 mt-3 flex justify-center items-center'>
+                <button className='px-8 md:w-fit w-full md:py-4 py-3 bg-emerald-500 rounded-lg font-bold text-white hover:bg-emerald-400 duration-500 cursor-pointer active:scale-95 transition-all '>Submit & Register</button>
               </div>
 
             </div>
           </form>
 
-          <div className=''>
-            <div className='p-10 border border-zinc-200  w-7/9 rounded-lg grid gap-5'  >
-              <button className='flex items-center bg-blue-500 hover:bg-blue-400 transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold py-3.5 px-9 gap-4 rounded-lg text-xl active:scale-95 '><FaFacebook className='text-3xl' />Continue with Facebook</button>
-              <button className='flex items-center transition-all duration-300 hover:-translate-y-1 border border-zinc-200 cursor-pointer text-zinc-600 font-bold py-3.5 px-9 gap-4 rounded-lg text-xl active:scale-95'><FcGoogle className='text-3xl' />Continue with Google</button>
-              <button className='flex items-center bg-black transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold py-3.5 px-9 gap-4 rounded-lg text-xl active:scale-95'><FaApple className='text-3xl' />Continue with Facebook</button>
-            </div>
+          <div className='md:p-10 p-5 h-fit border border-zinc-200  md:w-7/9 md:rounded-lg rounded-md flex flex-col md:gap-5 gap-3'>
 
+            <button className='flex items-center bg-blue-500 hover:bg-blue-400 transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold md:py-3.5 py-1.5 m:px-9 px-4 gap-4 rounded-lg md:text-xl active:scale-95 '><FaFacebook className='text-3xl' />Continue with Facebook</button>
 
+            <button className='flex items-center transition-all duration-300 hover:-translate-y-1 border border-zinc-200 cursor-pointer text-zinc-600 font-bold md:py-3.5 py-1.5 m:px-9 px-4 gap-4 rounded-lg md:text-xl active:scale-95'><FcGoogle className='text-3xl' />Continue with Google</button>
+
+            <button className='flex items-center bg-black transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold md:py-3.5 py-1.5 m:px-9 px-4 gap-4 rounded-lg md:text-xl active:scale-95'><FaApple className='text-3xl' />Continue with Facebook</button>
           </div>
+
         </div>
       </div>
 
 
+      <div className='md:mx-0 mx-3'>
+        <StayHome />
 
 
-      <StayHome />
+      </div>
+
     </>
   )
 }

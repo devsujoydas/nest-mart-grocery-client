@@ -25,7 +25,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import BrowesCatContainer from "./BrowesCatContainer";
 
 const Header = () => {
-  const { navslide, setNavSlide, megaModal, setMegaModal } = useContext(AuthContext)
+  const { navslide, setNavSlide, megaModal, setMegaModal, pageModal, setPageModal } = useContext(AuthContext)
 
   const [showAccModal, setShowAccModal] = useState(true)
 
@@ -66,13 +66,13 @@ const Header = () => {
               <h1 className="pr-2 border-r border-zinc-300">Need help? </h1>
               <h1 className="pr-2 border-r border-zinc-300 ">Call Us: <Link className="hover:text-black transition-all cursor-pointer" to={`tel:+8801303436299`}>+8801303436299</Link></h1>
 
-              <select className=" outline- hover:text-black transition-all cursor-pointer text-center" name="" id="">
+              <select className=" outline-none hover:text-black transition-all cursor-pointer text-center" name="" id="">
                 <option value="English">English</option>
                 <option value="Bangla">Bangla</option>
                 <option value="Hindi">Hindi</option>
               </select>
 
-              <select className="border-l px-2 border-l-zinc-200  outline- hover:text-black transition-all cursor-pointer text-center" name="" id="">
+              <select className="border-l px-2 border-l-zinc-200  outline-none hover:text-black transition-all cursor-pointer text-center" name="" id="">
                 <option value="USD">USD</option>
                 <option value="BDT">BDT</option>
                 <option value="INR">INR</option>
@@ -92,7 +92,7 @@ const Header = () => {
                 <select
                   value={category}
                   onChange={(e) => setCategory(e.target.value)}
-                  className="outline- font-family-primary font-semibold text-gray-900 text-sm rounded-lg block p-3.5"
+                  className="outline-none font-family-primary font-semibold text-gray-900 text-sm rounded-lg block p-3.5"
                 >
                   <option value="All Categories">All Categories</option>
                   <option value="Wines & Alcohol">Wines & Alcohol</option>
@@ -120,7 +120,7 @@ const Header = () => {
               <select
                 value={locationStatus}
                 onChange={(e) => setLocationStatus(e.target.value)}
-                className="outline- px-2" name="" id="">
+                className="outline-none px-2" name="" id="">
                 <option value="Your Location">Your Location</option>
                 <option value="Dhaka">Dhaka</option>
                 <option value="Mymensingh">Mymensingh</option>
@@ -168,6 +168,21 @@ const Header = () => {
 
               <div>
                 <Nav />
+                <div onMouseEnter={() => setPageModal(false)} className="relative">
+                  <div onMouseLeave={() => setPageModal(true)} className={`absolute  ${pageModal ? "opacity-0 -z-30  top-10" : "opacity-100 z-30  top-8 "} right-40 bg-white w-50 p-5 flex flex-col items-baseline gap-2 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all font-family-primary text-zinc-500`}>
+                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Contact</Link>
+                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all ">About Us </Link>
+                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> My Account</Link>
+                    <Link to={"/login"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all ">Login </Link>
+                    <Link to={"/signup"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Register</Link>
+                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Forgot password</Link>
+                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Reset password</Link>
+                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Purchase Guide</Link>
+                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Privacy Policy</Link>
+                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Terms of Service</Link>
+                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> 404 Page</Link>  
+                  </div>
+                </div>
               </div>
 
               <div onMouseEnter={() => setMegaModal(false)} onMouseLeave={() => setMegaModal(true)} className={`absolute ${megaModal ? "-z-50 top-62 opacity-0" : " top-59 z-50 opacity-100"}  w-[1536px] bg-white p-10 transition-all duration-500 border border-emerald-300 rounded-lg font-family-primary  `}>
@@ -220,15 +235,6 @@ const Header = () => {
 
                   </div>
                 </div>
-
-
-
-
-
-
-
-
-
 
               </div>
 

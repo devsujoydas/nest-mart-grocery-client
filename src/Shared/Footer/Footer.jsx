@@ -15,8 +15,8 @@ const Footer = () => {
   const footerBtnStyle = "hover:text-emerald-500 hover:translate-x-1 text-sm transition text-sm active:scale-95 duration-300"
   const socialBtnStyle = "text-white text-3xl cursor-pointer hover:bg-emerald-400 active:scale-95 transition-all bg-emerald-500 rounded-full p-1.5"
   return (
-    <div className="max-w-screen-2xl lg:mx-auto  font-family-primary">
-      <footer className="mt-10 ">
+    <div className="max-w-screen-2xl lg:mx-auto mx-3 font-family-primary">
+      <footer className="mt-10 "> 
 
         <div className="grid lg:grid-cols-10 gap-8 lg:gap-4  ">
 

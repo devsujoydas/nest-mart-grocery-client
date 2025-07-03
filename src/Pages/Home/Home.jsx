@@ -17,8 +17,7 @@ const Home = () => {
             <DailyBestSells />
             <TopSellingContainer />
             <StayHome />
-            <Servicess />
-            <Footer />
+            <Servicess /> 
         </div>
     )
 }
