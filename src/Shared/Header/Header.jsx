@@ -134,8 +134,13 @@ const Header = () => {
               <button to={"/"} className={compareBtnStyle}><IoGitCompareOutline className="text-2xl" /> Compare</button>
               <button to={"/"} className={compareBtnStyle}><FaRegHeart className="text-2xl" /> Wishlist</button>
               <button to={"/"} className={compareBtnStyle}><TiShoppingCart className="text-2xl" /> Cart</button>
-              <div onMouseEnter={() => setShowAccModal(false)} className="relative">
-                <div onMouseLeave={() => setShowAccModal(true)} className={`absolute  ${showAccModal ? "opacity-0 -z-30  top-10" : "opacity-100 z-30  top-8 "} right-0 bg-white py-4 px-3  w-46 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all`}>
+
+              <button onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="w-12 p-0.5 cursor-pointer rounded-full bg-emerald-400 active:scale-95 transition-all duration-200" >
+                <img className="rounded-full" src="./default.jpg" alt="" />
+              </button>
+
+              <div onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="relative">
+                <div className={`absolute  ${showAccModal ? "opacity-0 -z-30  top-20" : "opacity-100 z-30  top-10 "} right-7 bg-white py-4 px-3  w-46 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all`}>
                   <button to={"/"} className={myAccbtnStyle}><FaRegUser className="" /> My Account</button>
                   <button to={"/"} className={myAccbtnStyle}><CiLocationOn className="text-black" /> Order Tracking</button>
                   <button to={"/"} className={myAccbtnStyle}><GrTicket className="" /> My Voucher </button>
@@ -143,8 +148,8 @@ const Header = () => {
                   <button to={"/"} className={myAccbtnStyle}><CiSettings className="" /> Settings</button>
                   <button to={"/"} className={myAccbtnStyle}><PiSignOutLight className="" /> Sign out</button>
                 </div>
-                <button onMouseLeave={() => setShowAccModal(true)} to={"/"} className="flex justify-center items-end gap-1 cursor-pointer active:scale-95 hover:text-emerald-600 transition-all"><FaRegUser className="text-2xl" /> Account</button>
               </div>
+
             </div>
           </div>
         </div>
@@ -169,7 +174,7 @@ const Header = () => {
               <div>
                 <Nav />
                 <div onMouseEnter={() => setPageModal(false)} className="relative">
-                  <div onMouseLeave={() => setPageModal(true)} className={`absolute  ${pageModal ? "opacity-0 -z-30  top-10" : "opacity-100 z-30  top-8 "} right-40 bg-white w-50 p-5 flex flex-col items-baseline gap-2 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all font-family-primary text-zinc-500`}>
+                  <div onMouseLeave={() => setPageModal(true)} className={`absolute  ${pageModal ? "opacity-0 -z-30  top-10" : "opacity-100 z-30  top-8 "} right-10 bg-white w-50 p-5 flex flex-col items-baseline gap-2 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all font-family-primary text-zinc-500`}>
                     <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Contact</Link>
                     <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all ">About Us </Link>
                     <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> My Account</Link>
@@ -180,7 +185,7 @@ const Header = () => {
                     <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Purchase Guide</Link>
                     <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Privacy Policy</Link>
                     <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Terms of Service</Link>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> 404 Page</Link>  
+                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> 404 Page</Link>
                   </div>
                 </div>
               </div>

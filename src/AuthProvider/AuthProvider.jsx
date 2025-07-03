@@ -6,7 +6,7 @@ const AuthProvider = ({ children }) => {
 
     const [navslide, setNavSlide] = useState(true)
     const [megaModal, setMegaModal] = useState(true);
-    const [pageModal, setPageModal] = useState(false);
+    const [pageModal, setPageModal] = useState(true);
     const value = {
         navslide,
         setNavSlide,
