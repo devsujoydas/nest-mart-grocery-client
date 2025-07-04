@@ -26,20 +26,13 @@ const Servicess = () => {
             "titile": "Easy returns",
             "desc": "Within 30 days"
         },
-        {
-            "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-6.svg",
-            "titile": "Safe delivery",
-            "desc": "Within 30 days"
-        },
     ]
 
     return (
-        <div className="max-w-screen-2xl lg:mx-auto  ">
-            <div id="services" className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-3 md:gap-3 font-family-primary">
-
-
-                {
-                    serviceData.map((service, idx) => (
+        <div className="md:mx-10 2xl:mx-0 mx-3">
+            <div className="max-w-screen-2xl lg:mx-auto  ">
+                <div id="services" className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-5 gap-3 md:gap-3 font-family-primary">
+                    {serviceData.map((service, idx) => (
                         <div className=" group flex cursor-pointer gap-4 items-center  bg-[#edf0f19a] p-3 md:px-4 py-6 rounded-lg ">
 
                             <div className="flex justify-center items-center">
@@ -50,12 +43,8 @@ const Servicess = () => {
                                 <p className="text-zinc-400 font-medium md:text-[14px] text-xs">{service.desc}</p>
                             </div>
                         </div>
-                    ))
-                }
-
-
-
-
+                    ))}
+                </div>
             </div>
         </div>
     )

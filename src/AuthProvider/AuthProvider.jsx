@@ -5,7 +5,7 @@ export const AuthContext = createContext()
 const AuthProvider = ({ children }) => {
 
     const [navslide, setNavSlide] = useState(true)
-    const [megaModal, setMegaModal] = useState(true);
+    const [megaModal, setMegaModal] = useState(true );
     const [pageModal, setPageModal] = useState(true);
     const [vendormodal, setVendormodal] = useState(true);
     const [products, setProducts] = useState([]);

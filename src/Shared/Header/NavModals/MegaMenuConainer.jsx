@@ -7,12 +7,12 @@ const MegaMenuConainer = () => {
 
     return (
         <>
-            <div onMouseEnter={() => setMegaModal(false)} onMouseLeave={() => setMegaModal(true)} className={`absolute ${megaModal ? "-z-50 top-20 opacity-0 transition-all duration-500" : " top-14 z-50 opacity-100 transition-all duration-500"} -left-46 xl:w-7xl w-6xl mx-5 bg-white p-10  border border-emerald-200 rounded-lg font-family-primary  `}>
+            <div onMouseEnter={() => setMegaModal(false)} onMouseLeave={() => setMegaModal(true)} className={`absolute ${megaModal ? "-z-50 top-20 opacity-0 transition-all duration-500" : " top-14 z-50 opacity-100 transition-all duration-500"} 2xl:-left-46 -left-56 xl:-left-68 md:w-4xl xl:w-7xl mx-5 bg-white p-10  border border-emerald-200 rounded-lg font-family-primary `}>
 
                 <div>
-                    <div className="grid grid-cols-2 md:gap-0 gap-8 md:grid-cols-13  ">
+                    <div className="flex items-center justify-center gap-8 ">
 
-                        <div className="flex flex-col gap-4 md:gap-3 col-span-3">
+                        <div className="flex flex-col gap-2 md:gap-3 w-full">
                             <h1 className="text-xl text-emerald-500 font-bold mb-3">Fruit & Vegetables</h1>
                             <a href="#" className={megaMenuBtnStyle}>Meat & Poultry </a>
                             <a href="#" className={megaMenuBtnStyle}>Fresh Vegetables </a>
@@ -21,7 +21,8 @@ const MegaMenuConainer = () => {
                             <a href="#" className={megaMenuBtnStyle}>Exotic Fruits & Veggies </a>
                             <a href="#" className={megaMenuBtnStyle}>Packaged Produce </a>
                         </div>
-                        <div className="flex flex-col gap-4 md:gap-3 col-span-3">
+
+                        <div className="flex flex-col gap-4 md:gap-3 w-full">
                             <h1 className="text-xl text-emerald-500 font-bold mb-3">Breakfast & Dairy </h1>
                             <a href="#" className={megaMenuBtnStyle}>Milk & Flavoured Milk </a>
                             <a href="#" className={megaMenuBtnStyle}>Butter and Margarine </a>
@@ -30,7 +31,8 @@ const MegaMenuConainer = () => {
                             <a href="#" className={megaMenuBtnStyle}>Sour Cream </a>
                             <a href="#" className={megaMenuBtnStyle}>Cheese </a>
                         </div>
-                        <div className="flex flex-col gap-4 md:gap-3 col-span-3">
+
+                        <div className="flex flex-col gap-4 md:gap-3 w-full">
                             <h1 className="text-xl text-emerald-500 font-bold mb-3"> Meat & Seafood </h1>
                             <a href="#" className={megaMenuBtnStyle}>Breakfast Sausage </a>
                             <a href="#" className={megaMenuBtnStyle}>Dinner Sausage </a>
@@ -41,15 +43,15 @@ const MegaMenuConainer = () => {
                         </div>
 
                         <div
-                            style={{ backgroundImage: `url("https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-menu.png")` }} className="w-full relative rounded-lg h-66 bg-cover bg-center p-10 col-span-4 flex justify-between">
+                            style={{ backgroundImage: `url("https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-menu.png")` }} className="w-full relative rounded-lg h-66 bg-cover bg-center p-10 md:col-span-4 flex justify-between">
                             <div className="space-y-3">
-                                <h1>HOT DEALS</h1>
-                                <h1 className="text-2xl font-bold">Don't miss <br /> Trending</h1>
-                                <h1 className="text-emerald-600 font-bold text-2xl ">Save to 50%</h1>
+                                <h1 className='xl:text-lg text-xs'>HOT DEALS</h1>
+                                <h1 className="text-xl xl:text-2xl font-bold">Don't miss <br /> Trending</h1>
+                                <h1 className="text-emerald-600 font-bold text-xs xl:text-2xl ">Save to 50%</h1>
 
-                                <button className="bg-emerald-500 px-4 py-2 rounded-full text-sm text-white font-bold hover:bg-emerald-400 active:scale-95 transition-all cursor-pointer">Shop Now</button>
+                                <button className="bg-emerald-500 xl:px-4 px-2 xl:py-2 py-1 rounded-full text-xs xl:text-sm text-white font-bold hover:bg-emerald-400 active:scale-95 transition-all cursor-pointer">Shop Now</button>
                             </div>
-                            <div className="text-xl bg-yellow-400 h-fit font-bold w-fit py-4 px-6 rounded-full">
+                            <div className="xl:text-xl text-lg bg-yellow-400 h-fit font-bold w-fit md:py-4 py-4 md:px-6 px-4 rounded-full">
                                 <h1>25%</h1>
                                 <h1 className="-mt-1">off</h1>
                             </div>

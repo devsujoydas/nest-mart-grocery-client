@@ -51,147 +51,190 @@ const Header = () => {
       <div className="lg:block hidden  ">
         <div className="border-b font-family-secondary text-zinc-500 border-zinc-200 p-2 text-sm">
 
-          <div className="max-w-screen-2xl font-family-secondary md:mx-auto   mx-10 flex justify-between items-center text-zinc-400">
-            <div className="flex gap-2 ">
-              <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">About Us</Link>
-              <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">My Account</Link>
-              <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">Wishlist</Link>
-              <Link to={"/"} className=" hover:text-black transition-all">Order Tracking</Link>
-            </div>
+          <div className="md:mx-10 2xl:mx-0 mx-3">
+            <div className="max-w-screen-2xl font-family-secondary md:mx-auto   mx-10 flex justify-between items-center text-zinc-400">
+              <div className="flex gap-2 ">
+                <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">About Us</Link>
+                <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">My Account</Link>
+                <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">Wishlist</Link>
+                <Link to={"/"} className=" hover:text-black transition-all">Order Tracking</Link>
+              </div>
 
-            <div className="">
-              <ul className="font-semibold">
-                <li>Supper Value Deals - Save more with coupons</li>
-              </ul>
-            </div>
+              <div className=" h-3 overflow-hidden text-emerald-600 font-semibold">
+                <ul className="animate-slideUp">
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                  <li className="">100% Secure delivery without contacting the courier </li>
+                  <li className="">Supper Value Deals - Save more with coupons</li>
+                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
+                </ul>
+              </div>
 
-            <div className="flex items-center gap-2">
-              <h1 className="pr-2 border-r border-zinc-300">Need help? </h1>
-              <h1 className="pr-2 border-r border-zinc-300 ">Call Us: <Link className="hover:text-black transition-all cursor-pointer" to={`tel:+8801303436299`}>+8801303436299</Link></h1>
+              <div className="flex items-center gap-2">
+                <h1 className="pr-2 border-r border-zinc-300">Need help? </h1>
+                <h1 className="pr-2 border-r border-zinc-300 ">Call Us: <Link className="hover:text-black transition-all cursor-pointer" to={`tel:+8801303436299`}>+8801303436299</Link></h1>
 
-              <select className=" outline-none hover:text-black transition-all cursor-pointer text-center" name="" id="">
-                <option value="English">English</option>
-                <option value="Bangla">Bangla</option>
-                <option value="Hindi">Hindi</option>
-              </select>
-
-              <select className="border-l px-2 border-l-zinc-200  outline-none hover:text-black transition-all cursor-pointer text-center" name="" id="">
-                <option value="USD">USD</option>
-                <option value="BDT">BDT</option>
-                <option value="INR">INR</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <div className="max-w-screen-2xl  mx-auto flex gap-10 justify-between items-center py-8">
-          <div className="flex  items-center gap-10 w-full">
-            <Link to={"/"}>
-              <img src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/logo.svg" alt="" />
-            </Link>
-
-            <div className="w-full ">
-              <div className="flex justify-center items-center border-2 border-emerald-300  rounded-md">
-                <select
-                  value={category}
-                  onChange={(e) => setCategory(e.target.value)}
-                  className="outline-none font-family-primary font-semibold text-gray-900 text-sm rounded-lg block p-3.5"
-                >
-                  <option value="All Categories">All Categories</option>
-                  <option value="Wines & Alcohol">Wines & Alcohol</option>
-                  <option value="Clothing & Beauty">Clothing & Beauty</option>
-                  <option value="Pet Foods & Toy">Pet Foods & Toy</option>
-                  <option value="Fast food">Fast food</option>
-                  <option value="Baking material">Baking material</option>
-                  <option value="Vegetables">Vegetables</option>
-                  <option value="Fresh Seafood">Fresh Seafood</option>
-                  <option value="Noodles & Rice">Noodles & Rice</option>
-                  <option value="Ice cream">Ice cream</option>
+                <select className=" outline-none hover:text-black transition-all cursor-pointer text-center" name="" id="">
+                  <option value="English">English</option>
+                  <option value="Bangla">Bangla</option>
+                  <option value="Hindi">Hindi</option>
                 </select>
-                <input type="text" className="border-l w-full placeholder:text-sm ml-3 pl-3 border-zinc-300" placeholder=" Search for items..." />
-                <div className="text-xl mr-3">
-                  <SlMagnifier />
-                </div>
+
+                <select className="border-l px-2 border-l-zinc-200  outline-none hover:text-black transition-all cursor-pointer text-center" name="" id="">
+                  <option value="USD">USD</option>
+                  <option value="BDT">BDT</option>
+                  <option value="INR">INR</option>
+                </select>
               </div>
-            </div>
-
-          </div>
-
-          <div className="flex justify-center items-center gap-7 text-zinc-600">
-            <div className="text-emerald-400 shadow-md shadow-zinc-100 text-sm rounded-md p-2  border border-zinc-200 flex items-center ">
-              <CiLocationOn className="text-xl" />
-              <select
-                value={locationStatus}
-                onChange={(e) => setLocationStatus(e.target.value)}
-                className="outline-none px-2" name="" id="">
-                <option value="Your Location">Your Location</option>
-                <option value="Dhaka">Dhaka</option>
-                <option value="Mymensingh">Mymensingh</option>
-                <option value="Jamalpur">Jamalpur</option>
-                <option value="Sherpur">Sherpur</option>
-                <option value="Borisal">Borisal</option>
-              </select>
-            </div>
-
-            <div className="flex justify-center items-center gap-7">
-              <button to={"/"} className={compareBtnStyle}><IoGitCompareOutline className="text-2xl" /> Compare</button>
-              <button to={"/"} className={compareBtnStyle}><FaRegHeart className="text-2xl" /> Wishlist</button>
-              <button to={"/"} className={compareBtnStyle}><TiShoppingCart className="text-2xl" /> Cart</button>
-
-              <button onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="w-12 p-0.5 cursor-pointer rounded-full bg-emerald-400 active:scale-95 transition-all duration-200" >
-                <img className="rounded-full" src="./default.jpg" alt="" />
-              </button>
-
-              <div onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="relative">
-                <div className={`absolute  ${showAccModal ? "opacity-0 -z-30  top-20" : "opacity-100 z-30  top-10 "} right-7 bg-white py-4 px-3  w-46 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all`}>
-                  <button to={"/"} className={myAccbtnStyle}><FaRegUser className="" /> My Account</button>
-                  <button to={"/"} className={myAccbtnStyle}><CiLocationOn className="text-black" /> Order Tracking</button>
-                  <button to={"/"} className={myAccbtnStyle}><GrTicket className="" /> My Voucher </button>
-                  <button to={"/"} className={myAccbtnStyle}><FaRegHeart className="" /> My Wishlist</button>
-                  <button to={"/"} className={myAccbtnStyle}><CiSettings className="" /> Settings</button>
-                  <button to={"/"} className={myAccbtnStyle}><PiSignOutLight className="" /> Sign out</button>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
 
-        <div className="border-y border-zinc-200 hidden md:block">
-          <div className="max-w-screen-2xl mx-auto  py-3  flex items-center justify-between ">
-            <div className="flex items-center gap-10">
+        <div className="md:mx-10 2xl:mx-0 mx-3">
+          <div className="max-w-screen-2xl  mx-auto flex gap-10 justify-between items-center py-8">
+            <div className="flex  items-center gap-10 w-full">
+              <Link to={"/"}>
+                <img src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/logo.svg" alt="" />
+              </Link>
 
-              <div className="relative font-family-primary">
+              <div className="w-full ">
+                <div className="flex justify-center items-center border-2 border-emerald-300  rounded-md">
+                  <select
+                    value={category}
+                    onChange={(e) => setCategory(e.target.value)}
+                    className="outline-none font-family-primary font-semibold text-gray-900 text-sm rounded-lg block p-3.5"
+                  >
+                    <option value="All Categories">All Categories</option>
+                    <option value="Wines & Alcohol">Wines & Alcohol</option>
+                    <option value="Clothing & Beauty">Clothing & Beauty</option>
+                    <option value="Pet Foods & Toy">Pet Foods & Toy</option>
+                    <option value="Fast food">Fast food</option>
+                    <option value="Baking material">Baking material</option>
+                    <option value="Vegetables">Vegetables</option>
+                    <option value="Fresh Seafood">Fresh Seafood</option>
+                    <option value="Noodles & Rice">Noodles & Rice</option>
+                    <option value="Ice cream">Ice cream</option>
+                  </select>
+                  <input type="text" className="border-l w-full outline-none   placeholder:text-sm ml-3 pl-3 border-zinc-300" placeholder=" Search for items..." />
+                  <div className="text-xl mr-3">
+                    <SlMagnifier />
+                  </div>
+                </div>
+              </div>
 
-                <button onClick={() => setBrowserModal(!browserModal)} className="flex items-center gap-2 border py-2.5 px-4 rounded-md bg-emerald-500 hover:bg-emerald-600 cursor-pointer active:scale-95 transition-all text-white font-semibold  ">
-                  <MdOutlineGridView className="text-xl font-bold text-white" />Browse All Categories <IoIosArrowDown />
+            </div>
+
+            <div className="flex justify-center items-center gap-7 text-zinc-600">
+              <div className="text-emerald-400 shadow-md shadow-zinc-100 text-sm rounded-md p-2  border border-zinc-200 flex items-center ">
+                <CiLocationOn className="text-xl" />
+                <select
+                  value={locationStatus}
+                  onChange={(e) => setLocationStatus(e.target.value)}
+                  className="outline-none px-2" name="" id="">
+                  <option value="Your Location">Your Location</option>
+                  <option value="Dhaka">Dhaka</option>
+                  <option value="Mymensingh">Mymensingh</option>
+                  <option value="Jamalpur">Jamalpur</option>
+                  <option value="Sherpur">Sherpur</option>
+                  <option value="Borisal">Borisal</option>
+                </select>
+              </div>
+
+              <div className="flex justify-center items-center gap-7">
+                <button to={"/"} className={compareBtnStyle}><IoGitCompareOutline className="text-2xl" /> Compare</button>
+                <button to={"/"} className={compareBtnStyle}><FaRegHeart className="text-2xl" /> Wishlist</button>
+                <button to={"/"} className={compareBtnStyle}><TiShoppingCart className="text-2xl" /> Cart</button>
+
+                <button onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="w-12 p-0.5 cursor-pointer rounded-full bg-emerald-400 active:scale-95 transition-all duration-200" >
+                  <img className="rounded-full" src="./default.jpg" alt="" />
                 </button>
 
-                {/* Browse Btns container  */}
-                <div onClick={() => setBrowserModal(!browserModal)} className={`absolute ${browserModal ? "-z-50 top-22 opacity-0" : "top-18 z-50 opacity-100"}  left-0 w-[480px]  grid grid-cols-2 gap-5 bg-white p-8 transition-all duration-500 border border-emerald-300 rounded-lg`}>
-                  <BrowesCatContainer />
+                <div onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="relative">
+                  <div className={`absolute  ${showAccModal ? "opacity-0 -z-30  top-20" : "opacity-100 z-30  top-10 "} right-7 bg-white py-4 px-3  w-46 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all`}>
+                    <button to={"/"} className={myAccbtnStyle}><FaRegUser className="" /> My Account</button>
+                    <button to={"/"} className={myAccbtnStyle}><CiLocationOn className="text-black" /> Order Tracking</button>
+                    <button to={"/"} className={myAccbtnStyle}><GrTicket className="" /> My Voucher </button>
+                    <button to={"/"} className={myAccbtnStyle}><FaRegHeart className="" /> My Wishlist</button>
+                    <button to={"/"} className={myAccbtnStyle}><CiSettings className="" /> Settings</button>
+                    <button to={"/"} className={myAccbtnStyle}><PiSignOutLight className="" /> Sign out</button>
+                  </div>
                 </div>
 
               </div>
-
-              <div className="relative">
-                <Nav />
-                <VendorModal />
-                <MegaMenuConainer />
-                <PageModalsContainer />
-              </div>
-
-
-
-
-
-
             </div>
-            <div className="flex items-center gap-2">
-              <div> <IoHeadsetSharp className="text-5xl" /></div>
-              <div>
-                <Link to={"tel:+8801303436299"} className="text-emerald-600 hover:text-emerald-400 transition-all font-bold text-xl">01303-436299</Link>
-                <h1 className="text-sm text-zinc-500">24/7 Support Center</h1>
+          </div>
+        </div>
+
+        <div className="md:mx-10 2xl:mx-0 mx-3">
+          <div className="border-y border-zinc-200 hidden md:block">
+            <div className="max-w-screen-2xl mx-auto  py-3  flex items-center justify-between ">
+              <div className="flex items-center gap-10">
+
+                <div className="relative font-family-primary">
+
+                  <button onClick={() => setBrowserModal(!browserModal)} className="flex items-center gap-2 border py-2.5 px-4 rounded-md bg-emerald-500 hover:bg-emerald-600 cursor-pointer active:scale-95 transition-all text-white font-semibold  ">
+                    <MdOutlineGridView className="text-xl font-bold text-white" />Browse All Categories <IoIosArrowDown />
+                  </button>
+
+                  {/* Browse Btns container  */}
+                  <div onClick={() => setBrowserModal(!browserModal)} className={`absolute ${browserModal ? "-z-50 top-22 opacity-0" : "top-18 z-50 opacity-100"}  left-0 w-[480px]  grid grid-cols-2 gap-5 bg-white p-8 transition-all duration-500 border border-emerald-300 rounded-lg`}>
+                    <BrowesCatContainer />
+                  </div>
+                </div>
+
+                <div className="relative">
+                  <Nav />
+                  <VendorModal />
+                  <MegaMenuConainer />
+                  <PageModalsContainer />
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <div> <IoHeadsetSharp className="text-5xl" /></div>
+                <div>
+                  <Link to={"tel:+8801303436299"} className="text-emerald-600 hover:text-emerald-400 transition-all font-bold text-xl">01303-436299</Link>
+                  <h1 className="text-sm text-zinc-500">24/7 Support Center</h1>
+                </div>
               </div>
             </div>
           </div>

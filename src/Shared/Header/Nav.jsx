@@ -16,7 +16,7 @@ const Nav = () => {
 
             <Link to={"/shop"} className={navBtnStyle}>Shop <span className="md:hidden"><IoIosArrowDown className="-mb-1" /></span></Link>
 
-            <Link onMouseEnter={() => { setVendormodal(false) }} onMouseLeave={() => setVendormodal(true)} className={navBtnStyle}>Vendor<span><IoIosArrowDown className="-mb-1" /></span></Link>
+            <button onMouseEnter={() => { setVendormodal(false) }} onMouseLeave={() => setVendormodal(true)} className={navBtnStyle}>Vendor<span><IoIosArrowDown className="-mb-1" /></span></button>
 
             <button onMouseEnter={() => { setMegaModal(false) }} onMouseLeave={() => setMegaModal(true)} className={navBtnStyle}>Mega menu  <IoIosArrowDown className="-mb-1" /></button>
 

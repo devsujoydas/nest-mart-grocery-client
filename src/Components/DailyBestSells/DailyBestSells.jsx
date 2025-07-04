@@ -16,7 +16,7 @@ const DailyBestSells = () => {
   return (
     <div id='nav-for-daily-best-sell' className="max-w-screen-2xl lg:mx-auto  font-family-primary">
 
-      <div className=" my-10 flex justify-between litems-center  flex-wrap gap-3 lg:gap-8">
+      <div className=" my-5 md:my-10 flex justify-between litems-center  flex-wrap gap-3 lg:gap-8">
         <h1 className="md:text-4xl text-2xl font-bold">Daily Best Sells</h1>
         <div className="flex justify-center items-center font-semibold lg:gap-8 gap-x-4 gap-y-1 flex-wrap md:text-lg text-xs">
           <a href="#" className={btnStyles}>Featured</a>
