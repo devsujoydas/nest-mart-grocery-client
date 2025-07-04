@@ -190,7 +190,7 @@ const Header = () => {
                 </div>
               </div>
 
-              <div onMouseEnter={() => setMegaModal(false)} onMouseLeave={() => setMegaModal(true)} className={`absolute ${megaModal ? "-z-50 top-62 opacity-0" : " top-59 z-50 opacity-100"}  w-[1536px] bg-white p-10 transition-all duration-500 border border-emerald-300 rounded-lg font-family-primary  `}>
+              <div onMouseEnter={() => setMegaModal(false)} onMouseLeave={() => setMegaModal(true)} className={`absolute ${megaModal ? "-z-50 top-62 opacity-0 transition-all duration-500" : " top-59 z-50 opacity-100 transition-all duration-500"}  w-[1536px] bg-white p-10  border border-emerald-300 rounded-lg font-family-primary  `}>
 
                 <div>
                   <div className="grid grid-cols-2 md:gap-0 gap-8 md:grid-cols-13  ">
