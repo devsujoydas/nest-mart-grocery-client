@@ -9,7 +9,7 @@ import { FaApple } from "react-icons/fa";
 const Login = () => {
   return (
     <>
-      <NavigationPage />
+      <NavigationPage path1={"Pages"} path2={"My Account"}/>
 
       <div className=' font-family-primary md:w-7xl  mx-auto md:p-30 p-3 grid md:grid-cols-2 gap-10'>
         <div className='md:block hidden'>

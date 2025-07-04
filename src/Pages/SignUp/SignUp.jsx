@@ -10,7 +10,7 @@ import { FaApple } from "react-icons/fa";
 const SignUp = () => {
   return (
     <>
-      <NavigationPage />
+      <NavigationPage path1={"Pages"} path2={"My Account"}/>
 
       <div className=' font-family-primary md:w-7xl mx-auto  md:p-30 p-3 grid gap-5'>
         <h1 className='md:text-5xl text-2xl text-zinc-700 font-bold'>Create an Account</h1>

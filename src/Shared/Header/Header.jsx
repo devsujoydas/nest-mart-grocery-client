@@ -22,17 +22,20 @@ import { FaFacebookF } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import BrowesCatContainer from "./BrowesCatContainer";
+import BrowesCatContainer from "./NavModals/BrowesCatContainer";
+import MegaMenuConainer from "./NavModals/MegaMenuConainer";
+import PageModalsContainer from "./NavModals/PageModalsContainer";
+import VendorModal from "./NavModals/VendorModal";
 
 const Header = () => {
-  const { navslide, setNavSlide, megaModal, setMegaModal, pageModal, setPageModal } = useContext(AuthContext)
+  const { navslide, setNavSlide, megaModal, setMegaModal, pageModal, setPageModal, vendormodal, setVendormodal } = useContext(AuthContext)
 
   const [showAccModal, setShowAccModal] = useState(true)
 
   const socialBtnStyle = "text-white text-3xl cursor-pointer hover:bg-emerald-400 active:scale-95 transition-all bg-emerald-500 rounded-full p-1.5"
   const compareBtnStyle = "flex justify-center items-end gap-1 cursor-pointer active:scale-95 hover:text-emerald-600 transition-all"
   const myAccbtnStyle = "flex cursor-pointer hover:text-emerald-600 active:scale-95 transition-all items-center gap-2 hover:bg-zinc-200 w-full  px-2 py-2 rounded-sm"
-  const megaMenuBtnStyle = "hover:text-emerald-500 font-bold text-zinc-500 text-lg transition text-sm active:scale-95 duration-300"
+
 
 
   const [category, setCategory] = useState("All Categories");
@@ -45,7 +48,7 @@ const Header = () => {
   return (
     <div className="">
       {/* Nav for lg Device */}
-      <div className="lg:block hidden">
+      <div className="lg:block hidden  ">
         <div className="border-b font-family-secondary text-zinc-500 border-zinc-200 p-2 text-sm">
 
           <div className="max-w-screen-2xl font-family-secondary md:mx-auto   mx-10 flex justify-between items-center text-zinc-400">
@@ -171,77 +174,17 @@ const Header = () => {
 
               </div>
 
-              <div>
+              <div className="relative">
                 <Nav />
-                <div onMouseEnter={() => setPageModal(false)} className="relative">
-                  <div onMouseLeave={() => setPageModal(true)} className={`absolute  ${pageModal ? "opacity-0 -z-30  top-10" : "opacity-100 z-30  top-8 "} right-10 bg-white w-50 p-5 flex flex-col items-baseline gap-2 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all font-family-primary text-zinc-500`}>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Contact</Link>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all ">About Us </Link>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> My Account</Link>
-                    <Link to={"/login"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all ">Login </Link>
-                    <Link to={"/signup"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Register</Link>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Forgot password</Link>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Reset password</Link>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Purchase Guide</Link>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Privacy Policy</Link>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Terms of Service</Link>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> 404 Page</Link>
-                  </div>
-                </div>
+                <VendorModal />
+                <MegaMenuConainer />
+                <PageModalsContainer />
               </div>
 
-              <div onMouseEnter={() => setMegaModal(false)} onMouseLeave={() => setMegaModal(true)} className={`absolute ${megaModal ? "-z-50 top-62 opacity-0 transition-all duration-500" : " top-59 z-50 opacity-100 transition-all duration-500"}  w-[1536px] bg-white p-10  border border-emerald-300 rounded-lg font-family-primary  `}>
 
-                <div>
-                  <div className="grid grid-cols-2 md:gap-0 gap-8 md:grid-cols-13  ">
 
-                    <div className="flex flex-col gap-4 md:gap-3 col-span-3">
-                      <h1 className="text-xl text-emerald-500 font-bold mb-3">Fruit & Vegetables</h1>
-                      <a href="#" className={megaMenuBtnStyle}>Meat & Poultry </a>
-                      <a href="#" className={megaMenuBtnStyle}>Fresh Vegetables </a>
-                      <a href="#" className={megaMenuBtnStyle}>Herbs & Seasonings </a>
-                      <a href="#" className={megaMenuBtnStyle}>Cuts & Sprouts </a>
-                      <a href="#" className={megaMenuBtnStyle}>Exotic Fruits & Veggies </a>
-                      <a href="#" className={megaMenuBtnStyle}>Packaged Produce </a>
-                    </div>
-                    <div className="flex flex-col gap-4 md:gap-3 col-span-3">
-                      <h1 className="text-xl text-emerald-500 font-bold mb-3">Breakfast & Dairy </h1>
-                      <a href="#" className={megaMenuBtnStyle}>Milk & Flavoured Milk </a>
-                      <a href="#" className={megaMenuBtnStyle}>Butter and Margarine </a>
-                      <a href="#" className={megaMenuBtnStyle}>Eggs Substitutes </a>
-                      <a href="#" className={megaMenuBtnStyle}>Marmalades </a>
-                      <a href="#" className={megaMenuBtnStyle}>Sour Cream </a>
-                      <a href="#" className={megaMenuBtnStyle}>Cheese </a>
-                    </div>
-                    <div className="flex flex-col gap-4 md:gap-3 col-span-3">
-                      <h1 className="text-xl text-emerald-500 font-bold mb-3"> Meat & Seafood </h1>
-                      <a href="#" className={megaMenuBtnStyle}>Breakfast Sausage </a>
-                      <a href="#" className={megaMenuBtnStyle}>Dinner Sausage </a>
-                      <a href="#" className={megaMenuBtnStyle}>Chicken </a>
-                      <a href="#" className={megaMenuBtnStyle}>Sliced Deli Meat </a>
-                      <a href="#" className={megaMenuBtnStyle}>Wild Caught Fillets </a>
-                      <a href="#" className={megaMenuBtnStyle}>Crab and Shellfish </a>
-                    </div>
 
-                    <div
-                      style={{ backgroundImage: `url("https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-menu.png")` }} className="w-full relative rounded-lg h-66 bg-cover bg-center p-10 col-span-4 flex justify-between">
-                      <div className="space-y-3">
-                        <h1>HOT DEALS</h1>
-                        <h1 className="text-2xl font-bold">Don't miss <br /> Trending</h1>
-                        <h1 className="text-emerald-600 font-bold text-2xl ">Save to 50%</h1>
 
-                        <button className="bg-emerald-500 px-4 py-2 rounded-full text-sm text-white font-bold hover:bg-emerald-400 active:scale-95 transition-all cursor-pointer">Shop Now</button>
-                      </div>
-                      <div className="text-xl bg-yellow-400 h-fit font-bold w-fit py-4 px-6 rounded-full">
-                        <h1>25%</h1>
-                        <h1 className="-mt-1">off</h1>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
 
             </div>
             <div className="flex items-center gap-2">

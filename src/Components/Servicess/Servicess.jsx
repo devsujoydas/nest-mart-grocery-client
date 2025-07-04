@@ -1,69 +1,64 @@
 
 const Servicess = () => {
-  return (
-    <div className="max-w-screen-2xl lg:mx-auto  ">
-      <div id="services" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-3 font-family-primary">
-            <div
-                className="hover:shadow-md flex cursor-pointer gap-2 md:justify-center items-center border border-zinc-200 bg-[#edf0f19a] p-3 md:p-4 rounded-lg hover:-translate-y-2 transition-all">
-                <img className="hover:-translate-y-2 transition md:w-12 w-10" src="../../../assets/svgs/icon-1.svg" alt=""/>
-                <div>
-                    <p className="font-bold md:text-lg text-sm">Best prices & offers</p>
-                    <p className="text-zinc-400 font-medium md:text-[14px] text-xs">Orders $50 or More</p>
-                </div>
+    const serviceData = [
+        {
+            "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-1.svg",
+            "titile": "Best prices & offers",
+            "desc": "Orders $50 or more"
+        },
+        {
+            "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-2.svg",
+            "titile": "Free delivery",
+            "desc": "24/7 amazing services"
+        },
+        {
+            "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-3.svg",
+            "titile": "Great daily deal",
+            "desc": "When you sign up"
+        },
+        {
+            "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-4.svg",
+            "titile": "Wide assortment",
+            "desc": "Mega Discounts"
+        },
+        {
+            "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-5.svg",
+            "titile": "Easy returns",
+            "desc": "Within 30 days"
+        },
+        {
+            "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-6.svg",
+            "titile": "Safe delivery",
+            "desc": "Within 30 days"
+        },
+    ]
+
+    return (
+        <div className="max-w-screen-2xl lg:mx-auto  ">
+            <div id="services" className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-3 md:gap-3 font-family-primary">
+
+
+                {
+                    serviceData.map((service, idx) => (
+                        <div className=" group flex cursor-pointer gap-4 items-center  bg-[#edf0f19a] p-3 md:px-4 py-6 rounded-lg ">
+
+                            <div className="flex justify-center items-center">
+                                <img className="group-hover:-translate-y-2 transition md:w-14 w-10 duration-500" src={service.img} alt="" />
+                            </div>
+                            <div>
+                                <p className="font-bold md:text-lg text-sm">{service.titile}</p>
+                                <p className="text-zinc-400 font-medium md:text-[14px] text-xs">{service.desc}</p>
+                            </div>
+                        </div>
+                    ))
+                }
+
+
+
+
             </div>
-
-            <div
-                className="hover:shadow-md flex cursor-pointer gap-2 md:justify-center items-center border border-zinc-200 bg-[#edf0f19a] p-3 md:p-4 rounded-lg hover:-translate-y-2 transition-all">
-                <img className="hover:-translate-y-2 transition md:w-12 w-10" src="../../../assets/svgs/icon-2.svg" alt=""/>
-                <div>
-                    <p className="font-bold md:text-lg text-sm">Free delivery</p>
-                    <p className="text-zinc-400 font-medium md:text-[14px] text-xs">24/7 amazing services</p>
-                </div>
-            </div>
-
-            <div
-                className="hover:shadow-md lg:hidden flex gap-2 md:justify-center items-center border border-zinc-200 bg-[#edf0f19a] p-3 md:p-4 rounded-lg hover:-translate-y-2 transition-all">
-                <img className="hover:-translate-y-2 transition md:w-12 w-10" src="../../../assets/svgs/icon-3.svg" alt=""/>
-                <div>
-                    <p className="font-bold md:text-lg text-sm">Great daily deal</p>
-                    <p className="text-zinc-400 font-medium md:text-[14px] text-xs">When you sign up</p>
-                </div>
-            </div>
-
-            <div
-                className="hover:shadow-md flex cursor-pointer gap-2 md:justify-center items-center border border-zinc-200 bg-[#edf0f19a] p-3 md:p-4 rounded-lg hover:-translate-y-2 transition-all">
-                <img className="hover:-translate-y-2 transition md:w-12 w-10" src="../../../assets/svgs/icon-4.svg" alt=""/>
-                <div>
-                    <p className="font-bold md:text-lg text-sm">Wide assortment</p>
-                    <p className="text-zinc-400 font-medium md:text-[14px] text-xs">Mega Discounts</p>
-                </div>
-            </div>
-
-            <div
-                className="hover:shadow-md flex cursor-pointer gap-4 md:justify-center items-center border border-zinc-200 bg-[#edf0f19a] p-3 md:p-4 rounded-lg hover:-translate-y-2 transition-all">
-                <img className="hover:-translate-y-2 transition md:w-12 w-10" src="../../../assets/svgs/icon-5.svg" alt=""/>
-                <div>
-                    <p className="font-bold md:text-lg text-sm">Easy returns</p>
-                    <p className="text-zinc-400 font-medium md:text-[14px] text-xs">Within 30 days</p>
-                </div>
-            </div>
-
-            <div id="footer"
-                className=" scroll-smooth hover:shadow-md flex cursor-pointer gap-2 md:justify-center items-center border border-zinc-200 bg-[#edf0f19a] p-3 md:p-4 rounded-lg hover:-translate-y-2 transition-all">
-                <img className="hover:-translate-y-2 transition md:w-12 w-10" src="../../../assets/svgs/icon-6.svg" alt=""/>
-                <div>
-                    <p className="font-bold md:text-lg text-sm">Safe delivery</p>
-                    <p className="text-zinc-400 font-medium md:text-[14px] text-xs">Within 30 days</p>
-                </div>
-            </div>
-
-
-
-
-
         </div>
-    </div>
-  )
+    )
 }
 
 export default Servicess

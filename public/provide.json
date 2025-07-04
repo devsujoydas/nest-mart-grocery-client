@@ -1,0 +1,32 @@
+[
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-1.svg",
+    "title": "Best Prices & Offers",
+    "description": "Get the best prices and exciting offers on all your favorite products every day."
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-2.svg",
+    "title": "Wide Assortment",
+    "description": "Explore a wide assortment of products tailored to every need and preference."
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-3.svg",
+    "title": "Free Delivery",
+    "description": "Get your products delivered at no extra cost—fast, easy, and reliable."
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-4.svg",
+    "title": "Easy Returns",
+    "description": "Not satisfied? Enjoy hassle-free returns with our easy return policy."
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-5.svg",
+    "title": "100% Satisfaction",
+    "description": "We guarantee your satisfaction—quality products and outstanding service."
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/icon-6.svg",
+    "title": "Great Daily Deal",
+    "description": "Discover amazing daily deals and save big on your favorite items."
+  }
+]
