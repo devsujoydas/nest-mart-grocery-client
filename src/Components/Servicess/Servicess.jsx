@@ -33,7 +33,7 @@ const Servicess = () => {
             <div className="max-w-screen-2xl lg:mx-auto  ">
                 <div id="services" className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-5 gap-3 md:gap-3 font-family-primary">
                     {serviceData.map((service, idx) => (
-                        <div className=" group flex cursor-pointer gap-4 items-center  bg-[#edf0f19a] p-3 md:px-4 py-6 rounded-lg ">
+                        <div key={idx} className=" group flex cursor-pointer gap-4 items-center  bg-[#edf0f19a] p-3 md:px-4 py-6 rounded-lg ">
 
                             <div className="flex justify-center items-center">
                                 <img className="group-hover:-translate-y-2 transition md:w-14 w-10 duration-500" src={service.img} alt="" />

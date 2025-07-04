@@ -16,11 +16,14 @@ const PopularProducts = () => {
       setDisplayProducts(initialProducts);
     }
   }, [products]);
+
   const handleViewAll = () => {
     setShowAll(true);
     setDisplayProducts(products);
   };
-  console.log(products)
+
+
+  // console.log(products)
   return (
     <div className="max-w-screen-2xl lg:mx-auto font-family-primary">
 

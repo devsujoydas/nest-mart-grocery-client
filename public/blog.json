@@ -1,0 +1,114 @@
+[
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-1.png",
+    "type": "Side Dish",
+    "titile": "The Intermediate Guide to Healthy Food",
+    "date": "25 April 2024",
+    "views": "126",
+    "readtime": "4"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-2.png",
+    "type": "Breakfast",
+    "titile": "10 Quick and Healthy Breakfast Ideas",
+    "date": "29 April 2024",
+    "views": "310",
+    "readtime": "5"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-3.png",
+    "type": "Lunch",
+    "titile": "Power-Packed Lunches to Keep You Going",
+    "date": "2 May 2024",
+    "views": "189",
+    "readtime": "6"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-4.png",
+    "type": "Vegan",
+    "titile": "Beginner's Guide to a Plant-Based Diet",
+    "date": "5 May 2024",
+    "views": "275",
+    "readtime": "7"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-5.png",
+    "type": "Snack",
+    "titile": "Easy Snacks to Make in Under 10 Minutes",
+    "date": "8 May 2024",
+    "views": "198",
+    "readtime": "3"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-6.png",
+    "type": "Dessert",
+    "titile": "Top 5 Guilt-Free Desserts",
+    "date": "10 May 2024",
+    "views": "342",
+    "readtime": "5"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-7.png",
+    "type": "Dinner",
+    "titile": "Light Dinner Ideas for Better Sleep",
+    "date": "12 May 2024",
+    "views": "224",
+    "readtime": "6"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-8.png",
+    "type": "Smoothie",
+    "titile": "Detox Smoothies to Kickstart Your Morning",
+    "date": "14 May 2024",
+    "views": "311",
+    "readtime": "4"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-9.png",
+    "type": "Fitness",
+    "titile": "Best Pre-Workout Meals for Energy",
+    "date": "17 May 2024",
+    "views": "200",
+    "readtime": "5"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-10.png",
+    "type": "Keto",
+    "titile": "Keto-Friendly Dishes That Actually Taste Good",
+    "date": "20 May 2024",
+    "views": "154",
+    "readtime": "4"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-11.png",
+    "type": "Gluten-Free",
+    "titile": "Top Gluten-Free Alternatives for Your Diet",
+    "date": "22 May 2024",
+    "views": "134",
+    "readtime": "6"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-12.png",
+    "type": "Meal Prep",
+    "titile": "Weekly Meal Prep for Busy People",
+    "date": "24 May 2024",
+    "views": "277",
+    "readtime": "7"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-13.png",
+    "type": "Healthy",
+    "titile": "How to Eat Healthy on a Budget",
+    "date": "26 May 2024",
+    "views": "309",
+    "readtime": "5"
+  },
+  {
+    "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-14.png",
+    "type": "Beverages",
+    "titile": "Best Hydrating Drinks for Summer",
+    "date": "28 May 2024",
+    "views": "233",
+    "readtime": "3"
+  }
+]

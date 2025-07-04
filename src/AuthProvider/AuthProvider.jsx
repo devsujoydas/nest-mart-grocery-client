@@ -5,11 +5,12 @@ export const AuthContext = createContext()
 const AuthProvider = ({ children }) => {
 
     const [navslide, setNavSlide] = useState(true)
-    const [megaModal, setMegaModal] = useState(true );
+    const [megaModal, setMegaModal] = useState(true);
     const [pageModal, setPageModal] = useState(true);
     const [vendormodal, setVendormodal] = useState(true);
     const [products, setProducts] = useState([]);
     const [provideData, setProvideData] = useState([]);
+    const [blogsData, setBlogsData] = useState([]);
 
 
     useEffect(() => {
@@ -22,6 +23,11 @@ const AuthProvider = ({ children }) => {
             .then(res => res.json())
             .then(data => setProvideData(data))
     }, [])
+    useEffect(() => {
+        fetch("./blog.json")
+            .then(res => res.json())
+            .then(data => setBlogsData(data))
+    }, [])
 
 
 
@@ -31,7 +37,8 @@ const AuthProvider = ({ children }) => {
         pageModal, setPageModal,
         products, setProducts,
         vendormodal, setVendormodal,
-        provideData, setProvideData
+        provideData, setProvideData,
+        blogsData, setBlogsData
     }
     return (
         <AuthContext.Provider value={value}>
