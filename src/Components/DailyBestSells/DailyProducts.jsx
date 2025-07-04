@@ -14,7 +14,7 @@ const DailyProducts = () => {
     return (
 
         <div className="text-left">
-            <div className="border border-zinc-300 relative overflow-hidden md:p-4 p-2 lg:p-6 md:rounded-2xl rounded-md  ">
+            <div className="border border-zinc-200 relative overflow-hidden md:p-4 p-2 lg:p-6 md:rounded-2xl rounded-md  ">
 
                 <div>
                     <span className="bg-pink-600 text-white text-xs px-6 p-1 md:py-2 rounded-br-2xl absolute top-0 left-0 z-10">Save 15%</span>

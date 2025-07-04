@@ -39,7 +39,7 @@ const PopularProduct = ({ product }) => {
                     <h1 className="text-emerald-500 font-bold md:text-xl text-sm">${product.price}</h1>
                     <h1 className="text-xs text-zinc-400 line-through font-bold ">${product.prevPrice}</h1>
                 </div>
-                <button className="bg-emerald-100 hover:bg-emerald-500 text-emerald-600 hover:text-white font-semibold px-3 lg:px-6 md:py-2 py-1 rounded-md flex justify-between items-center gap-1 hover:-translate-y-1 transition duration-500 md:text-sm text-xs cursor-pointer">
+                <button className="bg-emerald-100 hover:bg-emerald-500 text-emerald-600 hover:text-white font-semibold px-3 lg:px-6 md:py-2 py-1 rounded-md flex justify-between items-center gap-1 hover:-translate-y-1 active:scale-95 transition duration-300 md:text-sm text-xs cursor-pointer">
                     <BsCart3 />
                     <h1 className="">Add</h1>
                 </button>

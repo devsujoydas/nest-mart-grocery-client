@@ -18,15 +18,15 @@ const Blogs = () => {
 
 
   return (
-    <div>
+    <div className="">
 
 
-      <div className='md:max-w-screen-2xl mx-auto mt-8'>
+      <div className='md:max-w-screen-2xl 2xl:mx-auto mt-8 md:mx-10   mx-3'>
 
         {/* Blog & News Heading */}
         <div
-          className='px-20 pt-16 pb-10 rounded-xl bg-center bg-cover flex flex-col justify-center' style={{ backgroundImage: `url("https://nest-frontend-v6.vercel.app/assets/imgs/blog/header-bg.png")` }}>
-          <h1 className='text-5xl text-zinc-700 font-bold font-family-primary'>Blog & News</h1>
+          className='md:px-20 md:p-0 px-5 pt-5 pb-3 md:pt-16 md:pb-10 rounded-xl bg-center bg-cover flex flex-col justify-center md:items-baseline items-center' style={{ backgroundImage: `url("https://nest-frontend-v6.vercel.app/assets/imgs/blog/header-bg.png")` }}>
+          <h1 className='md:text-5xl text-3xl text-zinc-700 font-bold font-family-primary'>Blog & News</h1>
           <div className='-mt-2'>
             <NavigationPage path1={"Blog & News"} />
           </div>
@@ -34,15 +34,15 @@ const Blogs = () => {
 
         {/* Recipy & Filtering */}
         <div>
-          <div className='my-10 flex md:flex-row flex-col justify-between items-center'>
+          <div className='md:my-10 my-5 flex md:flex-row flex-col justify-between items-center'>
             {/* Recips Articles */}
             <div className='flex items-center gap-5'>
-              <img className='w-10' src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-1.svg" alt="" />
-              <h1 className='text-4xl font-bold font-family-primary'>Recips Articles</h1>
+              <img className='md:w-10 w-5' src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-1.svg" alt="" />
+              <h1 className='md:text-4xl text-2xl font-bold font-family-primary'>Recips Articles</h1>
             </div>
             {/* Filtering Section */}
-            <div className='flex items-center gap-2'>
-              <div className='flex  items-center  justify-center text-zinc-500 border border-zinc-200 rounded-md p-3  bg-white  transition'>
+            <div className='flex items-center md:flex-row flex-col md:mt-0 mt-2 gap-2'>
+              <div className='flex  items-center  justify-center text-zinc-500 border border-zinc-200 rounded-md p-2 md:p-3  bg-white  transition'>
                 <MdOutlineGridView className="text-xl text-emerald-600" />
                 <select
                   value={show}
@@ -55,7 +55,7 @@ const Blogs = () => {
                 </select>
               </div>
 
-              <div className='flex  items-center  justify-center text-zinc-500 border border-zinc-200 rounded-md p-3  bg-white  transition'>
+              <div className='flex  items-center  justify-center text-zinc-500 border border-zinc-200 rounded-md p-2 md:p-3  bg-white  transition'>
                 <TbArrowsSort className="text-xl text-emerald-600" />
                 <select
                   value={sort}
@@ -71,19 +71,13 @@ const Blogs = () => {
             </div>
           </div>
 
-          <div className='grid md:grid-cols-4 gap-5'>
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
             {blogsData.map((blog, idx) => <Blog blog={blog} key={idx} />)}
           </div>
 
 
         </div>
-
-
-
-
-
-
-
+ 
       </div>
 
 
