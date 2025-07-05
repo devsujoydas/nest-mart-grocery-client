@@ -11,8 +11,14 @@ const AuthProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
     const [provideData, setProvideData] = useState([]);
     const [blogsData, setBlogsData] = useState([]);
+    const [user, setUser] = useState()
 
-
+    useEffect(() => {
+        setTimeout(() => {
+            setUser(1)
+        }, 300);
+    }, [])
+    
     useEffect(() => {
         fetch("./product.json")
             .then(res => res.json())
@@ -38,7 +44,8 @@ const AuthProvider = ({ children }) => {
         products, setProducts,
         vendormodal, setVendormodal,
         provideData, setProvideData,
-        blogsData, setBlogsData
+        blogsData, setBlogsData,
+        user, setUser
     }
     return (
         <AuthContext.Provider value={value}>
