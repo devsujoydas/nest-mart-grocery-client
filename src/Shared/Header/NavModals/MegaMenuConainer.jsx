@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { AuthContext } from '../../../AuthProvider/AuthProvider'
+import { Link } from 'react-router-dom'
 
 const MegaMenuConainer = () => {
     const megaMenuBtnStyle = "hover:text-emerald-500 font-bold text-zinc-500 text-lg transition text-sm active:scale-95 duration-300"
@@ -14,32 +15,32 @@ const MegaMenuConainer = () => {
 
                         <div className="flex flex-col gap-2 md:gap-3 w-full">
                             <h1 className="text-xl text-emerald-500 font-bold mb-3">Fruit & Vegetables</h1>
-                            <a href="#" className={megaMenuBtnStyle}>Meat & Poultry </a>
-                            <a href="#" className={megaMenuBtnStyle}>Fresh Vegetables </a>
-                            <a href="#" className={megaMenuBtnStyle}>Herbs & Seasonings </a>
-                            <a href="#" className={megaMenuBtnStyle}>Cuts & Sprouts </a>
-                            <a href="#" className={megaMenuBtnStyle}>Exotic Fruits & Veggies </a>
-                            <a href="#" className={megaMenuBtnStyle}>Packaged Produce </a>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Meat & Poultry </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Fresh Vegetables </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Herbs & Seasonings </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Cuts & Sprouts </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Exotic Fruits & Veggies </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Packaged Produce </Link>
                         </div>
 
                         <div className="flex flex-col gap-4 md:gap-3 w-full">
                             <h1 className="text-xl text-emerald-500 font-bold mb-3">Breakfast & Dairy </h1>
-                            <a href="#" className={megaMenuBtnStyle}>Milk & Flavoured Milk </a>
-                            <a href="#" className={megaMenuBtnStyle}>Butter and Margarine </a>
-                            <a href="#" className={megaMenuBtnStyle}>Eggs Substitutes </a>
-                            <a href="#" className={megaMenuBtnStyle}>Marmalades </a>
-                            <a href="#" className={megaMenuBtnStyle}>Sour Cream </a>
-                            <a href="#" className={megaMenuBtnStyle}>Cheese </a>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Milk & Flavoured Milk </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Butter and Margarine </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Eggs Substitutes </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Marmalades </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Sour Cream </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Cheese </Link>
                         </div>
 
                         <div className="flex flex-col gap-4 md:gap-3 w-full">
                             <h1 className="text-xl text-emerald-500 font-bold mb-3"> Meat & Seafood </h1>
-                            <a href="#" className={megaMenuBtnStyle}>Breakfast Sausage </a>
-                            <a href="#" className={megaMenuBtnStyle}>Dinner Sausage </a>
-                            <a href="#" className={megaMenuBtnStyle}>Chicken </a>
-                            <a href="#" className={megaMenuBtnStyle}>Sliced Deli Meat </a>
-                            <a href="#" className={megaMenuBtnStyle}>Wild Caught Fillets </a>
-                            <a href="#" className={megaMenuBtnStyle}>Crab and Shellfish </a>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Breakfast Sausage </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Dinner Sausage </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Chicken </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Sliced Deli Meat </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Wild Caught Fillets </Link>
+                            <Link to="/shop" className={megaMenuBtnStyle}>Crab and Shellfish </Link>
                         </div>
 
                         <div
