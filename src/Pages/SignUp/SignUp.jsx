@@ -53,13 +53,13 @@ const SignUp = () => {
             </div>
           </form>
 
-          <div className='md:p-10 p-5 h-fit border border-zinc-200  md:w-8/9 md:rounded-lg rounded-md flex flex-col md:gap-5 gap-3'>
+          <div className='md:p-10 p-3 h-fit border border-zinc-200  md:w-8/9 md:rounded-lg rounded-md flex flex-col md:gap-5 gap-3'>
 
-            <button className='flex items-center bg-blue-500 hover:bg-blue-400 transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold md:py-3.5 py-1.5 md:px-4 px-4 gap-4 rounded-lg md:text-xl active:scale-95 '><FaFacebook className='text-3xl' />Continue with Facebook</button>
+            <button className='flex items-center bg-blue-500 hover:bg-blue-400 transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold md:py-3.5 py-2 md:px-4 px-4 gap-4 rounded-sm md:rounded-lg md:text-xl active:scale-95 '><FaFacebook className='md:text-3xl text-xl' />Continue with Facebook</button>
 
-            <button className='flex items-center transition-all duration-300 hover:-translate-y-1 border border-zinc-200 cursor-pointer text-zinc-600 font-bold md:py-3.5 py-1.5 md:px-4 px-4 gap-4 rounded-lg md:text-xl active:scale-95'><FcGoogle className='text-3xl' />Continue with Google</button>
+            <button className='flex items-center transition-all duration-300 hover:-translate-y-1 border border-zinc-200 cursor-pointer text-zinc-600 font-bold md:py-3.5 py-2 md:px-4 px-4 gap-4 rounded-sm md:rounded-lg md:text-xl active:scale-95'><FcGoogle className='md:text-3xl text-xl' />Continue with Google</button>
 
-            <button className='flex items-center bg-black transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold md:py-3.5 py-1.5 md:px-4 px-4 gap-4 rounded-lg md:text-xl active:scale-95'><FaApple className='text-3xl' />Continue with Apple</button>
+            <button className='flex items-center bg-black transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold md:py-3.5 py-2 md:px-4 px-4 gap-4 rounded-sm md:rounded-lg md:text-xl active:scale-95'><FaApple className='md:text-3xl text-xl' />Continue with Apple</button>
           </div>
 
         </div>

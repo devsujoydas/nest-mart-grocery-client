@@ -9,6 +9,7 @@ import { MdOutlineGridView } from "react-icons/md";
 import { useContext, useEffect } from "react"
 import { AuthContext } from "../../AuthProvider/AuthProvider"
 import PopularProduct from '../../Components/PopularProducts/PopularProduct'
+import { motion } from "framer-motion";
 
 
 const Shop = () => {
@@ -81,24 +82,35 @@ const Shop = () => {
           </div>
         </div>
 
-
         <div className='md:pt-0 pt-5'>
           <div className="grid grid-cols-2 md:mt-0 -mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 md:gap-5 gap-3">
             {displayProducts.map((product, idx) => (
-              <PopularProduct key={idx} product={product} />
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: idx * 0.01 }}
+              >
+                <PopularProduct product={product} />
+              </motion.div>
             ))}
           </div>
 
           {!showAll && products.length > 8 && (
             <div className="flex justify-center mt-6">
-              <button
+              <motion.button
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
                 onClick={handleViewAll}
-                className="bg-emerald-500 active:scale-95 cursor-pointer duration-300  text-white px-5 py-2 rounded-md hover:bg-emerald-600 transition"
-              >View All
-              </button>
+                className="bg-emerald-500 active:scale-95 cursor-pointer duration-300 text-white px-5 py-2 rounded-md hover:bg-emerald-600 transition"
+              >
+                View All
+              </motion.button>
             </div>
           )}
         </div>
+
 
 
 

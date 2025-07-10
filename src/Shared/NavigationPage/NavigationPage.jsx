@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const NavigationPage = ({ path1, path2 }) => {
   return (
-    <div className="md:mx-10 2xl:mx-0 mx-3">
+    <div className="md:mx-10 2xl:mx-0 ">
       <div className='md:py-6 py-3 md:mx-0 mx-3 border-b border-zinc-200'>
 
         <div className=' max-w-screen-2xl mx-auto flex items-center gap-2 font-family-primary text-xs md:text-sm font-bold'>

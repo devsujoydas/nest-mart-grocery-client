@@ -56,7 +56,7 @@ const Header = () => {
               <div className="flex gap-2 ">
                 <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">About Us</Link>
                 <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">My Account</Link>
-                <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">Wishlist</Link>
+                <Link to={"/wishlist"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">Wishlist</Link>
                 <Link to={"/"} className=" hover:text-black transition-all">Order Tracking</Link>
               </div>
 
@@ -180,26 +180,23 @@ const Header = () => {
                 </select>
               </div>
 
-              <div className="flex justify-center items-center gap-7">
+              <div className="flex justify-between relative items-center gap-8">
                 <button to={"/"} className={compareBtnStyle}><IoGitCompareOutline className="text-2xl" /> Compare</button>
-                <button to={"/"} className={compareBtnStyle}><FaRegHeart className="text-2xl" /> Wishlist</button>
-                <button to={"/"} className={compareBtnStyle}><TiShoppingCart className="text-2xl" /> Cart</button>
+                <Link to={"/wishlist"} className={compareBtnStyle}><FaRegHeart className="text-2xl" /> Wishlist</Link>
+                <Link to={"/cart"} className={compareBtnStyle}><TiShoppingCart className="text-2xl" /> Cart</Link>
 
-                <button onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="w-12 p-0.5 cursor-pointer rounded-full bg-emerald-400 active:scale-95 transition-all duration-200" >
+                <button onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="w-12  p-0.5 cursor-pointer rounded-full bg-emerald-400 active:scale-95 transition-all duration-200" >
                   <img className="rounded-full" src="./default.jpg" alt="" />
                 </button>
 
-                <div onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="relative">
-                  <div className={`absolute  ${showAccModal ? "opacity-0 -z-30  top-20" : "opacity-100 z-30  top-10 "} right-7 bg-white py-4 px-3  w-46 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all`}>
-                    <button to={"/"} className={myAccbtnStyle}><FaRegUser className="" /> My Account</button>
-                    <button to={"/"} className={myAccbtnStyle}><CiLocationOn className="text-black" /> Order Tracking</button>
-                    <button to={"/"} className={myAccbtnStyle}><GrTicket className="" /> My Voucher </button>
-                    <button to={"/"} className={myAccbtnStyle}><FaRegHeart className="" /> My Wishlist</button>
-                    <button to={"/"} className={myAccbtnStyle}><CiSettings className="" /> Settings</button>
-                    <button to={"/"} className={myAccbtnStyle}><PiSignOutLight className="" /> Sign out</button>
-                  </div>
+                <div onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className={`absolute  ${showAccModal ? "opacity-0 -z-30  top-20" : "opacity-100 z-30  top-12 "} right-5 bg-white py-4 px-3  w-46 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all`}>
+                  <button to={"/"} className={myAccbtnStyle}><FaRegUser className="" /> My Account</button>
+                  <button to={"/"} className={myAccbtnStyle}><CiLocationOn className="text-black" /> Order Tracking</button>
+                  <button to={"/"} className={myAccbtnStyle}><GrTicket className="" /> My Voucher </button>
+                  <Link to={"/wishlist"} className={myAccbtnStyle}><FaRegHeart className="" /> My Wishlist</Link>
+                  <button to={"/"} className={myAccbtnStyle}><CiSettings className="" /> Settings</button>
+                  <button to={"/"} className={myAccbtnStyle}><PiSignOutLight className="" /> Sign out</button>
                 </div>
-
               </div>
             </div>
           </div>
@@ -256,8 +253,13 @@ const Header = () => {
           </div>
           <Link to={"/"}><img className="w-33" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/logo.svg" alt="" /></Link >
           <div className="flex items-center gap-2 text-zinc-600 ">
-            <FaRegHeart className="text-2xl active:scale-95 hover:text-black transition-all cursor-pointer" />
-            <TiShoppingCart className="text-3xl active:scale-95 hover:text-black transition-all cursor-pointer" />
+
+            <Link to={"/wishlist"}>
+              <FaRegHeart className="text-2xl active:scale-95 hover:text-black transition-all cursor-pointer" />
+            </Link>
+            <Link to={"cart"}>
+              <TiShoppingCart className="text-3xl active:scale-95 hover:text-black transition-all cursor-pointer" />
+            </Link>
           </div>
         </div>
 
@@ -290,8 +292,8 @@ const Header = () => {
                     </div>
                     <div className="flex items-center text-sm gap-2">
                       <FaRegUser className="text-lg text-emerald-600" />
-                      <Link to={"/"}>Log In</Link> /
-                      <Link to={"/"}>Sign Up</Link>
+                      <Link to={"/login"}>Log In</Link> /
+                      <Link to={"/signup"}>Sign Up</Link>
                     </div>
                     <div className="flex items-center text-sm gap-2">
                       <IoHeadsetSharp className="text-lg text-emerald-600" /> <Link to={"tel:+8801303436299"}>+8801303436299</Link>

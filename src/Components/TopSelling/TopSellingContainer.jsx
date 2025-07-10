@@ -1,26 +1,51 @@
-import TopSelling from "./TopSelling"
-
+import { motion } from "framer-motion";
+import TopSelling from "./TopSelling";
 
 const TopSellingContainer = () => {
     return (
-        <div className="max-w-screen-2xl md:mx-auto font-family-primary">
-            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:grid-cols-4 gap-4 ">
+        <div className="max-w-screen-2xl md:mx-auto font-family-primary px-4 md:px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                >
+                    <TopSelling data={"Top Selling"} />
+                </motion.div>
 
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.1 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                >
+                    <TopSelling data={"Trending Products"} />
+                </motion.div>
 
-                <TopSelling data={"Top Selling"} />
-                <TopSelling data={"Trending Products"} />
-
-                <div className="lg:block hidden">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.2 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    className="lg:block hidden"
+                >
                     <TopSelling data={"Recently added"} />
-                </div>
+                </motion.div>
 
-                <div className="xl:block hidden">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.3 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    className="xl:block hidden"
+                >
                     <TopSelling data={"Top Rated"} />
-                </div>
-
+                </motion.div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default TopSellingContainer
+export default TopSellingContainer;
