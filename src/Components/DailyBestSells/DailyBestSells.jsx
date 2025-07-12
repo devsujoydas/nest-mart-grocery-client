@@ -21,7 +21,7 @@ const DailyBestSells = () => {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="my-5 md:my-10 flex justify-between items-center flex-wrap gap-3 lg:gap-8"
       >
         <h1 className="md:text-4xl text-2xl font-bold">Daily Best Sells</h1>
@@ -40,7 +40,7 @@ const DailyBestSells = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           id='bgLeaf'
           className="bg-cover rounded-xl p-10 lg:col-span-1 flex justify-between flex-col"
         >
@@ -57,7 +57,7 @@ const DailyBestSells = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className='lg:col-span-3'
         >
           <Swiper
@@ -80,7 +80,7 @@ const DailyBestSells = () => {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: false, amount: 0.2 }}
+                  viewport={{ once: true, amount: 0.2 }}
                 >
                   <DailyProducts />
                 </motion.div>

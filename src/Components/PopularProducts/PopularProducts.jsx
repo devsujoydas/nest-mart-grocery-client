@@ -53,7 +53,7 @@ const PopularProducts = () => {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
       >
         <div className="my-5 md:my-10 flex justify-between items-center w-full flex-wrap gap-3 lg:gap-8">
           <div>
@@ -76,7 +76,7 @@ const PopularProducts = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="md:pt-0 pt-5"
       >
         <div className="grid grid-cols-2 md:mt-0 -mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 md:gap-5 gap-3">

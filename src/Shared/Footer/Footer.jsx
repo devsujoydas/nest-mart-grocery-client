@@ -39,7 +39,7 @@ const Footer = () => {
       className="max-w-screen-2xl lg:mx-auto font-family-primary"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
       <footer className="mt-10 md:mx-10 2xl:mx-0 mx-3">

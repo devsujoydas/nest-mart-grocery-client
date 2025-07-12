@@ -83,7 +83,7 @@ const DealsOfTheDay = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         {products.map((product, idx) => (
           <motion.div key={idx} variants={productVariants}>

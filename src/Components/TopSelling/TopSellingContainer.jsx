@@ -10,7 +10,7 @@ const TopSellingContainer = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4 }}
-                    viewport={{ once: false, amount: 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
                 >
                     <TopSelling data={"Top Selling"} />
                 </motion.div>
@@ -19,7 +19,7 @@ const TopSellingContainer = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.1 }}
-                    viewport={{ once: false, amount: 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
                 >
                     <TopSelling data={"Trending Products"} />
                 </motion.div>
@@ -28,7 +28,7 @@ const TopSellingContainer = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.2 }}
-                    viewport={{ once: false, amount: 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     className="lg:block hidden"
                 >
                     <TopSelling data={"Recently added"} />
@@ -38,7 +38,7 @@ const TopSellingContainer = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.3 }}
-                    viewport={{ once: false, amount: 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     className="xl:block hidden"
                 >
                     <TopSelling data={"Top Rated"} />
