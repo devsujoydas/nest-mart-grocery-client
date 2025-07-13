@@ -10,7 +10,7 @@ import { FaApple } from "react-icons/fa";
 const Login = () => {
   return (
     <>
-      <NavigationPage path1={"Pages"} path2={"My Account"} />
+      <NavigationPage path1={"My Account"} path2={"Login"} />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}

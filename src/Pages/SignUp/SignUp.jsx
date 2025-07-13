@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 const SignUp = () => {
   return (
     <>
-      <NavigationPage path1={"Pages"} path2={"My Account"} />
+      <NavigationPage path1={"My Account"} path2={"Sign Up"} />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
