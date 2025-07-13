@@ -290,7 +290,7 @@ const Header = () => {
                     <div className="flex items-center text-sm gap-2">
                       <CiLocationOn className="text-lg text-emerald-600" /> <h1>Our location</h1>
                     </div>
-                    <div className="flex items-center text-sm gap-2">
+                    <div className="flex items-center text-sm gap-2" onClick={() => setNavSlide(true)}>
                       <FaRegUser className="text-lg text-emerald-600" />
                       <Link to={"/login"}>Log In</Link> /
                       <Link to={"/signup"}>Sign Up</Link>
