@@ -70,7 +70,7 @@ const Login = () => {
                   </label>
                 </div>
                 <div>
-                  <Link to={""} className='hover:text-zinc-700 duration-300 transition-all hover:underline'>
+                  <Link to={"/forgotPassword"} className='hover:text-zinc-700 duration-300 transition-all hover:underline'>
                     Forgot password?
                   </Link>
                 </div>

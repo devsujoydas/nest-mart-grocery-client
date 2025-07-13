@@ -13,7 +13,7 @@ const PageModalsContainer = () => {
                     <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> My Account</Link>
                     <Link to={"/login"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all ">Login </Link>
                     <Link to={"/signup"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Register</Link>
-                    <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Forgot password</Link>
+                    <Link to={"/forgotPassword"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Forgot password</Link>
                     <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Reset password</Link>
                     <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Purchase Guide</Link>
                     <Link to={"/"} className="font-semibold hover:text-emerald-600 cursor-pointer duration-300 transition-all "> Privacy Policy</Link>

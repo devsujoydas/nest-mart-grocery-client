@@ -17,6 +17,7 @@ import Blogs from './Pages/Blogs/Blogs.jsx'
 import AboutUs from './Pages/AboutUs/AboutUs.jsx'
 import YourCart from './Pages/YourCart/YourCart.jsx'
 import YourWishlist from './Pages/YourWishlist/YourWishlist.jsx'
+import ForgotPassword from './Pages/ForgotPassword/ForgotPassword.jsx'
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login />
+      },
+      {
+        path: '/forgotPassword',
+        element: <ForgotPassword />
       },
       {
         path: '/shop',
