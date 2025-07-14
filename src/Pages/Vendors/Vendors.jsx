@@ -4,8 +4,9 @@ import NavigationPage from '../../Shared/NavigationPage/NavigationPage'
 import { TbArrowsSort } from "react-icons/tb";
 import { MdOutlineGridView } from "react-icons/md";
 import Vendor from './Vendor';
-import StayHome from '../../Components/StayHome/StayHome'; 
+import StayHome from '../../Components/StayHome/StayHome';
 import Servicess from '../../Components/Servicess/Servicess';
+import { SlMagnifier } from "react-icons/sl";
 
 
 const Vendors = () => {
@@ -17,10 +18,17 @@ const Vendors = () => {
             <NavigationPage path1={"Vendors "} />
 
 
-            <div className='max-w-screen-2xl 2xl:mx-auto  md:mx-10 mx-3 my-10'>
+            <div className='max-w-screen-2xl 2xl:mx-auto  md:mx-10 mx-3 my-20'>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='font-family-primary font-bold md:text-7xl text-3xl text-zinc-700'>Vendors List</h1>
 
+                    <div className='flex items-center justify-between gap-5 border border-zinc-200 px-5 py-2 rounded-full w-1/2 mt-10 shadow-xl'>
+                        <input type="text" className="py-2 pl-2 w-full outline-none
+                        " placeholder=" Search for items..." />
+                        <div className=" text-xl text-zinc-300">
+                            <SlMagnifier />
+                        </div>
+                    </div>
                 </div>
 
 
@@ -69,10 +77,6 @@ const Vendors = () => {
                     <Vendor />
                 </div>
             </div>
-
-
-
-
 
 
 

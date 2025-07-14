@@ -19,6 +19,7 @@ import YourCart from './Pages/YourCart/YourCart.jsx'
 import YourWishlist from './Pages/YourWishlist/YourWishlist.jsx'
 import ForgotPassword from './Pages/ForgotPassword/ForgotPassword.jsx'
 import Vendors from './Pages/Vendors/Vendors.jsx'
+import VendorShop from './Pages/Vendors/VendorShop.jsx'
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
         element: <Vendors />
       },
       {
+        path: '/vendors/:id',
+        element: <VendorShop />
+      },
+      {
         path: '/cart',
         element: <YourCart />
       },
@@ -70,7 +75,7 @@ const router = createBrowserRouter([
         path: '/vendor-guide',
         element: <VendorGuide />
       },
-      
+
     ]
   }
 ])
