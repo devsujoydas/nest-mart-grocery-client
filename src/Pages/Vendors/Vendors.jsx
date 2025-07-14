@@ -24,7 +24,7 @@ const Vendors = () => {
 
                     <div className='flex items-center justify-between gap-5 border border-zinc-200 px-5 py-2 rounded-full w-1/2 mt-10 shadow-xl'>
                         <input type="text" className="py-2 pl-2 w-full outline-none
-                        " placeholder=" Search for items..." />
+                        " placeholder=" Search for Vendor..." />
                         <div className=" text-xl text-zinc-300">
                             <SlMagnifier />
                         </div>
@@ -70,7 +70,13 @@ const Vendors = () => {
                 </div>
 
                 {/* Vendor Sections */}
-                <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-10  '>
+                <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5   '>
+                    <Vendor />
+                    <Vendor />
+                    <Vendor />
+                    <Vendor />
+                    <Vendor />
+                    <Vendor />
                     <Vendor />
                     <Vendor />
                     <Vendor />

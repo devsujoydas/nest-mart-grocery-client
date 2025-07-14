@@ -52,7 +52,7 @@ const Shop = () => {
             <h1 className='font-family-primary'>We found <span className='font-bold text-emerald-500'>{products?.length}</span> items for you!</h1>
           </div>
           {/* Filtering Section */}
-          <div className='flex items-center md:flex-row flex-col md:mt-0 mt-2 gap-2'>
+          <div className='flex items-center  md:mt-0 mt-2 gap-2'>
             <div className='flex  items-center  justify-center text-zinc-500 border border-zinc-200 rounded-md p-2 md:p-3  bg-white  transition'>
               <MdOutlineGridView className="text-xl text-emerald-600" />
               <select

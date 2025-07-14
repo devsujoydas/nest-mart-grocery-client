@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <div className="">
       {/* Nav for lg Device */}
-      <div className="lg:block hidden  ">
+      <div className="lg:block hidden ">
         <div className="border-b font-family-secondary text-zinc-500 border-zinc-200 p-2 text-sm">
 
           <div className="md:mx-10 2xl:mx-0 mx-3">
@@ -202,8 +202,8 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="md:mx-10 2xl:mx-0 mx-3">
-          <div className="border-y border-zinc-200 hidden md:block">
+        <div className="md:mx-10 2xl:mx-0 mx-3 ">
+          <div className="border-y border-zinc-200 hidden md:block ">
             <div className="max-w-screen-2xl mx-auto  py-3  flex items-center justify-between ">
               <div className="flex items-center gap-10">
 

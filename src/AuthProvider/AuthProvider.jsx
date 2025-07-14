@@ -9,10 +9,13 @@ const AuthProvider = ({ children }) => {
     const [megaModal, setMegaModal] = useState(true);
     const [pageModal, setPageModal] = useState(true);
     const [vendormodal, setVendormodal] = useState(true);
+
+    const [user, setUser] = useState()
+
     const [products, setProducts] = useState([]);
     const [provideData, setProvideData] = useState([]);
     const [blogsData, setBlogsData] = useState([]);
-    const [user, setUser] = useState()
+    const [vendors, setVendors] = useState([]);
 
     useEffect(() => {
         setTimeout(() => {
@@ -22,15 +25,15 @@ const AuthProvider = ({ children }) => {
 
 
     useEffect(() => {
-        axios.get('/product.json')
-            .then(res => {
-                setProducts(res.data)
-            })
+        axios.get('/vendors.json')
+            .then(res => setProducts(res.data))
     }, [])
 
-    // if (products.length >= 1) {
-    //     console.log(products)
-    // }
+    useEffect(() => {
+        axios.get('/product.json')
+            .then(res => setProducts(res.data))
+    }, [])
+ 
 
     useEffect(() => {
         axios.get('/provide.json')
@@ -53,6 +56,7 @@ const AuthProvider = ({ children }) => {
         vendormodal, setVendormodal,
         provideData, setProvideData,
         blogsData, setBlogsData,
+        vendors, setVendors,
         user, setUser
     }
     return (

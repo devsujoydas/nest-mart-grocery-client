@@ -1,0 +1,274 @@
+[
+  {
+    "name": "Nature Fresh Market",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-1.png",
+    "since": 2012,
+    "rating": 4.5,
+    "products": 380,
+    "address": "123 Green St, Austin, TX 73301, USA",
+    "phone": "(512) 555-0123",
+    "type": "Organic Store",
+    "description": "Nature Fresh Market offers a wide range of organic and fresh products straight from the farm. Trusted by thousands for healthy living since 2012.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/naturefreshmarket",
+      "whatsappUrl": "https://wa.me/10015550001",
+      "youtubeUrl": "https://youtube.com/@naturefreshmarket",
+      "instaUrl": "https://instagram.com/naturefreshmarket"
+    }
+  },
+  {
+    "name": "Hamburger Haven",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-2.png",
+    "since": 2015,
+    "rating": 4.3,
+    "products": 120,
+    "address": "456 Burger Blvd, Chicago, IL 60601, USA",
+    "phone": "(312) 555-0456",
+    "type": "Fast Food",
+    "description": "Hamburger Haven is known for juicy, delicious burgers and fries that bring joy to every bite. A hometown favorite since 2015.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/hamburgerhaven",
+      "whatsappUrl": "https://wa.me/10025550002",
+      "youtubeUrl": "https://youtube.com/@hamburgerhaven",
+      "instaUrl": "https://instagram.com/hamburgerhaven"
+    }
+  },
+  {
+    "name": "Ramen Republic",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-3.png",
+    "since": 2011,
+    "rating": 4.1,
+    "products": 200,
+    "address": "789 Noodle St, Seattle, WA 98101, USA",
+    "phone": "(206) 555-0789",
+    "type": "Instant Food",
+    "description": "Ramen Republic offers rich, flavorful instant noodles that satisfy hunger and tastebuds alike. A staple since 2011.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/ramenrepublic",
+      "whatsappUrl": "https://wa.me/10035550003",
+      "youtubeUrl": "https://youtube.com/@ramenrepublic",
+      "instaUrl": "https://instagram.com/ramenrepublic"
+    }
+  },
+  {
+    "name": "Red Baron Bakery",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-4.png",
+    "since": 2010,
+    "rating": 4.4,
+    "products": 150,
+    "address": "321 Crust Ave, Denver, CO 80202, USA",
+    "phone": "(303) 555-0321",
+    "type": "Bakery",
+    "description": "Red Baron Bakery crafts artisanal baked goods with love and tradition. Serving communities deliciousness since 2010.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/redbaronbakery",
+      "whatsappUrl": "https://wa.me/10045550004",
+      "youtubeUrl": "https://youtube.com/@redbaronbakery",
+      "instaUrl": "https://instagram.com/redbaronbakery"
+    }
+  },
+  {
+    "name": "Dove Delights",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-5.png",
+    "since": 2016,
+    "rating": 4.6,
+    "products": 80,
+    "address": "555 Cocoa Rd, Hershey, PA 17033, USA",
+    "phone": "(717) 555-0555",
+    "type": "Chocolates",
+    "description": "Dove Delights is synonymous with smooth, rich chocolates that melt hearts. A premium treat loved nationwide.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/dovedelights",
+      "whatsappUrl": "https://wa.me/10055550005",
+      "youtubeUrl": "https://youtube.com/@dovedelights",
+      "instaUrl": "https://instagram.com/dovedelights"
+    }
+  },
+  {
+    "name": "Lindt Luxe Store",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-6.png",
+    "since": 2018,
+    "rating": 4.8,
+    "products": 95,
+    "address": "147 Swiss Ln, Boston, MA 02108, USA",
+    "phone": "(617) 555-0147",
+    "type": "Luxury Chocolates",
+    "description": "Lindt Luxe Store brings the finest Swiss chocolate experience to your doorstep. Pure indulgence since 2018.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/lindtluxestore",
+      "whatsappUrl": "https://wa.me/10065550006",
+      "youtubeUrl": "https://youtube.com/@lindtluxestore",
+      "instaUrl": "https://instagram.com/lindtluxestore"
+    }
+  },
+  {
+    "name": "Country Crock Mart",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-7.png",
+    "since": 2019,
+    "rating": 4.0,
+    "products": 60,
+    "address": "878 Farm St, Nashville, TN 37201, USA",
+    "phone": "(615) 555-0878",
+    "type": "Dairy & Butter",
+    "description": "Got a smooth, buttery spread in your fridge? Chances are good that it's Country Crock, a beloved American brand.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/countrycrockmart",
+      "whatsappUrl": "https://wa.me/10075550007",
+      "youtubeUrl": "https://youtube.com/@countrycrockmart",
+      "instaUrl": "https://instagram.com/countrycrockmart"
+    }
+  },
+  {
+    "name": "Totino's Treats",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+    "since": 2013,
+    "rating": 4.2,
+    "products": 140,
+    "address": "222 Pizza Ave, New York, NY 10001, USA",
+    "phone": "(212) 555-0222",
+    "type": "Frozen Food",
+    "description": "Totino's Treats specializes in fun, fast, and tasty frozen pizzas \u2013 a family favorite since 2013.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/totino'streats",
+      "whatsappUrl": "https://wa.me/10085550008",
+      "youtubeUrl": "https://youtube.com/@totino'streats",
+      "instaUrl": "https://instagram.com/totino'streats"
+    }
+  },
+  {
+    "name": "USA Soup Kitchen",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-9.png",
+    "since": 2010,
+    "rating": 3.9,
+    "products": 110,
+    "address": "633 Warm Bowl Rd, Phoenix, AZ 85001, USA",
+    "phone": "(602) 555-0633",
+    "type": "Soups",
+    "description": "USA Soup Kitchen delivers hearty, nourishing soups that warm you up from the inside out. Trusted since 2010.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/usasoupkitchen",
+      "whatsappUrl": "https://wa.me/10095550009",
+      "youtubeUrl": "https://youtube.com/@usasoupkitchen",
+      "instaUrl": "https://instagram.com/usasoupkitchen"
+    }
+  },
+  {
+    "name": "Mrs. Smith's Pie House",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-10.png",
+    "since": 2008,
+    "rating": 4.3,
+    "products": 75,
+    "address": "109 Pie Crust St, Portland, OR 97205, USA",
+    "phone": "(503) 555-0109",
+    "type": "Bakery",
+    "description": "Mrs. Smith\u2019s Pie House is where every slice tells a story of homemade flavor and tradition.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/mrs.smith'spiehouse",
+      "whatsappUrl": "https://wa.me/10105550010",
+      "youtubeUrl": "https://youtube.com/@mrs.smith'spiehouse",
+      "instaUrl": "https://instagram.com/mrs.smith'spiehouse"
+    }
+  },
+  {
+    "name": "Mrs. Dash Spices",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-11.png",
+    "since": 2014,
+    "rating": 4.0,
+    "products": 55,
+    "address": "441 Spice Ln, Baton Rouge, LA 70801, USA",
+    "phone": "(225) 555-0441",
+    "type": "Seasonings",
+    "description": "Mrs. Dash Spices adds life to every meal without the salt. A go-to for health-conscious cooking.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/mrs.dashspices",
+      "whatsappUrl": "https://wa.me/10115550011",
+      "youtubeUrl": "https://youtube.com/@mrs.dashspices",
+      "instaUrl": "https://instagram.com/mrs.dashspices"
+    }
+  },
+  {
+    "name": "Snyder's Snacks",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-12.png",
+    "since": 2012,
+    "rating": 4.2,
+    "products": 130,
+    "address": "312 Crunchy Rd, Charlotte, NC 28202, USA",
+    "phone": "(704) 555-0312",
+    "type": "Snacks",
+    "description": "Snyder\u2019s Snacks is a name synonymous with crunch, taste, and quality in every bite. Snacking made smarter.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/snyder'ssnacks",
+      "whatsappUrl": "https://wa.me/10125550012",
+      "youtubeUrl": "https://youtube.com/@snyder'ssnacks",
+      "instaUrl": "https://instagram.com/snyder'ssnacks"
+    }
+  },
+  {
+    "name": "Dreyer's Ice Cream",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-13.png",
+    "since": 2011,
+    "rating": 4.4,
+    "products": 90,
+    "address": "818 Creamy St, San Francisco, CA 94103, USA",
+    "phone": "(415) 555-0818",
+    "type": "Ice Cream",
+    "description": "Dreyer\u2019s Ice Cream serves happiness in every scoop with creamy, dreamy textures and rich flavors.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/dreyer'sicecream",
+      "whatsappUrl": "https://wa.me/10135550013",
+      "youtubeUrl": "https://youtube.com/@dreyer'sicecream",
+      "instaUrl": "https://instagram.com/dreyer'sicecream"
+    }
+  },
+  {
+    "name": "Wonderful Nuts",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-14.png",
+    "since": 2013,
+    "rating": 4.5,
+    "products": 160,
+    "address": "214 Nut Grove Ave, Fresno, CA 93711, USA",
+    "phone": "(559) 555-0214",
+    "type": "Nuts & Dry Fruits",
+    "description": "Wonderful Nuts delivers premium quality pistachios and almonds to health-conscious snackers everywhere.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/wonderfulnuts",
+      "whatsappUrl": "https://wa.me/10145550014",
+      "youtubeUrl": "https://youtube.com/@wonderfulnuts",
+      "instaUrl": "https://instagram.com/wonderfulnuts"
+    }
+  },
+  {
+    "name": "Almond Delight",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-15.png",
+    "since": 2010,
+    "rating": 4.3,
+    "products": 100,
+    "address": "777 Almond Blvd, Bakersfield, CA 93309, USA",
+    "phone": "(661) 555-0777",
+    "type": "Nuts",
+    "description": "Almond Delight offers roasted, salted, and raw almonds that are both tasty and nutritious.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/almonddelight",
+      "whatsappUrl": "https://wa.me/10155550015",
+      "youtubeUrl": "https://youtube.com/@almonddelight",
+      "instaUrl": "https://instagram.com/almonddelight"
+    }
+  },
+  {
+    "name": "Pistachio Palace",
+    "image": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-16.png",
+    "since": 2016,
+    "rating": 4.1,
+    "products": 88,
+    "address": "999 Pistachio Rd, El Paso, TX 79936, USA",
+    "phone": "(915) 555-0999",
+    "type": "Nuts",
+    "description": "Pistachio Palace brings you the freshest and crunchiest pistachios from farm to table.",
+    "socialLinks": {
+      "fbUrl": "https://facebook.com/pistachiopalace",
+      "whatsappUrl": "https://wa.me/10165550016",
+      "youtubeUrl": "https://youtube.com/@pistachiopalace",
+      "instaUrl": "https://instagram.com/pistachiopalace"
+    }
+  }
+]

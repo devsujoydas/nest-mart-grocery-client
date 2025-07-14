@@ -12,7 +12,7 @@ const Vendor = () => {
                 <img className='w-38' src="https://wp.alithemes.com/html/nest/demo/assets/imgs/vendor/vendor-1.png" alt="" />
             </div>
 
-            <div className='flex justify-between items-center'>
+            <div className='flex justify-between items-center mt-5'>
                 <div className=''>
                     <p className='text-zinc-400 text-sm'>Since 2012</p>
                     <h1 className='font-family-primary font-bold text-2xl text-zinc-600'>Nature Food </h1>
@@ -42,8 +42,8 @@ const Vendor = () => {
             </div>
 
             <Link to={`/vendors/nest`} className="bg-emerald-500 w-fit hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 text-sm rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer mt-5 duration-500">
-            Visit Store <FaArrowRight className='text-xs' />
-          </Link>
+                Visit Store <FaArrowRight className='text-xs' />
+            </Link>
         </div>
     )
 }

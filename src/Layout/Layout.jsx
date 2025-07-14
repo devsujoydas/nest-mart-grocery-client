@@ -10,7 +10,7 @@ const Layout = () => {
   const { user, setUser } = useContext(AuthContext)
 
   return ( 
-    <div>
+    <div className='relative'>
       {user ?
         <>
           <Header />

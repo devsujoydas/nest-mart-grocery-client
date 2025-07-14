@@ -9,10 +9,8 @@ import { LuPhoneCall } from "react-icons/lu";
 import { motion } from "framer-motion";
 
 const Footer = () => {
-  const footerBtnStyle =
-    "hover:text-emerald-500 hover:translate-x-1 text-sm transition active:scale-95 duration-300";
-  const socialBtnStyle =
-    "text-white text-3xl cursor-pointer hover:bg-emerald-400 active:scale-95 transition-all bg-emerald-500 rounded-full p-1.5";
+  const footerBtnStyle = "hover:text-emerald-500 hover:translate-x-1 text-sm transition active:scale-95 duration-300";
+  const socialBtnStyle = "text-white text-3xl cursor-pointer hover:bg-emerald-400 active:scale-95 transition-all bg-emerald-500 rounded-full p-1.5";
 
   // Container variants for staggering children
   const containerVariants = {
@@ -89,102 +87,48 @@ const Footer = () => {
             {/* Company */}
             <motion.div className="flex flex-col gap-2 md:gap-3" variants={sectionVariants}>
               <h1 className="text-2xl font-semibold">Company</h1>
-              <a href="#none" className={footerBtnStyle}>
-                About Us
-              </a>
-              <a href="#none" className={footerBtnStyle}>
-                Delivery Info
-              </a>
-              <a href="#none" className={footerBtnStyle}>
-                Privacy Policy
-              </a>
-              <a href="#none" className={footerBtnStyle}>
-                Terms & Conditions
-              </a>
-              <a href="#none" className={footerBtnStyle}>
-                Contact Us
-              </a>
-              <a href="#none" className={footerBtnStyle}>
-                Support Center
-              </a>
-              <a href="#none" className={footerBtnStyle}>
-                Careers
-              </a>
+              <a href="#none" className={footerBtnStyle}>About Us</a>
+              <a href="#none" className={footerBtnStyle}>Delivery Info</a>
+              <a href="#none" className={footerBtnStyle}>Privacy Policy</a>
+              <a href="#none" className={footerBtnStyle}>Terms & Conditions</a>
+              <a href="#none" className={footerBtnStyle}>Contact Us</a>
+              <a href="#none" className={footerBtnStyle}>Support Center</a>
+              <a href="#none" className={footerBtnStyle}>Careers</a>
             </motion.div>
 
             {/* Account */}
             <motion.div className="flex flex-col gap-2 md:gap-3" variants={sectionVariants}>
               <h1 className="text-2xl font-semibold">Account</h1>
-              <a href="#code" className={footerBtnStyle}>
-                Sign In
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                View Cart
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                My Wishlist
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Track My Order
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Help Ticket
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Shipping Details
-              </a>
+              <a href="#code" className={footerBtnStyle}>Sign In</a>
+              <a href="#code" className={footerBtnStyle}>View Cart</a>
+              <a href="#code" className={footerBtnStyle}>My Wishlist</a>
+              <a href="#code" className={footerBtnStyle}>Track My Order</a>
+              <a href="#code" className={footerBtnStyle}>Help Ticket</a>
+              <a href="#code" className={footerBtnStyle}>Shipping Details</a>
             </motion.div>
 
             {/* Corporate */}
             <motion.div className="flex flex-col gap-2 md:gap-3" variants={sectionVariants}>
               <h1 className="text-2xl font-semibold">Corporate</h1>
-              <a href="#code" className={footerBtnStyle}>
-                Become a Vendor
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Affiliate Program
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Farm Business
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Farm Careers
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Our Suppliers
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Accessibility
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Promotions
-              </a>
+              <a href="#code" className={footerBtnStyle}>Become a Vendor</a>
+              <a href="#code" className={footerBtnStyle}>Affiliate Program</a>
+              <a href="#code" className={footerBtnStyle}>Farm Business</a>
+              <a href="#code" className={footerBtnStyle}>Farm Careers</a>
+              <a href="#code" className={footerBtnStyle}>Our Suppliers</a>
+              <a href="#code" className={footerBtnStyle}>Accessibility</a>
+              <a href="#code" className={footerBtnStyle}>Promotions</a>
             </motion.div>
 
             {/* Popular */}
             <motion.div className="flex flex-col gap-2 md:gap-3" variants={sectionVariants}>
               <h1 className="text-2xl font-semibold">Popular</h1>
-              <a href="#code" className={footerBtnStyle}>
-                Milk & Flavoured Milk
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Butter and Margarine
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Eggs Substitutes
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Marmalades
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Sour Cream and Dips
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Tea & Kombucha
-              </a>
-              <a href="#code" className={footerBtnStyle}>
-                Cheese
-              </a>
+              <a href="#code" className={footerBtnStyle}>Milk & Flavoured Milk</a>
+              <a href="#code" className={footerBtnStyle}>Butter and Margarine</a>
+              <a href="#code" className={footerBtnStyle}>Eggs Substitutes</a>
+              <a href="#code" className={footerBtnStyle}>Marmalades</a>
+              <a href="#code" className={footerBtnStyle}>Sour Cream and Dips</a>
+              <a href="#code" className={footerBtnStyle}>Tea & Kombucha</a>
+              <a href="#code" className={footerBtnStyle}>Cheese</a>
             </motion.div>
 
             {/* Install App */}
