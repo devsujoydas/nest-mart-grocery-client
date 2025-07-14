@@ -2,6 +2,7 @@ import React from 'react'
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io"
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 const Vendor = () => {
@@ -40,9 +41,9 @@ const Vendor = () => {
                 <p className='mt-2'><span className='font-bold'>Call Us:</span> +880 1303-436299</p>
             </div>
 
-            <button className="bg-emerald-500 w-fit hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 text-sm rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer mt-5 duration-500">
+            <Link to={`/vendors/nest`} className="bg-emerald-500 w-fit hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 text-sm rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer mt-5 duration-500">
             Visit Store <FaArrowRight className='text-xs' />
-          </button>
+          </Link>
         </div>
     )
 }

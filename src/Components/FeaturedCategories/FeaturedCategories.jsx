@@ -2,11 +2,12 @@
 import './FeaturedCategories.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/free-mode'; 
+import 'swiper/css/free-mode';
 
 import { Autoplay, FreeMode } from 'swiper/modules';
 import { useEffect, useState } from 'react';
 import { FaArrowRight } from "react-icons/fa6";
+import axios from 'axios';
 
 
 const FeaturedCategories = () => {
@@ -27,9 +28,8 @@ const FeaturedCategories = () => {
 
 
     useEffect(() => {
-        fetch("./categories.json")
-            .then(res => res.json())
-            .then(data => setCategory(data))
+        axios.get('./categories.json')
+            .then((res) => setCategory(res.data))
     }, [])
 
 
@@ -67,7 +67,7 @@ const FeaturedCategories = () => {
                     >
                         {categories?.map((category, idx) => (
                             <SwiperSlide key={idx}>
-                                <div id="card" className={`hover:shadow-xl w-full border border-transparent hover:border-emerald-300 transition-all text-black p-4 rounded-lg flex justify-center items-center flex-col ${bgColors[idx % bgColors.length]}`}>
+                                <div id="card" className={`hover:shadow-xl w-full border border-transparent hover:border-emerald-100 transition-all text-black p-4 rounded-lg flex justify-center items-center flex-col ${bgColors[idx % bgColors.length]}`}>
                                     <img id='categoriesImg' className="block  cursor-pointer group-hover:scale-110 duration-500 transition" src={category.imgUrl} alt="" />
                                     <a href="#" className="font-semibold text-lg hover:text-emerald-400"> {category.name} </a>
                                     <h1 className="text-gray-500 text-sm">{category.quantity} items</h1>

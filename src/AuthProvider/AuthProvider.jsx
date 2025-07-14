@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { createContext, useEffect, useState } from 'react'
 
 export const AuthContext = createContext()
@@ -18,22 +19,29 @@ const AuthProvider = ({ children }) => {
             setUser(1)
         }, 300);
     }, [])
-    
+
+
     useEffect(() => {
-        fetch("./product.json")
-            .then(res => res.json())
-            .then(data => setProducts(data))
+        axios.get('/product.json')
+            .then(res => {
+                setProducts(res.data)
+            })
     }, [])
+
+    // if (products.length >= 1) {
+    //     console.log(products)
+    // }
+
     useEffect(() => {
-        fetch("./provide.json")
-            .then(res => res.json())
-            .then(data => setProvideData(data))
+        axios.get('/provide.json')
+            .then((res) => setProvideData(res.data))
     }, [])
+
     useEffect(() => {
-        fetch("./blog.json")
-            .then(res => res.json())
-            .then(data => setBlogsData(data))
+        axios.get('/blog.json')
+            .then((res) => setBlogsData(res.data))
     }, [])
+
 
 
 
