@@ -16,20 +16,24 @@ import PopularProduct from '../../Components/PopularProducts/PopularProduct'
 import NavigationPage from '../../Shared/NavigationPage/NavigationPage'
 import Servicess from '../../Components/Servicess/Servicess'
 import StayHome from '../../Components/StayHome/StayHome'
+import { useParams } from 'react-router-dom';
 
 
 const VendorShop = () => {
 
-    const { products } = useContext(AuthContext)
+    const { products, vendors } = useContext(AuthContext)
     const [show, setShow] = useState("");
     const [sort, setSort] = useState("");
     const socialBtnStyle = "text-white text-3xl cursor-pointer hover:bg-emerald-400 active:scale-95 transition-all bg-emerald-500 rounded-full p-1.5";
 
+    const paramsId = useParams()
+
+    const vendor = vendors.find(vendor => vendor.name == paramsId.id)
+
 
     return (
         <div>
-            <NavigationPage path1={"Vendor"} path2={"Nest Mart"} />
-
+            <NavigationPage path1={"Vendors"} path2={"Nest Mart"} />
 
             <div className='max-w-screen-2xl 2xl:mx-auto  md:mx-10 mx-3 my-5 md:my-10'>
 
@@ -43,29 +47,28 @@ const VendorShop = () => {
                         </div>
                     </div>
                 </div>
- 
+
 
                 <div className='flex md:flex-row flex-col-reverse gap-8 mt-5 md:mt-20'>
 
                     <div className='md:w-96 w-full col-span-1 relative'>
-
-                        <div className='bg-[#D1E8F2] border border-zinc-300 rounded-xl p-8 sticky top-0'>
+                        <div className='bg-[#D1E8F2] border border-zinc-300 rounded-xl p-5 sticky top-0'>
                             <div>
-                                <img className='w-38' src="https://wp.alithemes.com/html/nest/demo/assets/imgs/vendor/vendor-1.png" alt="" />
+                                <img className='w-38' src={vendor.image} alt="" />
                             </div>
 
-                            <div className='mt-10'>
-                                <p className='text-zinc-400 text-sm'>Since 2012</p>
-                                <h1 className='font-family-primary font-bold text-2xl text-zinc-700 py-2'>Nest Food.,Ltd </h1>
+                            <div className='mt-5'>
+                                <p className='text-zinc-400 text-sm'>Since {vendor.since}</p>
+                                <h1 className='font-family-primary font-bold text-2xl text-zinc-700 py-2'>{vendor.name} </h1>
                                 <div className='flex items-center gap-2'>
                                     <div className="flex items-center text-orange-300 text-sm">
                                         <IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStarHalf />
                                     </div>
-                                    <p className='text-sm text-zinc-400'>(4.5)</p>
+                                    <p className='text-sm text-zinc-400'>({vendor.rating})</p>
                                 </div>
                             </div>
 
-                            <h1 className='text-sm mt-5 text-zinc-600'>Got a smooth, buttery spread in your fridge? Chances are good that it's Good Chef. This brand made Lionto's list of the most popular grocery brands across the country.</h1>
+                            <h1 className='text-sm mt-5 text-zinc-600'>{vendor.description}</h1>
 
 
                             <div className='mt-5'>
@@ -91,8 +94,8 @@ const VendorShop = () => {
                             </div>
 
                             <div className='mt-5 text-zinc-500 text-sm '>
-                                <h1><span className='font-bold'>Address:</span> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</h1>
-                                <p className='mt-2'><span className='font-bold'>Call Us:</span> +880 1303-436299</p>
+                                <h1><span className='font-bold'>Address:</span> {vendor.address}</h1>
+                                <p className='mt-2'><span className='font-bold'>Call Us:</span> {vendor.phone}</p>
                             </div>
 
                             <button className="bg-emerald-500 w-fit hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 text-sm rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer mt-5 duration-500">
@@ -105,7 +108,7 @@ const VendorShop = () => {
                         <div className='md:my-5 flex md:flex-row flex-col justify-between items-center'>
                             {/* Recips Articles */}
                             <div className='md:my-0 my-2'>
-                                <h1 className='font-family-primary'>We found <span className='font-bold text-emerald-500'>700</span> vendors now</h1>
+                                <h1 className='font-family-primary'>We found <span className='font-bold text-emerald-500'>{products.length}</span> items now</h1>
                             </div>
                             {/* Filtering Section */}
                             <div className='flex items-center md:mb-0 mb-5 md:mt-0 mt-2 gap-2'>
@@ -137,9 +140,7 @@ const VendorShop = () => {
                                 </div>
                             </div>
                         </div>
-
-
-
+  
                         <div className="grid grid-cols-2 md:mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-5 gap-3">
                             {products.map((product, idx) => (
                                 <motion.div
@@ -155,7 +156,7 @@ const VendorShop = () => {
                     </div>
                 </div>
 
- 
+
             </div>
 
             <StayHome />

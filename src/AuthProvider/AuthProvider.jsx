@@ -26,7 +26,7 @@ const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         axios.get('/vendors.json')
-            .then(res => setProducts(res.data))
+            .then(res => setVendors(res.data))
     }, [])
 
     useEffect(() => {
