@@ -4,6 +4,8 @@ import NavigationPage from '../../Shared/NavigationPage/NavigationPage'
 import { TbArrowsSort } from "react-icons/tb";
 import { MdOutlineGridView } from "react-icons/md";
 import Vendor from './Vendor';
+import StayHome from '../../Components/StayHome/StayHome'; 
+import Servicess from '../../Components/Servicess/Servicess';
 
 
 const Vendors = () => {
@@ -60,14 +62,22 @@ const Vendors = () => {
                 </div>
 
                 {/* Vendor Sections */}
-                <div className='grid md:grid-cols-4 gap-5  '>
+                <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-10  '>
                     <Vendor />
                     <Vendor />
                     <Vendor />
                     <Vendor />
                 </div>
-
             </div>
+
+
+
+
+
+
+
+            <StayHome />
+            <Servicess />
         </div>
     )
 }
