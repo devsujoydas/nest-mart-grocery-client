@@ -73,7 +73,7 @@ const Vendors = () => {
                 </div>
 
                 {/* Vendor Sections */}
-                <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5   '>
+                <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5   '>
 
                     {vendors.map((vendor, idx) => (
                         <Vendor key={idx} vendor={vendor} />
