@@ -18,7 +18,7 @@ const Nav = () => {
 
             {/* <button onMouseEnter={() => { setVendormodal(false) }} onMouseLeave={() => setVendormodal(true)} className={navBtnStyle}>Vendors<span><IoIosArrowDown className="-mb-1" /></span></button> */}
 
-             <Link to={"/vendors"} className={"hover:text-emerald-500 active:scale-95 transition-all flex justify-between md:justify-normal cursor-pointer items-center gap-1 font-bold md:pb-0 pb-3"}>Vendors <span className="md:hidden"><IoIosArrowDown className="-mb-1" /></span></Link>
+             <Link to={"/vendors"} className={"hover:text-emerald-500 active:scale-95 transition-all flex justify-between md:justify-normal cursor-pointer items-center gap-1 font-bold border-b md:border-none border-zinc-200  md:pb-0 pb-3"}>Vendors <span className="md:hidden"><IoIosArrowDown className="-mb-1" /></span></Link>
 
             <button onMouseEnter={() => { setMegaModal(false) }} onMouseLeave={() => setMegaModal(true)} className={navBtnStyle}>Mega menu  <IoIosArrowDown className="-mb-1" /></button>
 

@@ -9,10 +9,15 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import './DailyBestSell.css';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { useContext } from 'react';
 
 const btnStyles = "text-black active:scale-95 hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400 active:text-emerald-500";
 
 const DailyBestSells = () => {
+
+ const { products, setProducts } = useContext(AuthContext)
+
   return (
     <div id='nav-for-daily-best-sell' className="max-w-screen-2xl lg:mx-auto font-family-primary">
 
@@ -74,7 +79,7 @@ const DailyBestSells = () => {
             className="mySwiper"
           >
             {/* Add as many slides as you want */}
-            {[...Array(6)].map((_, index) => (
+            {products.map((product, index) => (
               <SwiperSlide key={index}>
                 <motion.div
                   initial={{ opacity: 0, y: 40 }}
@@ -82,7 +87,7 @@ const DailyBestSells = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true, amount: 0.2 }}
                 >
-                  <DailyProducts />
+                  <DailyProducts product={product} />
                 </motion.div>
               </SwiperSlide>
             ))}

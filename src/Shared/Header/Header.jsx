@@ -242,6 +242,11 @@ const Header = () => {
 
       {/* Nav For sm Device */}
       <div className="block lg:hidden">
+
+        {/* <div className="fixed top-0 w-full border h-full overflow-hidden bg-white z-40">
+          ffff
+        </div> */}
+
         <div className="font-semibold text-white text-center bg-emerald-600 p-2 text-sm">
           <h1 className="font-family-primary text-xs">Grand opening, up to 15% off all items, Only 3days left</h1>
         </div>
