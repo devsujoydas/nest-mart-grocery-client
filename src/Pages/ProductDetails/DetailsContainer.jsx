@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io"
 
 import { FaPlus } from "react-icons/fa";
 import { TiMinus } from "react-icons/ti";
 import { BsCart3 } from "react-icons/bs";
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 
 const DetailsContainer = ({ product }) => {
+    const { notify } = useContext(AuthContext)
+    
     const { title, ratings, by, price, prevPrice, discountPercent, productDetails } = product;
     const { Sale, description, type, mfg, life, sku, tags, stock, } = productDetails;
-
     const [qty, setQty] = useState(1); 
     const handleDecrease = () => { if (qty > 1) setQty(qty - 1) };
     const handleIncrease = () => { setQty(qty + 1) };
@@ -67,7 +69,7 @@ const DetailsContainer = ({ product }) => {
                         </button>
                     </div>
 
-                    <button className="font-bold flex justify-center items-center gap-2 bg-emerald-600 hover:bg-yellow-400  text-white px-4 md:px-6 text-lg rounded-md cursor-pointer active:scale-95 transition-all duration-300">
+                    <button onClick={() => notify()}  className="font-bold flex justify-center items-center gap-2 bg-emerald-600 hover:bg-yellow-400  text-white px-4 md:px-6 text-lg rounded-md cursor-pointer active:scale-95 transition-all duration-300">
                         <BsCart3 />
                         <h1 className="">Add to cart</h1>
                     </button>

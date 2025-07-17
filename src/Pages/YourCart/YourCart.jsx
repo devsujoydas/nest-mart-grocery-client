@@ -21,7 +21,7 @@ const YourCart = () => {
         <div className="grid lg:grid-cols-3 mt-6 md:gap-6 gap-4">
 
           {/* Cart Left */}
-          <div className="lg:col-span-2 w-full overflow-x-auto md:border-none border border-zinc-200 ">
+          <div className="lg:col-span-2 w-full overflow-x-auto  border border-zinc-200 ">
             <table className="w-full min-w-[640px] text-left table-auto shadow-sm ">
               <thead className="bg-zinc-200 text-zinc-600">
                 <tr>

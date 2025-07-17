@@ -1,15 +1,15 @@
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
-import { BsCart3 } from "react-icons/bs"; 
-
-
+import { BsCart3 } from "react-icons/bs";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { useContext } from "react";
 
 const DealsProduct = ({ product }) => {
+    const { notify } = useContext(AuthContext)
 
- 
     return (
         <div className="group cursor-pointer">
-           
+
             <div>
                 <img className='rounded-xl' src={product.img} alt="" />
             </div>
@@ -52,7 +52,7 @@ const DealsProduct = ({ product }) => {
                             <h1 className="text-emerald-500  font-bold md:text-xl text-sm">${product?.price}</h1>
                             <h1 className="text-xs text-zinc-400 line-through font-bold ">${product?.prevPrice}</h1>
                         </div>
-                        <button className="bg-emerald-100 hover:bg-emerald-500 text-emerald-600 hover:text-white font-semibold px-3 lg:px-6 md:py-2 py-1 rounded-md flex justify-between items-center gap-1 hover:-translate-y-1 transition duration-300 md:text-sm text-xs cursor-pointer active:scale-95">
+                        <button onClick={() => notify()}  className="bg-emerald-100 hover:bg-emerald-500 text-emerald-600 hover:text-white font-semibold px-3 lg:px-6 md:py-2 py-1 rounded-md flex justify-between items-center gap-1 hover:-translate-y-1 transition duration-300 md:text-sm text-xs cursor-pointer active:scale-95">
                             <BsCart3 />
                             <h1 className="">Add</h1>
                         </button>

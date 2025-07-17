@@ -12,7 +12,7 @@ const AuthProvider = ({ children }) => {
     const [vendormodal, setVendormodal] = useState(true);
 
     const [user, setUser] = useState()
-    const notify = () => toast('Add to Cart Successfully');
+    const notify = () => toast.success('Add to Cart Successfully');
 
     const [products, setProducts] = useState([]);
     const [provideData, setProvideData] = useState([]);

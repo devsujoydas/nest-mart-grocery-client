@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { IoIosStar, IoIosStarHalf } from "react-icons/io"; 
 import { BsTrash } from "react-icons/bs";
 import { BsCart3 } from "react-icons/bs";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const WishlistProducts = () => {
-
+ const { notify } = useContext(AuthContext)
     const [price] = useState(2.0);
     const [qty, setQty] = useState(1);
     const [subTotal, setSubTotal] = useState(price);
@@ -63,7 +64,7 @@ const WishlistProducts = () => {
             {/* Subtotal */}
             <td className="md:p-4 p-2 font-bold md:text-xl text-zinc-700">
 
-                <button className="hover:bg-yellow-400 bg-emerald-500 text-white font-semibold px-3 lg:px-6 md:py-2 py-1 rounded-sm flex justify-between items-center gap-1 hover:-translate-y-1 active:scale-95 transition duration-300 md:text-sm text-xs cursor-pointer">
+                <button onClick={() => notify()}  className="hover:bg-yellow-400 bg-emerald-500 text-white font-semibold px-3 lg:px-6 md:py-2 py-1 rounded-sm flex justify-between items-center gap-1 hover:-translate-y-1 active:scale-95 transition duration-300 md:text-sm text-xs cursor-pointer">
                     <BsCart3 />
                     <h1 className="">Add</h1>
                 </button>
