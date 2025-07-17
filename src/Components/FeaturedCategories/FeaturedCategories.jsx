@@ -8,6 +8,7 @@ import { Autoplay, FreeMode } from 'swiper/modules';
 import { useEffect, useState } from 'react';
 import { FaArrowRight } from "react-icons/fa6";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 const FeaturedCategories = () => {
@@ -67,9 +68,11 @@ const FeaturedCategories = () => {
                     >
                         {categories?.map((category, idx) => (
                             <SwiperSlide key={idx}>
-                                <div id="card" className={`hover:shadow-xl w-full border border-transparent hover:border-emerald-100 transition-all text-black p-4 rounded-lg flex justify-center items-center flex-col ${bgColors[idx % bgColors.length]}`}>
-                                    <img id='categoriesImg' className="block  cursor-pointer group-hover:scale-110 duration-500 transition" src={category.imgUrl} alt="" />
-                                    <a href="#" className="font-semibold text-lg hover:text-emerald-400"> {category.name} </a>
+                                <div id="card" className={`group hover:shadow-xl w-full border border-transparent hover:border-emerald-100 transition-all text-black p-4 rounded-lg flex justify-center items-center flex-col ${bgColors[idx % bgColors.length]}`}>
+                                    <Link to={"/shop"}>
+                                        <img id='categoriesImg' className="block  cursor-pointer group-hover:scale-110 duration-500 transition" src={category.imgUrl} alt="" />
+                                    </Link>
+                                    <Link to={"/shop"} className="font-semibold text-lg group-hover:text-emerald-400 transition-all duration-500"> {category.name} </Link>
                                     <h1 className="text-gray-500 text-sm">{category.quantity} items</h1>
                                 </div>
                             </SwiperSlide>

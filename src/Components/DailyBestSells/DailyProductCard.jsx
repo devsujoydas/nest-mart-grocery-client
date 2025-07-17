@@ -6,13 +6,9 @@ import { BsCart3 } from "react-icons/bs";
 
 
 
-const DailyProducts = ({ product }) => {
-
-
+const DailyProducts = ({ product }) => { 
     const [showImg, setShowImg] = useState(true)
-
-    console.log(product)
-
+   
     return (
 
         <div className="text-left w-full ">

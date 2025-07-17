@@ -1,8 +1,7 @@
-import { BsCart3 } from "react-icons/bs";
 
-import { IoIosStarOutline } from "react-icons/io";
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
+import { Link } from "react-router-dom";
 const TopSelling = ({ titile, product }) => {
 
 
@@ -14,12 +13,14 @@ const TopSelling = ({ titile, product }) => {
         <div className="grid md:grid-rows-3 md:gap-4 gap-1">
 
           {product.map((pro, idx) => (
-            <div
+            <div key={idx}
               className="flex items-center md:gap-4 gap-2 rounded-lg hover:shadow-lg hover:-translate-y-1 transition p-2 border border-zinc-200
             ">
               <img className="md:w-22 w-18 rounded-lg" src={pro.img1} alt="" />
               <div>
-                <h1 className="font-bold cursor-pointer hover:text-emerald-500 active:text-emerald-500 transition-all duration-500 md:mb-1 md:text-[16px] text-sm">{pro.title}</h1>
+                <Link to={`/product/${pro.SL}`}>
+                  <h1 className="font-bold cursor-pointer hover:text-emerald-500 active:text-emerald-500 transition-all duration-500 md:mb-1 md:text-[16px] text-sm">{pro.title}</h1>
+                </Link>
                 <div className="flex text-orange-300 text-sm">
                   <IoIosStar /> <IoIosStar /> <IoIosStar /> <IoIosStar /> <IoIosStarHalf />
                 </div>

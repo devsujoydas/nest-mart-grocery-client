@@ -1,6 +1,6 @@
 [
   {
-    "SL": "product 1",
+    "SL": "product-1",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-2.jpg",
     "status": "Organic",
@@ -51,7 +51,7 @@
     }
   },
   {
-    "SL": "product 2",
+    "SL": "product-2",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-2-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-2-2.jpg",
     "status": "Hot",
@@ -102,7 +102,7 @@
     }
   },
   {
-    "SL": "product 3",
+    "SL": "product-3",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-3-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-3-2.jpg",
     "status": "Sale",
@@ -153,7 +153,7 @@
     }
   },
   {
-    "SL": "product 4",
+    "SL": "product-4",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-4-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-4-2.jpg",
     "status": "Hot",
@@ -204,7 +204,7 @@
     }
   },
   {
-    "SL": "product 5",
+    "SL": "product-5",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-5-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-5-2.jpg",
     "status": "Best Seller",
@@ -255,7 +255,7 @@
     }
   },
   {
-    "SL": "product 6",
+    "SL": "product-6",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-6-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-6-2.jpg",
     "status": "New",
@@ -306,7 +306,7 @@
     }
   },
   {
-    "SL": "product 7",
+    "SL": "product-7",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-7-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-7-2.jpg",
     "status": "Classic",
@@ -357,7 +357,7 @@
     }
   },
   {
-    "SL": "product 8",
+    "SL": "product-8",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-8-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-8-2.jpg",
     "status": "Gourmet",
@@ -408,7 +408,7 @@
     }
   },
   {
-    "SL": "product 9",
+    "SL": "product-9",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-9-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-9-2.jpg",
     "status": "Family Favorite",
@@ -459,7 +459,7 @@
     }
   },
   {
-    "SL": "product 10",
+    "SL": "product-10",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-10-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-10-2.jpg",
     "status": "Family Size",
@@ -510,7 +510,7 @@
     }
   },
   {
-    "SL": "product 11",
+    "SL": "product-11",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-11-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-11-2.jpg",
     "status": "Plant-Based",
@@ -561,7 +561,7 @@
     }
   },
   {
-    "SL": "product 12",
+    "SL": "product-12",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-12-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-12-2.jpg",
     "status": "No.1 Best Seller",
@@ -612,7 +612,7 @@
     }
   },
   {
-    "SL": "product 13",
+    "SL": "product-13",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-13-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-13-2.jpg",
     "status": "Premium",
@@ -663,7 +663,7 @@
     }
   },
   {
-    "SL": "product 14",
+    "SL": "product-14",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-14-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-14-2.jpg",
     "status": "Italy's #1 Brand",
@@ -714,7 +714,7 @@
     }
   },
   {
-    "SL": "product 15",
+    "SL": "product-15",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-15-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-15-2.jpg",
     "status": "Organic",
@@ -744,7 +744,7 @@
       "packaging&delivery": "Packaged in a glass bottle to protect its living probiotics. Shipped in refrigerated packaging.",
       "suggestedUse": "Keep refrigerated. Do not shake. Enjoy chilled.",
       "otherIngredients": "GT's Kombucha (Organically Produced), Fresh Pressed Ginger Juice (Organically Produced).",
-      "warnings": "This product is raw and may contain a trace amount of alcohol (less than 0.5%).",
+      "warnings": "This product-is raw and may contain a trace amount of alcohol (less than 0.5%).",
       "delivery": "Ships from GT's Living Foods in Beverly Hills, CA.",
       "returnAndWarranty": {
         "authentic": "100% Authentic",
@@ -765,7 +765,7 @@
     }
   },
   {
-    "SL": "product 16",
+    "SL": "product-16",
     "img1": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-16-1.jpg",
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-16-2.jpg",
     "status": "Natural",

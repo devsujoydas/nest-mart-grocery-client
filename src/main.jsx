@@ -17,6 +17,7 @@ import YourWishlist from './Pages/YourWishlist/YourWishlist.jsx'
 import ForgotPassword from './Pages/ForgotPassword/ForgotPassword.jsx'
 import Vendors from './Pages/Vendors/Vendors.jsx'
 import VendorShop from './Pages/Vendors/VendorShop.jsx' 
+import ProductDetails from './Pages/ProductDetails/ProductDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: '/shop',
         element: <Shop />
+      },
+      {
+        path: '/product/:id',
+        element: <ProductDetails />,
       },
       {
         path: '/vendors',
