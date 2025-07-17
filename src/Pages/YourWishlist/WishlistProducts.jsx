@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { IoIosStar, IoIosStarHalf } from "react-icons/io";
-import { FaPlus } from "react-icons/fa";
-import { TiMinus } from "react-icons/ti";
+import { IoIosStar, IoIosStarHalf } from "react-icons/io"; 
 import { BsTrash } from "react-icons/bs";
 import { BsCart3 } from "react-icons/bs";
 
@@ -28,7 +26,9 @@ const WishlistProducts = () => {
 
     return (
         <tr className="border-b border-zinc-200 text-base md:text-lg font-montserrat text-zinc-700">
+           
             {/* Product Info */}
+
             <td className="md:p-4 p-2 flex gap-4 items-center">
                 <div className="w-26 h-26 border border-zinc-200 rounded-lg overflow-hidden">
                     <img

@@ -1,22 +1,18 @@
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
-import { BsCart3 } from "react-icons/bs";
-import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { useContext, useEffect, useState } from "react";
+import { BsCart3 } from "react-icons/bs"; 
+
 
 
 const DealsProduct = ({ product }) => {
 
-
-
-
+ 
     return (
         <div className="group cursor-pointer">
+           
             <div>
                 <img className='rounded-xl' src={product.img} alt="" />
             </div>
-
-
 
             <div className='-mt-50 group-hover:-translate-y-1 transition-all duration-500  relative w-11/12 mx-auto z-20  '>
 

@@ -28,25 +28,25 @@ const Description = ({ productDetails }) => {
             </div>
 
             <div>
-                <h1 className=' text-xl md:text-3xl font-bold font-family-primary text-zinc-600 '>Packaging & Delivery</h1>
+                <h1 className=' text-xl md:text-2xl font-bold font-family-primary text-zinc-600 '>Packaging & Delivery</h1>
                 <hr className='text-zinc-300 my-2 md:my-3' />
                 <p className="text-zinc-500 text-sm md:text-[16px]">{packagingDelivery}</p>
             </div>
 
             <div>
-                <h1 className=' text-xl md:text-3xl font-bold font-family-primary text-zinc-600 '>Suggested Use</h1>
+                <h1 className=' text-xl md:text-2xl font-bold font-family-primary text-zinc-600 '>Suggested Use</h1>
                 <hr className='text-zinc-300 my-2 md:my-3' />
                 <p className="text-zinc-500 text-sm md:text-[16px]">{suggestedUse}</p>
             </div>
 
             <div>
-                <h1 className=' text-xl md:text-3xl font-bold font-family-primary text-zinc-600 '>Other Ingredients</h1>
+                <h1 className=' text-xl md:text-2xl font-bold font-family-primary text-zinc-600 '>Other Ingredients</h1>
                 <hr className='text-zinc-300 my-2 md:my-3' />
                 <p className="text-zinc-500 text-sm md:text-[16px]">{otherIngredients}</p>
             </div>
 
             <div>
-                <h1 className=' text-xl md:text-3xl font-bold font-family-primary text-zinc-600 '>Warnings</h1>
+                <h1 className=' text-xl md:text-2xl font-bold font-family-primary text-zinc-600 '>Warnings</h1>
                 <hr className='text-zinc-300 my-2 md:my-3' />
                 <p className="text-zinc-500 text-sm md:text-[16px]">{warnings}</p>
             </div>

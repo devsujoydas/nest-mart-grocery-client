@@ -18,9 +18,9 @@ const DailyProducts = ({ product }) => {
                 <span className="bg-emerald-600  text-white text-xs px-4 py-2 rounded-br-2xl z-20 absolute top-0 left-0">{product.status}</span>
 
 
-                <div onMouseEnter={() => setShowImg(false)} onMouseLeave={() => setShowImg(true)} className="h-[225px] overflow-hidden relative mb-3 rounded-md cursor-pointer ">
+                <div onMouseEnter={() => setShowImg(false)} onMouseLeave={() => setShowImg(true)} className=" overflow-hidden relative mb-3 rounded-md cursor-pointer ">
                     <Link to={`/product/${product.SL}`}>
-                        <div className={` absolute top-0 w-full h-full ${showImg ? 'opacity-100  z-10 transition-all duration-500' : 'opacity-0  z-0 transition-all duration-500'} `}><img className="w-full" src={product.img1} alt="" /></div>
+                        <div className={` w-full h-full ${showImg ? 'opacity-100  z-10 transition-all duration-500' : 'opacity-0  z-0 transition-all duration-500'} `}><img className="w-full" src={product.img1} alt="" /></div>
                         <div className={` absolute top-0 w-full h-full ${showImg ? 'opacity-0  z-0 transition-all duration-500 ' : 'opacity-100  z-10 transition-all duration-500'}`}><img className="w-full" src={product.img2} alt="" /></div>
                     </Link>
                 </div>

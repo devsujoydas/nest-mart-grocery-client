@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom'
 import Footer from '../Shared/Footer/Footer'
 import LoadingPage from '../Components/LoadingPage/LoadingPage'
 import { AuthContext } from '../AuthProvider/AuthProvider' 
+import toast, { Toaster } from 'react-hot-toast';
 
 const Layout = () => {
 
@@ -15,6 +16,7 @@ const Layout = () => {
         <>
           <Header />
           <div>
+             <Toaster />
             <Outlet />
           </div>
           <Footer />

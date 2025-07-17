@@ -19,6 +19,11 @@
   background-position: center;
 }
 
+.bgOrganic {
+  background-image: url('https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-11.png');
+  background-position: center;
+}
+
 #stay-home {
   background-image: url('./src/assets/banner/banner-10.png');
   background-position: center center;

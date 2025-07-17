@@ -75,22 +75,24 @@ const DealsOfTheDay = () => {
   };
 
   return (
-    <div className="max-w-screen-2xl 2xl:mx-auto md:mx-10 mx-3">
-      <h1 className="md:text-4xl text-2xl font-bold font-family-primary">Deals Of The Day</h1>
+    <div className="md:mx-0 ">
+      <div className="max-w-screen-2xl 2xl:mx-auto ">
+        <h1 className="md:text-4xl text-2xl font-bold font-family-primary">Deals Of The Day</h1>
 
-      <motion.div
-        className="grid md:grid-cols-2 xl:grid-cols-4 gap-5 md:py-10 py-5"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        {products.map((product, idx) => (
-          <motion.div key={idx} variants={productVariants}>
-            <DealsProduct product={product} />
-          </motion.div>
-        ))}
-      </motion.div>
+        <motion.div
+          className="grid md:grid-cols-2 xl:grid-cols-4 gap-5 md:py-10 py-5"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          {products.map((product, idx) => (
+            <motion.div key={idx} variants={productVariants}>
+              <DealsProduct product={product} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 };

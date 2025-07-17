@@ -10,7 +10,7 @@ const TopSelling = ({ titile, product }) => {
       <div>
         <h1 className="md:text-3xl text-2xl font-bold border-b-2 border-emerald-600 mb-5 pb-2">{titile}</h1>
 
-        <div className="grid md:grid-rows-3 md:gap-4 gap-1">
+        <div className="grid md:grid-rows-3 md:gap-4 gap-3">
 
           {product.map((pro, idx) => (
             <div key={idx}

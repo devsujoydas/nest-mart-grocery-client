@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { createContext, useEffect, useState } from 'react'
+import toast, { Toaster } from 'react-hot-toast';
 
 export const AuthContext = createContext()
 
@@ -11,6 +12,7 @@ const AuthProvider = ({ children }) => {
     const [vendormodal, setVendormodal] = useState(true);
 
     const [user, setUser] = useState()
+    const notify = () => toast('Add to Cart Successfully');
 
     const [products, setProducts] = useState([]);
     const [provideData, setProvideData] = useState([]);
@@ -33,7 +35,7 @@ const AuthProvider = ({ children }) => {
         axios.get('/product.json')
             .then(res => setProducts(res.data))
     }, [])
- 
+
 
     useEffect(() => {
         axios.get('/provide.json')
@@ -57,7 +59,8 @@ const AuthProvider = ({ children }) => {
         provideData, setProvideData,
         blogsData, setBlogsData,
         vendors, setVendors,
-        user, setUser
+        user, setUser,
+        notify
     }
     return (
         <AuthContext.Provider value={value}>
