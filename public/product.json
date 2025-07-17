@@ -38,7 +38,7 @@
         "warranty": "N/A"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/seeds-of-change-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Seeds of Change",
         "reviews": "1250",
         "address": "Rancho Dominguez, CA 90220, United States",
@@ -89,7 +89,7 @@
         "warranty": "Quality Guaranteed"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/bellinas-kitchen-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Bellina's Kitchen",
         "reviews": "850",
         "address": "123 Pasta Lane, Trenton, NJ 08608, United States",
@@ -140,7 +140,7 @@
         "warranty": "N/A"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/conagra-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Conagra Brands",
         "reviews": "5400",
         "address": "222 W Merchandise Mart Plaza, Chicago, IL 60654, United States",
@@ -191,7 +191,7 @@
         "warranty": "Satisfaction Guaranteed"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/foster-farms-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Foster Farms",
         "reviews": "3200",
         "address": "1000 Foster Farms Rd, Livingston, CA 95334, United States",
@@ -242,7 +242,7 @@
         "warranty": "Freshness Guaranteed"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/blue-diamond-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Blue Diamond Growers",
         "reviews": "8500",
         "address": "1802 C St, Sacramento, CA 95811, United States",
@@ -293,7 +293,7 @@
         "warranty": "Freshness Guaranteed"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/chobani-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Chobani",
         "reviews": "9800",
         "address": "147 State Hwy 320, Norwich, NY 13815, United States",
@@ -344,7 +344,7 @@
         "warranty": "N/A"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/keurig-dr-pepper-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Keurig Dr Pepper",
         "reviews": "15000",
         "address": "53 South Ave, Burlington, MA 01803, United States",
@@ -395,7 +395,7 @@
         "warranty": "Quality Guaranteed"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/encore-seafoods-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Encore Seafoods",
         "reviews": "650",
         "address": "4000 22nd Ave W, Seattle, WA 98199, United States",
@@ -446,7 +446,7 @@
         "warranty": "Trust the Gorton's Fisherman Guarantee"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/gortons-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Gorton's of Gloucester",
         "reviews": "4100",
         "address": "128 Rogers St, Gloucester, MA 01930, United States",
@@ -497,7 +497,7 @@
         "warranty": "N/A"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/general-mills-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "General Mills",
         "reviews": "12000",
         "address": "1 General Mills Blvd, Minneapolis, MN 55426, United States",
@@ -548,7 +548,7 @@
         "warranty": "Quality Guaranteed"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/beyond-meat-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Beyond Meat",
         "reviews": "7500",
         "address": "888 N Douglas St, El Segundo, CA 90245, United States",
@@ -599,7 +599,7 @@
         "warranty": "N/A"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/kraft-heinz-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "The Kraft Heinz Company",
         "reviews": "25000",
         "address": "200 E Randolph St, Chicago, IL 60601, United States",
@@ -650,7 +650,7 @@
         "warranty": "Satisfaction Guaranteed"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/haagen-dazs-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Häagen-Dazs (Dreyer's)",
         "reviews": "6000",
         "address": "5929 College Ave, Oakland, CA 94618, United States",
@@ -701,7 +701,7 @@
         "warranty": "N/A"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/barilla-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Barilla Group",
         "reviews": "9500",
         "address": "1 Barilla Blvd, Northbrook, IL 60062, United States",
@@ -752,7 +752,7 @@
         "warranty": "N/A"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/gts-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "GT's Living Foods",
         "reviews": "8100",
         "address": "PO Box 2352, Beverly Hills, CA 90213, United States",
@@ -803,7 +803,7 @@
         "warranty": "Quality Guaranteed"
       },
       "vendor": {
-        "logo": "https://cdn.example.com/applegate-logo.svg",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Applegate Farms, LLC",
         "reviews": "4500",
         "address": "750 US Highway 202, Bridgewater, NJ 08807, United States",
