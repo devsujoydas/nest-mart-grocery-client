@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaArrowRight } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 import { Autoplay, FreeMode } from 'swiper/modules';
-import DailyProducts from './DailyProducts';
+import DailyProductCard from './DailyProductCard';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -87,7 +87,7 @@ const DailyBestSells = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true, amount: 0.2 }}
                 >
-                  <DailyProducts product={product} />
+                  <DailyProductCard product={product} />
                 </motion.div>
               </SwiperSlide>
             ))}

@@ -1,12 +1,11 @@
 import { useContext, useEffect, useState } from "react";
-import PopularProduct from "./PopularProduct";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import ProductCard from "../Products/ProductCard";
 
 const PopularProducts = () => {
-  const btnStyles =
-    "text-black active:scale-95 hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400";
+  const btnStyles = "text-black active:scale-95 hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400";
 
   const { products } = useContext(AuthContext);
   const [displayProducts, setDisplayProducts] = useState([]);
@@ -82,7 +81,7 @@ const PopularProducts = () => {
         <div className="grid grid-cols-2 md:mt-0 -mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 md:gap-5 gap-3">
           {displayProducts.map((product, idx) => (
             <motion.div key={idx} variants={cardVariants}>
-              <PopularProduct product={product} />
+              <ProductCard product={product} />
             </motion.div>
           ))}
         </div>
@@ -97,7 +96,7 @@ const PopularProducts = () => {
           className="flex justify-center mt-6"
         >
           <Link to={"/shop"}
-           
+
             className="bg-emerald-500 active:scale-95 cursor-pointer duration-300 text-white px-5 py-2 rounded-md hover:bg-emerald-600 transition"
           >
             View All

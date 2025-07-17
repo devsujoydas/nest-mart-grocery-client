@@ -11,12 +11,12 @@ import { FaYoutube, FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa"
 import { FiGithub } from "react-icons/fi";
 
 
-import { AuthContext } from '../../AuthProvider/AuthProvider'
-import PopularProduct from '../../Components/PopularProducts/PopularProduct'
+import { AuthContext } from '../../AuthProvider/AuthProvider' 
 import NavigationPage from '../../Shared/NavigationPage/NavigationPage'
 import Servicess from '../../Components/Servicess/Servicess'
 import StayHome from '../../Components/StayHome/StayHome'
 import { useParams } from 'react-router-dom';
+import ProductCard from '../../Components/Products/ProductCard';
 
 
 const VendorShop = () => {
@@ -149,7 +149,7 @@ const VendorShop = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.4, delay: idx * 0.01 }}
                                 >
-                                    <PopularProduct product={product} />
+                                    <ProductCard product={product} />
                                 </motion.div>
                             ))}
                         </div>

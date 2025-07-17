@@ -8,16 +8,15 @@ import { MdOutlineGridView } from "react-icons/md";
 
 import { useContext, useEffect } from "react"
 import { AuthContext } from "../../AuthProvider/AuthProvider"
-import PopularProduct from '../../Components/PopularProducts/PopularProduct'
 import { motion } from "framer-motion";
+import ProductCard from '../../Components/Products/ProductCard'
 
 
 const Shop = () => {
   const [show, setShow] = useState("");
   const [sort, setSort] = useState("");
-  const btnStyles = "text-black active:scale-95 hover:-translate-y-1 duration-300 transition-all hover:text-emerald-400"
 
-  const { products, setProducts } = useContext(AuthContext)
+  const { products } = useContext(AuthContext)
   const [displayProducts, setDisplayProducts] = useState([]);
   const [showAll, setShowAll] = useState(false);
 
@@ -91,7 +90,7 @@ const Shop = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: idx * 0.01 }}
               >
-                <PopularProduct product={product} />
+                <ProductCard product={product} />
               </motion.div>
             ))}
           </div>
@@ -99,10 +98,7 @@ const Shop = () => {
           {!showAll && products.length > 8 && (
             <div className="flex justify-center mt-6">
               <motion.button
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                onClick={handleViewAll}
+                initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.3 }} onClick={handleViewAll}
                 className="bg-emerald-500 active:scale-95 cursor-pointer duration-300 text-white px-5 py-2 rounded-md hover:bg-emerald-600 transition"
               >
                 View All
