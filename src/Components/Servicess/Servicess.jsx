@@ -50,7 +50,7 @@ const Servicess = () => {
   };
 
   return (
-    <div className="md:mx-10 2xl:mx-0 mx-3">
+    <div className="md:mx-10 lg:mx-0 mx-3">
       <div className="max-w-screen-2xl lg:mx-auto">
         <motion.div
           id="services"

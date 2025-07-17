@@ -13,13 +13,8 @@ const CartProduct = () => {
     setSubTotal((qty * price).toFixed(2));
   }, [qty, price]);
 
-  const handleDecrease = () => {
-    if (qty > 1) setQty(qty - 1);
-  };
-
-  const handleIncrease = () => {
-    setQty(qty + 1);
-  };
+  const handleDecrease = () => { if (qty > 1) setQty(qty - 1) };
+  const handleIncrease = () => { setQty(qty + 1) };
 
   return (
     <tr className="border-b border-zinc-200 text-base md:text-lg font-montserrat text-zinc-700">
@@ -56,11 +51,10 @@ const CartProduct = () => {
           <button
             onClick={handleDecrease}
             disabled={qty === 1}
-            className={`transition-all duration-300 active:scale-95 ${
-              qty === 1
+            className={`transition-all duration-300 active:scale-95 ${qty === 1
                 ? "text-gray-400 cursor-not-allowed"
                 : "text-zinc-700 hover:text-yellow-500"
-            }`}
+              }`}
           >
             <TiMinus />
           </button>

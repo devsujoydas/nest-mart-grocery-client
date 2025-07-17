@@ -3,30 +3,34 @@ import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
 import { IoIosStarOutline } from "react-icons/io";
 import { BsCart3 } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 
 
-const DailyProducts = ({ product }) => { 
+const DailyProducts = ({ product }) => {
     const [showImg, setShowImg] = useState(true)
-   
+
     return (
 
         <div className="text-left w-full ">
             <div className="border border-zinc-200 w-full relative overflow-hidden md:p-4 p-2 lg:p-6 md:rounded-2xl rounded-md  ">
 
-                 <span className="bg-emerald-600  text-white text-xs px-4 py-2 rounded-br-2xl z-20 absolute top-0 left-0">{product.status}</span>
-
+                <span className="bg-emerald-600  text-white text-xs px-4 py-2 rounded-br-2xl z-20 absolute top-0 left-0">{product.status}</span>
 
 
                 <div onMouseEnter={() => setShowImg(false)} onMouseLeave={() => setShowImg(true)} className="h-[225px] overflow-hidden relative mb-3 rounded-md cursor-pointer ">
-                    <div className={` absolute top-0 w-full h-full ${showImg ? 'opacity-100  z-10 transition-all duration-500' : 'opacity-0  z-0 transition-all duration-500'} `}><img className="w-full" src={product.img1} alt="" /></div>
-                    <div className={` absolute top-0 w-full h-full ${showImg ? 'opacity-0  z-0 transition-all duration-500 ' : 'opacity-100  z-10 transition-all duration-500'}`}><img className="w-full" src={product.img2} alt="" /></div>
+                    <Link to={`/product/${product.SL}`}>
+                        <div className={` absolute top-0 w-full h-full ${showImg ? 'opacity-100  z-10 transition-all duration-500' : 'opacity-0  z-0 transition-all duration-500'} `}><img className="w-full" src={product.img1} alt="" /></div>
+                        <div className={` absolute top-0 w-full h-full ${showImg ? 'opacity-0  z-0 transition-all duration-500 ' : 'opacity-100  z-10 transition-all duration-500'}`}><img className="w-full" src={product.img2} alt="" /></div>
+                    </Link>
                 </div>
 
                 <div className="flex flex-col mb-1">
                     <a href="#"
                         className="text-gray-400 text-xs text-left hover:text-emerald-400">{product.categories}</a>
-                    <a href="#" className="text-left font-bold my-1 leading-none hover:text-emerald-500 transition-colors md:text-[16px] text-sm">{product.title}</a>
+
+
+                    <Link to={`/product/${product.SL}`} className="text-left font-bold my-1 leading-none hover:text-emerald-500 transition-colors md:text-[16px] text-sm">{product.title}</Link>
                 </div>
 
                 <div className="flex text-orange-300 md:text-sm text-xs">

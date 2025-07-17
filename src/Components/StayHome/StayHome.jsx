@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const StayHome = () => {
   return (
-    <div className="md:mx-10 2xl:mx-0 mx-3">
+    <div className="md:mx-10 lg:mx-0 mx-3">
       <motion.div
         className="max-w-screen-2xl lg:mx-auto font-family-primary"
         initial={{ opacity: 0, y: 50 }}
