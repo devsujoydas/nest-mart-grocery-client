@@ -1,10 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Root from './Components/Root/Root.jsx'
-import Hero from './Components/Hero/Hero.jsx'
+import './index.css' 
+import { createBrowserRouter, RouterProvider } from 'react-router-dom' 
 import AuthProvider from './AuthProvider/AuthProvider.jsx'
 import Layout from './Layout/Layout.jsx'
 import Home from './Pages/Home/Home.jsx'
@@ -19,7 +16,7 @@ import YourCart from './Pages/YourCart/YourCart.jsx'
 import YourWishlist from './Pages/YourWishlist/YourWishlist.jsx'
 import ForgotPassword from './Pages/ForgotPassword/ForgotPassword.jsx'
 import Vendors from './Pages/Vendors/Vendors.jsx'
-import VendorShop from './Pages/Vendors/VendorShop.jsx'
+import VendorShop from './Pages/Vendors/VendorShop.jsx' 
 
 const router = createBrowserRouter([
   {
@@ -38,7 +35,7 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element: <SignUp />
-      },
+      }, 
       {
         path: '/login',
         element: <Login />

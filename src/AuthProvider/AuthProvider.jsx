@@ -20,7 +20,7 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         setTimeout(() => {
             setUser(1)
-        }, 300);
+        }, 400);
     }, [])
 
 

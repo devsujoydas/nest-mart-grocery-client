@@ -1,4 +1,4 @@
-import React from 'react'
+
 import NavigationPage from '../../Shared/NavigationPage/NavigationPage'
 
 const VendorGuide = () => {

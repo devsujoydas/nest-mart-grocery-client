@@ -1,4 +1,4 @@
-import React from 'react';
+;
 import DealsProduct from './DealsProduct';
 import { motion } from 'framer-motion';
 

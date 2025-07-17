@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io"
 import { FaArrowRight } from "react-icons/fa6";
