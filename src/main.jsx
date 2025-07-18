@@ -25,6 +25,7 @@ import Stores from './Pages/Stores/Stores.jsx'
 import Store from './Pages/Stores/Store.jsx'
 import Contact from './Pages/Contact/Contact.jsx'
 import OrderTracking from './Pages/OrderTracking/OrderTracking.jsx'
+import Reviews from './Pages/Account/Reviews.jsx'
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
           {
             path: '/account/orders',
             element: <Orders />,
+          },
+          {
+            path: '/account/reviews',
+            element: <Reviews />,
           },
           {
             path: '/account/address',

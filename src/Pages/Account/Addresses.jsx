@@ -1,8 +1,11 @@
 import React from 'react'
+import NoYetTemplate from './NoYetTemplate'
 
 const Addresses = () => {
   return (
-    <div>Addresses</div>
+    <div>
+      <NoYetTemplate text1={"No addresses yet!"} text2={"Add your first shipping or billing address to get started."} address={"Add Your First Address"}  />
+    </div>
   )
 }
 

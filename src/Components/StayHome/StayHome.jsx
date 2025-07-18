@@ -9,7 +9,7 @@ const StayHome = () => {
         className="max-w-screen-2xl lg:mx-auto font-family-primary"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}  // animate once when 30% visible
+        viewport={{ once: true, amount: 0.01 }}  // animate once when 30% visible
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div id="stay-home" className="md:my-10 my-5 relative overflow-hidden stay-home-bg rounded-3xl md:flex lg:flex-row justify-between items-end">

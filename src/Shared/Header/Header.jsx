@@ -185,16 +185,16 @@ const Header = () => {
                 <Link to={"/wishlist"} className={compareBtnStyle}><FaRegHeart className="text-2xl" /> Wishlist</Link>
                 <Link to={"/cart"} className={compareBtnStyle}><TiShoppingCart className="text-2xl" /> Cart</Link>
 
-                <button onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="w-12  p-0.5 cursor-pointer rounded-full bg-emerald-400 active:scale-95 transition-all duration-200" >
-                  <img className="rounded-full" src="./default.jpg" alt="" />
+                <button onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="w-12 h-12 p-0.5 cursor-pointer rounded-full bg-emerald-400 active:scale-95 transition-all duration-200" >
+                  <img className="rounded-full bg-white" src="./default.jpg" alt="" />
                 </button>
 
                 <div onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className={`absolute  ${showAccModal ? "opacity-0 -z-30  top-20" : "opacity-100 z-30  top-12 "} right-5 bg-white py-4 px-3  w-46 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all`}>
                   <Link to={"/account/overview"} className={myAccbtnStyle}><FaRegUser className="" /> My Account</Link>
                   <Link to={"/order/tracking"} className={myAccbtnStyle}><CiLocationOn className="text-black" /> Order Tracking</Link>
-                  <button to={"/"} className={myAccbtnStyle}><GrTicket className="" /> My Voucher </button>
+                  {/* <button to={"/"} className={myAccbtnStyle}><GrTicket className="" /> My Voucher </button>  */}
                   <Link to={"/wishlist"} className={myAccbtnStyle}><FaRegHeart className="" /> My Wishlist</Link>
-                  <button to={"/"} className={myAccbtnStyle}><CiSettings className="" /> Settings</button>
+                  <Link to={"/account/accountSettings"} className={myAccbtnStyle}><CiSettings className="" /> Settings</Link>
                   <button to={"/"} className={myAccbtnStyle}><PiSignOutLight className="" /> Sign out</button>
                 </div>
               </div>
@@ -257,9 +257,13 @@ const Header = () => {
             <Link to={"/wishlist"}>
               <FaRegHeart className="text-2xl active:scale-95 hover:text-black transition-all cursor-pointer" />
             </Link>
-            <Link to={"cart"}>
+            <Link to={"/cart"}>
               <TiShoppingCart className="text-3xl active:scale-95 hover:text-black transition-all cursor-pointer" />
             </Link>
+            <Link to={"/account/overview"} className="w-7 rounded-full overflow-hidden border border-zinc-200">
+              <img src="/default.jpg" alt="" />
+            </Link>
+
           </div>
         </div>
 
