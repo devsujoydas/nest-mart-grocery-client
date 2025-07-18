@@ -87,24 +87,25 @@ const Footer = () => {
             {/* Company */}
             <motion.div className="flex flex-col gap-2 md:gap-3" variants={sectionVariants}>
               <h1 className="text-2xl font-semibold">Company</h1>
-              <a href="#none" className={footerBtnStyle}>About Us</a>
-              <a href="#none" className={footerBtnStyle}>Delivery Info</a>
-              <a href="#none" className={footerBtnStyle}>Privacy Policy</a>
-              <a href="#none" className={footerBtnStyle}>Terms & Conditions</a>
-              <a href="#none" className={footerBtnStyle}>Contact Us</a>
-              <a href="#none" className={footerBtnStyle}>Support Center</a>
-              <a href="#none" className={footerBtnStyle}>Careers</a>
+              <Link to="/blogs  " className={footerBtnStyle}>Blogs</Link>
+              <Link to="/stores" className={footerBtnStyle}>Stores</Link>
+              <Link to="/products" className={footerBtnStyle}>Products</Link>
+              <Link to="/about" className={footerBtnStyle}>About Us</Link>
+              <Link to="/contact" className={footerBtnStyle}>Contact Us</Link>
+              <Link to="/order/tracking" className={footerBtnStyle}>Order Tracking</Link>
+              <Link to="/contact" className={footerBtnStyle}>Support Center</Link>
             </motion.div>
 
             {/* Account */}
             <motion.div className="flex flex-col gap-2 md:gap-3" variants={sectionVariants}>
               <h1 className="text-2xl font-semibold">Account</h1>
-              <a href="#code" className={footerBtnStyle}>Sign In</a>
-              <a href="#code" className={footerBtnStyle}>View Cart</a>
-              <a href="#code" className={footerBtnStyle}>My Wishlist</a>
-              <a href="#code" className={footerBtnStyle}>Track My Order</a>
-              <a href="#code" className={footerBtnStyle}>Help Ticket</a>
-              <a href="#code" className={footerBtnStyle}>Shipping Details</a>
+              <Link to="/signup" className={footerBtnStyle}>Register</Link>
+              <Link to="/login" className={footerBtnStyle}>Login</Link> 
+              <Link to="/account/overview" className={footerBtnStyle}>Overview</Link>
+              <Link to="/account/orders" className={footerBtnStyle}>Orders</Link>
+              <Link to="/account/reviews" className={footerBtnStyle}>Reviews</Link>
+              <Link to="/account/address" className={footerBtnStyle}>Addresses</Link>
+              <Link to="/account/accountSettings" className={footerBtnStyle}>Settings</Link>
             </motion.div>
 
             {/* Corporate */}
