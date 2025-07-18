@@ -95,7 +95,7 @@ const PopularProducts = () => {
           transition={{ duration: 0.4 }}
           className="flex justify-center mt-6"
         >
-          <Link to={"/shop"}
+          <Link to={"/products"}
 
             className="bg-emerald-500 active:scale-95 cursor-pointer duration-300 text-white px-5 py-2 rounded-md hover:bg-emerald-600 transition"
           >

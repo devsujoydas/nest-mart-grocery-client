@@ -17,7 +17,7 @@ const AuthProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
     const [provideData, setProvideData] = useState([]);
     const [blogsData, setBlogsData] = useState([]);
-    const [vendors, setVendors] = useState([]);
+    const [stores, setStores] = useState([]);
 
     useEffect(() => {
         setTimeout(() => {
@@ -27,8 +27,8 @@ const AuthProvider = ({ children }) => {
 
 
     useEffect(() => {
-        axios.get('/vendors.json')
-            .then(res => setVendors(res.data))
+        axios.get('/stores.json')
+            .then(res => setStores(res.data))
     }, [])
 
     useEffect(() => {
@@ -58,7 +58,7 @@ const AuthProvider = ({ children }) => {
         vendormodal, setVendormodal,
         provideData, setProvideData,
         blogsData, setBlogsData,
-        vendors, setVendors,
+        stores, setStores,
         user, setUser,
         notify
     }

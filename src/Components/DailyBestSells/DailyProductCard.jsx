@@ -1,14 +1,16 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
 import { IoIosStarOutline } from "react-icons/io";
 import { BsCart3 } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 
 const DailyProducts = ({ product }) => {
     const [showImg, setShowImg] = useState(true)
+    const { notify } = useContext(AuthContext)
 
     return (
 
@@ -19,7 +21,7 @@ const DailyProducts = ({ product }) => {
 
 
                 <div onMouseEnter={() => setShowImg(false)} onMouseLeave={() => setShowImg(true)} className=" overflow-hidden relative mb-3 rounded-md cursor-pointer ">
-                    <Link to={`/product/${product.SL}`}>
+                    <Link to={`/products/${product.SL}`}>
                         <div className={` w-full h-full ${showImg ? 'opacity-100  z-10 transition-all duration-500' : 'opacity-0  z-0 transition-all duration-500'} `}><img className="w-full" src={product.img1} alt="" /></div>
                         <div className={` absolute top-0 w-full h-full ${showImg ? 'opacity-0  z-0 transition-all duration-500 ' : 'opacity-100  z-10 transition-all duration-500'}`}><img className="w-full" src={product.img2} alt="" /></div>
                     </Link>
@@ -30,7 +32,7 @@ const DailyProducts = ({ product }) => {
                         className="text-gray-400 text-xs text-left hover:text-emerald-400">{product.categories}</a>
 
 
-                    <Link to={`/product/${product.SL}`} className="text-left font-bold my-1 leading-none hover:text-emerald-500 transition-colors md:text-[16px] text-sm">{product.title}</Link>
+                    <Link to={`/products/${product.SL}`} className="text-left font-bold my-1 leading-none hover:text-emerald-500 transition-colors md:text-[16px] text-sm">{product.title}</Link>
                 </div>
 
                 <div className="flex text-orange-300 md:text-sm text-xs">
@@ -56,7 +58,7 @@ const DailyProducts = ({ product }) => {
 
                     <p className="text-xs mt-2">Sold: {product.productDetails.sold}/{product.productDetails.quantity}</p>
 
-                    <button
+                    <button onClick={() => notify()}
                         className="bg-emerald-500 active:bg-orange-300 hover:bg-orange-300 cursor-pointer active:scale-95 text-white hover:text-white font-semibold w-full md:py-3 py-1.5 rounded-md flex justify-center items-center gap-1 hover:-translate-y-1 duration-500 transition mt-3">
                         <BsCart3 />
                         <h1 className="text-xs">Add To Cart</h1>

@@ -75,8 +75,8 @@ const DealsOfTheDay = () => {
   };
 
   return (
-    <div className="md:mx-0 ">
-      <div className="max-w-screen-2xl 2xl:mx-auto ">
+    <div className=" ">
+      <div className="max-w-screen-2xl 2xl:mx-auto md:mx-10 mx-3">
         <h1 className="md:text-4xl text-2xl font-bold font-family-primary">Deals Of The Day</h1>
 
         <motion.div
@@ -91,7 +91,7 @@ const DealsOfTheDay = () => {
               <DealsProduct product={product} />
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> 
       </div>
     </div>
   );

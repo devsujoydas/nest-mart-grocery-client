@@ -37,7 +37,7 @@
         "return": "30 Days Return on unopened items",
         "warranty": "N/A"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Seeds of Change",
         "reviews": "1250",
@@ -59,8 +59,8 @@
     "title": "All Natural Italian-Style Chicken Meatballs",
     "ratings": "4.6",
     "by": "Bellina's Kitchen",
-    "price": 8.49,
-    "prevPrice": 9.99,
+    "price": 2.49,
+    "prevPrice": 3.99,
     "discountPercent": "15%",
     "productDetails": {
       "Sale": "On",
@@ -88,7 +88,7 @@
         "return": "No returns on perishable items",
         "warranty": "Quality Guaranteed"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Bellina's Kitchen",
         "reviews": "850",
@@ -110,8 +110,8 @@
     "title": "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
     "ratings": "4.9",
     "by": "Angie's",
-    "price": 3.79,
-    "prevPrice": 4.29,
+    "price": 1.79,
+    "prevPrice": 2.29,
     "discountPercent": "12%",
     "productDetails": {
       "Sale": "On",
@@ -139,7 +139,7 @@
         "return": "14 Days Return",
         "warranty": "N/A"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Conagra Brands",
         "reviews": "5400",
@@ -161,8 +161,8 @@
     "title": "Foster Farms Takeout Crispy Buffalo Wings",
     "ratings": "4.5",
     "by": "Foster Farms",
-    "price": 12.99,
-    "prevPrice": 14.99,
+    "price": 4.99,
+    "prevPrice": 5.99,
     "discountPercent": "13%",
     "productDetails": {
       "Sale": "On",
@@ -190,7 +190,7 @@
         "return": "No returns on perishable items",
         "warranty": "Satisfaction Guaranteed"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Foster Farms",
         "reviews": "3200",
@@ -212,8 +212,8 @@
     "title": "Blue Diamond Almonds Lightly Salted",
     "ratings": "4.9",
     "by": "Blue Diamond",
-    "price": 7.99,
-    "prevPrice": 8.99,
+    "price": 2.99,
+    "prevPrice": 3.99,
     "discountPercent": "11%",
     "productDetails": {
       "Sale": "On",
@@ -241,7 +241,7 @@
         "return": "30 Days Return",
         "warranty": "Freshness Guaranteed"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Blue Diamond Growers",
         "reviews": "8500",
@@ -263,8 +263,8 @@
     "title": "Chobani Complete Vanilla Greek Yogurt",
     "ratings": "4.7",
     "by": "Chobani",
-    "price": 6.49,
-    "prevPrice": 6.49,
+    "price": 2.44,
+    "prevPrice": 2.59,
     "discountPercent": "0%",
     "productDetails": {
       "Sale": "Off",
@@ -292,7 +292,7 @@
         "return": "No returns on perishable items",
         "warranty": "Freshness Guaranteed"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Chobani",
         "reviews": "9800",
@@ -343,7 +343,7 @@
         "return": "14 Days Return",
         "warranty": "N/A"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Keurig Dr Pepper",
         "reviews": "15000",
@@ -365,8 +365,8 @@
     "title": "Encore Seafoods Stuffed Alaskan Salmon",
     "ratings": "4.7",
     "by": "Encore Seafoods",
-    "price": 15.99,
-    "prevPrice": 17.99,
+    "price": 2.35,
+    "prevPrice": 3.33,
     "discountPercent": "11%",
     "productDetails": {
       "Sale": "On",
@@ -394,7 +394,7 @@
         "return": "No returns on perishable items",
         "warranty": "Quality Guaranteed"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Encore Seafoods",
         "reviews": "650",
@@ -416,8 +416,8 @@
     "title": "Gorton’s Beer Battered Fish Fillets",
     "ratings": "4.8",
     "by": "Gorton's",
-    "price": 9.99,
-    "prevPrice": 11.49,
+    "price": 3.47,
+    "prevPrice": 4.53,
     "discountPercent": "13%",
     "productDetails": {
       "Sale": "On",
@@ -445,7 +445,7 @@
         "return": "No returns on perishable items",
         "warranty": "Trust the Gorton's Fisherman Guarantee"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Gorton's of Gloucester",
         "reviews": "4100",
@@ -496,7 +496,7 @@
         "return": "14 Days Return",
         "warranty": "N/A"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "General Mills",
         "reviews": "12000",
@@ -547,7 +547,7 @@
         "return": "No returns on perishable items",
         "warranty": "Quality Guaranteed"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Beyond Meat",
         "reviews": "7500",
@@ -598,7 +598,7 @@
         "return": "30 Days Return",
         "warranty": "N/A"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "The Kraft Heinz Company",
         "reviews": "25000",
@@ -649,7 +649,7 @@
         "return": "No returns on perishable items",
         "warranty": "Satisfaction Guaranteed"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Häagen-Dazs (Dreyer's)",
         "reviews": "6000",
@@ -700,7 +700,7 @@
         "return": "30 Days Return",
         "warranty": "N/A"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Barilla Group",
         "reviews": "9500",
@@ -751,7 +751,7 @@
         "return": "No returns on perishable items",
         "warranty": "N/A"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "GT's Living Foods",
         "reviews": "8100",
@@ -802,7 +802,7 @@
         "return": "No returns on perishable items",
         "warranty": "Quality Guaranteed"
       },
-      "vendor": {
+      "stores": {
         "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
         "name": "Applegate Farms, LLC",
         "reviews": "4500",

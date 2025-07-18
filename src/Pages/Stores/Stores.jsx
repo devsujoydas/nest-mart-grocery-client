@@ -3,31 +3,34 @@ import React, { useContext, useState } from 'react'
 import NavigationPage from '../../Shared/NavigationPage/NavigationPage'
 import { TbArrowsSort } from "react-icons/tb";
 import { MdOutlineGridView } from "react-icons/md";
-import Vendor from './Vendor';
+import Vendor from './StoreCard';
 import StayHome from '../../Components/StayHome/StayHome';
 import Servicess from '../../Components/Servicess/Servicess';
 import { SlMagnifier } from "react-icons/sl";
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import Store from './Store';
+import ProductCard from '../../Components/Products/ProductCard';
+import StoreCard from './StoreCard';
 
 
-const Vendors = () => {
+const Stores = () => {
     const [show, setShow] = useState("");
     const [sort, setSort] = useState("");
 
-    const { vendors } = useContext(AuthContext)
+    const { stores } = useContext(AuthContext)
 
     return (
         <div>
-            <NavigationPage path1={"Vendors"} />
+            <NavigationPage path1={"Stores"} />
 
 
             <div className='max-w-screen-2xl 2xl:mx-auto  md:mx-10 mx-3 my-5 md:my-20'>
                 <div className='flex flex-col justify-center items-center'>
-                    <h1 className='font-family-primary font-bold md:text-7xl text-3xl text-zinc-700'>Vendors List</h1>
+                    <h1 className='font-family-primary font-bold md:text-7xl text-3xl text-zinc-700'>Stores List</h1>
 
                     <div className='flex items-center justify-between gap-5 border border-zinc-200 px-5 py-2 rounded-full  md:w-1/2 mt-5 md:mt-10 shadow-lg'>
                         <input type="text" className="md:py-2 py-1 pl-2 w-full outline-none
-                        " placeholder=" Search for Vendor..." />
+                        " placeholder=" Search for Stores..." />
                         <div className=" text-xl text-zinc-300">
                             <SlMagnifier />
                         </div>
@@ -39,7 +42,7 @@ const Vendors = () => {
                 <div className='md:my-10 my-5 flex md:flex-row flex-col justify-between items-center'>
                     {/* Recips Articles */}
                     <div className=''>
-                        <h1 className='font-family-primary'>We found <span className='font-bold text-emerald-500'>{vendors?.length}</span> vendors now</h1>
+                        <h1 className='font-family-primary'>We found <span className='font-bold text-emerald-500'>{stores?.length}</span> vendors now</h1>
                     </div>
                     {/* Filtering Section */}
                     <div className='flex items-center  md:mt-0 mt-2 gap-2'>
@@ -75,8 +78,8 @@ const Vendors = () => {
                 {/* Vendor Sections */}
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5   '>
 
-                    {vendors.map((vendor, idx) => (
-                        <Vendor key={idx} vendor={vendor} />
+                    {stores.map((store, idx) => (
+                        <StoreCard key={idx} store={store}/>
                     ))}
                 </div>
             </div>
@@ -89,4 +92,4 @@ const Vendors = () => {
     )
 }
 
-export default Vendors
+export default Stores

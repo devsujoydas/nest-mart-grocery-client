@@ -1,0 +1,8 @@
+.active{
+    background-color: #3BB77E;
+    color: white;
+}
+
+ .active:hover #accBtn{
+    color: white;
+ }

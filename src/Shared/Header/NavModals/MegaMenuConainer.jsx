@@ -15,32 +15,32 @@ const MegaMenuConainer = () => {
 
                         <div className="flex flex-col gap-2 md:gap-3 w-full">
                             <h1 className="text-xl text-emerald-500 font-bold mb-3">Fruit & Vegetables</h1>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Meat & Poultry </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Fresh Vegetables </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Herbs & Seasonings </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Cuts & Sprouts </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Exotic Fruits & Veggies </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Packaged Produce </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Meat & Poultry </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Fresh Vegetables </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Herbs & Seasonings </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Cuts & Sprouts </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Exotic Fruits & Veggies </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Packaged Produce </Link>
                         </div>
 
                         <div className="flex flex-col gap-4 md:gap-3 w-full">
                             <h1 className="text-xl text-emerald-500 font-bold mb-3">Breakfast & Dairy </h1>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Milk & Flavoured Milk </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Butter and Margarine </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Eggs Substitutes </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Marmalades </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Sour Cream </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Cheese </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Milk & Flavoured Milk </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Butter and Margarine </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Eggs Substitutes </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Marmalades </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Sour Cream </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Cheese </Link>
                         </div>
 
                         <div className="flex flex-col gap-4 md:gap-3 w-full">
                             <h1 className="text-xl text-emerald-500 font-bold mb-3"> Meat & Seafood </h1>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Breakfast Sausage </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Dinner Sausage </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Chicken </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Sliced Deli Meat </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Wild Caught Fillets </Link>
-                            <Link to="/shop" className={megaMenuBtnStyle}>Crab and Shellfish </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Breakfast Sausage </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Dinner Sausage </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Chicken </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Sliced Deli Meat </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Wild Caught Fillets </Link>
+                            <Link to="/products" className={megaMenuBtnStyle}>Crab and Shellfish </Link>
                         </div>
 
                         <div

@@ -18,7 +18,7 @@ const TopSelling = ({ titile, product }) => {
             ">
               <img className="md:w-22 w-18 rounded-lg" src={pro.img1} alt="" />
               <div>
-                <Link to={`/product/${pro.SL}`}>
+                <Link to={`/products/${pro.SL}`}>
                   <h1 className="font-bold cursor-pointer hover:text-emerald-500 active:text-emerald-500 transition-all duration-500 md:mb-1 md:text-[16px] text-sm">{pro.title}</h1>
                 </Link>
                 <div className="flex text-orange-300 text-sm">

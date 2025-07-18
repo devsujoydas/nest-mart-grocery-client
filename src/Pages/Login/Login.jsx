@@ -14,7 +14,7 @@ const Login = () => {
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
         className='font-family-primary md:w-7xl mx-auto md:p-30 p-3 grid md:grid-cols-2 gap-10'

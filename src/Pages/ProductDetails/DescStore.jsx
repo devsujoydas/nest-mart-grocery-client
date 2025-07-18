@@ -3,8 +3,8 @@ import { IoIosStarHalf } from "react-icons/io"
 
 
 
-const DescVendor = ({ vendor }) => {
-    const { logo, name, reviews, address, contactSeller, rating, shipOnTime, chatResponse, vendorsDescription } = vendor;
+const DescStore = ({ productDetails }) => {
+    const { logo, name, reviews, address, contactSeller, rating, shipOnTime, chatResponse, vendorsDescription } = productDetails.stores; 
 
     return (
         <div className=''>
@@ -55,4 +55,4 @@ const DescVendor = ({ vendor }) => {
     )
 }
 
-export default DescVendor
+export default DescStore

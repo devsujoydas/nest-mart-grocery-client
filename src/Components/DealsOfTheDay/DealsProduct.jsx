@@ -10,8 +10,8 @@ const DealsProduct = ({ product }) => {
     return (
         <div className="group cursor-pointer">
 
-            <div>
-                <img className='rounded-xl' src={product.img} alt="" />
+            <div className="border border-zinc-100 min-h-82 rounded-xl overflow-hidden">
+                <img className='' src={product.img} alt="" />
             </div>
 
             <div className='-mt-50 group-hover:-translate-y-1 transition-all duration-500  relative w-11/12 mx-auto z-20  '>

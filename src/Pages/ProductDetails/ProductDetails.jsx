@@ -4,33 +4,31 @@ import { AuthContext } from '../../AuthProvider/AuthProvider'
 import NavigationPage from '../../Shared/NavigationPage/NavigationPage'
 import StayHome from '../../Components/StayHome/StayHome'
 import Servicess from '../../Components/Servicess/Servicess'
-import DescVendor from './DescVendor'
 import Description from './Description'
-import Category from './Category'
-import FillByPrice from './FillByPrice'
-import Organic from './Organic'
 import RelatedProducts from './RelatedProducts'
 import DetailsContainer from './DetailsContainer'
+import CategorySide from '../../Components/CategorySide/CategorySide'
+import DescStore from './DescStore'
 
 const ProductDetails = () => {
-  const { products, vendors } = useContext(AuthContext)
+  const { products } = useContext(AuthContext)
   const paramsId = useParams()
   const product = products.find(product => product.SL == paramsId.id)
   const { img1, img2, productDetails } = product;
   const [descOrVendor, setDescOrVendor] = useState(true);
   const [imgBanner, setImgBanner] = useState(img1)
-
+ 
   return (
     <>
       <NavigationPage path1={`Product`} path2={`${product.title}`} />
 
       <div className='md:mx-10 2xl:mx-0 mx-3'>
-        <div className=' grid lg:grid-cols-9 gap-5 rounded-md  max-w-screen-2xl mx-auto md:my-10 my-5'>
-          <div className=' lg:col-span-7'>
+        <div className=' grid xl:grid-cols-9 gap-5 rounded-md  max-w-screen-2xl mx-auto md:my-10 my-5'>
+          <div className=' xl:col-span-7'>
             {/* Product Image Details */}
             <div className='grid md:grid-cols-2 gap-3 md:gap-10'>
               {/* img Container  */}
-              <div className='flex flex-col  gap-3 md:gap-5'>
+              <div className='flex flex-col gap-3 md:gap-5'>
                 <div className=' border h-fit border-zinc-200 rounded-3xl overflow-hidden'>
                   <img src={imgBanner} className='hover:scale-125 duration-500 transition-all cursor-zoom-in active:scale-200' alt="" />
                 </div>
@@ -50,13 +48,13 @@ const ProductDetails = () => {
           '>
               <div className='flex items-center gap-1 md:gap-5'>
                 <button onClick={() => setDescOrVendor(true)} className='text-emerald-500 cursor-pointer hover:-translate-y-1 font-semibold md:px-6 px-4 md:py-2 py-1 md:text-lg text-sm shadow-xl border border-zinc-200 rounded-full transition-all duration-300'>Description</button>
-                <button onClick={() => setDescOrVendor(false)} className='text-emerald-500 cursor-pointer hover:-translate-y-1 font-semibold md:px-6 px-4 md:py-2 py-1 md:text-lg text-sm shadow-xl border border-zinc-200 rounded-full transition-all duration-300'>Vendor</button>
+                <button onClick={() => setDescOrVendor(false)} className='text-emerald-500 cursor-pointer hover:-translate-y-1 font-semibold md:px-6 px-4 md:py-2 py-1 md:text-lg text-sm shadow-xl border border-zinc-200 rounded-full transition-all duration-300'>Store</button>
                 <button className='text-emerald-500 cursor-pointer hover:-translate-y-1 font-semibold md:px-6 px-4 md:py-2 py-1 md:text-lg text-sm shadow-xl border border-zinc-200 rounded-full transition-all duration-300'>Reviews</button>
               </div>
               <div>
                 {descOrVendor
                   ? <Description productDetails={productDetails} />
-                  : <DescVendor vendor={vendor} />
+                  : <DescStore productDetails={productDetails} />
                 }
               </div>
             </div>
@@ -66,12 +64,8 @@ const ProductDetails = () => {
           </div>
 
           {/* right Side */}
-          <div className='lg:col-span-2 relative  '>
-            <div className='grid gap-5 sticky top-0 h-fit'>
-              <Category />
-              <FillByPrice />
-              <Organic />
-            </div>
+          <div className='xl:col-span-2 relative  '>
+            <CategorySide />
           </div>
         </div>
 

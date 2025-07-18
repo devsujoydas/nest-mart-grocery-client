@@ -14,28 +14,28 @@ const FillByPrice = () => {
                         <label htmlFor="red" className='cursor-pointer'>Red (56)</label>
                     </div>
                     <div className='flex items-center gap-2 text-sm'>
-                        <input id='red' type="checkbox" />
-                        <label htmlFor="red" className='cursor-pointer'>Green (78)</label>
+                        <input id='Green' type="checkbox" />
+                        <label htmlFor="Green" className='cursor-pointer'>Green (78)</label>
                     </div>
                     <div className='flex items-center gap-2 text-sm'>
-                        <input id='red' type="checkbox" />
-                        <label htmlFor="red" className='cursor-pointer'>Blue (54)</label>
+                        <input id='Blue' type="checkbox" />
+                        <label htmlFor="Blue" className='cursor-pointer'>Blue (54)</label>
                     </div>
                 </div>
 
                 <div className='grid gap-2'>
                     <h1 className='font-bold'>Item Condition</h1>
                     <div className='flex items-center gap-2 text-sm'>
-                        <input id='red' type="checkbox" />
-                        <label htmlFor="red" className='cursor-pointer'>New (1506)</label>
+                        <input id='New' type="checkbox" />
+                        <label htmlFor="New" className='cursor-pointer'>New (1506)</label>
                     </div>
                     <div className='flex items-center gap-2 text-sm'>
-                        <input id='red' type="checkbox" />
-                        <label htmlFor="red" className='cursor-pointer'>Refurbished (27)</label>
+                        <input id='Refurbished' type="checkbox" />
+                        <label htmlFor="Refurbished" className='cursor-pointer'>Refurbished (27)</label>
                     </div>
                     <div className='flex items-center gap-2 text-sm'>
-                        <input id='red' type="checkbox" />
-                        <label htmlFor="red" className='cursor-pointer'>Used (45)</label>
+                        <input id='Used' type="checkbox" />
+                        <label htmlFor="Used" className='cursor-pointer'>Used (45)</label>
                     </div>
                 </div>
             </div>

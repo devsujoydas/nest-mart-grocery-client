@@ -73,10 +73,13 @@ const DetailsContainer = ({ product }) => {
                         <BsCart3 />
                         <h1 className="">Add to cart</h1>
                     </button>
+                    {/* <button onClick={() => notify()}  className="font-bold flex justify-center items-center gap-2 bg-blue-600 hover:bg-yellow-400  text-white px-4 md:px-6 text-lg rounded-md cursor-pointer active:scale-95 transition-all duration-300">
+                        <h1 className="">Buy Now</h1>
+                    </button> */}
                 </div>
             </div>
 
-            <div className='grid grid-cols-2 text-xs md:mt-0 mt-5 md:text-sm '>
+            <div className='grid grid-cols-2 text-xs mt-5 md:text-sm '>
                 <div className='grid gap-2'>
                     <p>Type: <span className='text-emerald-500 hover:text-yellow-500 transition-all duration-500 cursor-pointer'>{type}</span></p>
                     <p>MFG: <span className='text-emerald-500 hover:text-yellow-500 transition-all duration-500 cursor-pointer'>{mfg}</span></p>

@@ -19,9 +19,9 @@ const RelatedProducts = ({ product }) => {
     return (
         <div>
             <h1 className='text-2xl font-family-primary font-bold text-zinc-600'>Related products</h1>
-            <hr className='text-zinc-300 my-3' />
+            <hr className='text-zinc-300 mt-5' />
 
-            <div className="grid grid-cols-2 md:mt-0 -mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-5 gap-3">
+            <div className="grid grid-cols-2 md:mt-0 mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-5 gap-3">
                 {displayProducts.map((product, idx) => (
                     <motion.div
                         key={idx}

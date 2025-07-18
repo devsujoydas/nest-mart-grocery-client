@@ -69,10 +69,10 @@ const FeaturedCategories = () => {
                         {categories?.map((category, idx) => (
                             <SwiperSlide key={idx}>
                                 <div id="card" className={`group hover:shadow-xl w-full border border-transparent hover:border-emerald-100 transition-all text-black p-4 rounded-lg flex justify-center items-center flex-col ${bgColors[idx % bgColors.length]}`}>
-                                    <Link to={"/shop"}>
+                                    <Link to={"/products"}>
                                         <img id='categoriesImg' className="block  cursor-pointer group-hover:scale-110 duration-500 transition" src={category.imgUrl} alt="" />
                                     </Link>
-                                    <Link to={"/shop"} className="font-semibold text-lg group-hover:text-emerald-400 transition-all duration-500"> {category.name} </Link>
+                                    <Link to={"/products"} className="font-semibold text-lg group-hover:text-emerald-400 transition-all duration-500"> {category.name} </Link>
                                     <h1 className="text-gray-500 text-sm">{category.quantity} items</h1>
                                 </div>
                             </SwiperSlide>
@@ -84,16 +84,16 @@ const FeaturedCategories = () => {
                 <div className="md:pt-10 pt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-3 gap-4">
                     <div className="bg-cover bgOnion  rounded-xl md:p-12 p-10 hover:shadow-lg  transition-all ">
                         <h1 className="font-bold md:text-2xl text-xl my-8md: tex my-5 text-black hover:-translate-y-1 transition-all  ">Everyday Fresh & <br /> Clean with Our <br /> Products</h1>
-                        <Link to={"/shop"} className="w-fit bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></Link>
+                        <Link to={"/products"} className="w-fit bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></Link>
                     </div>
                     <div className="bg-cover bgStroberry  rounded-xl md:p-12 p-10 hover:shadow-lg transition-all">
                         <h1 className="font-bold md:text-2xl text-xl md:my-8 my-5 text-black hover:-translate-y-1 transition-all">Make your Breakfast <br /> Healthy and Easy </h1>
-                        <Link to={"/shop"} className="w-fit bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></Link>
+                        <Link to={"/products"} className="w-fit bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></Link>
                     </div>
                     <div className=" bg-cover bgVegetable rounded-xl md:p-12 p-10  
                         hover:shadow-lg transition-all">
                         <h1 className="font-bold md:text-2xl text-xl md:my-8 my-5 text-black hover:-translate-y-1 transition-all">The best Organic <br /> Products Online</h1>
-                        <Link to={"/shop"} className="w-fit bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></Link>
+                        <Link to={"/products"} className="w-fit bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></Link>
                     </div>
                 </div>
 

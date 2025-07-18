@@ -25,10 +25,10 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import BrowesCatContainer from "./NavModals/BrowesCatContainer";
 import MegaMenuConainer from "./NavModals/MegaMenuConainer";
 import PageModalsContainer from "./NavModals/PageModalsContainer";
-import VendorModal from "./NavModals/VendorModal";
+
 
 const Header = () => {
-  const { navslide, setNavSlide, megaModal, setMegaModal, pageModal, setPageModal, vendormodal, setVendormodal } = useContext(AuthContext)
+  const { navslide, setNavSlide, } = useContext(AuthContext)
 
   const [showAccModal, setShowAccModal] = useState(true)
 
@@ -170,7 +170,7 @@ const Header = () => {
                 <select
                   value={locationStatus}
                   onChange={(e) => setLocationStatus(e.target.value)}
-                  className="outline-none px-2" name="" id="">
+                  className="outline-none px-2 font-family-primary font-semibold" name="" id="">
                   <option value="Your Location">Your Location</option>
                   <option value="Dhaka">Dhaka</option>
                   <option value="Mymensingh">Mymensingh</option>
@@ -190,7 +190,7 @@ const Header = () => {
                 </button>
 
                 <div onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className={`absolute  ${showAccModal ? "opacity-0 -z-30  top-20" : "opacity-100 z-30  top-12 "} right-5 bg-white py-4 px-3  w-46 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all`}>
-                  <button to={"/"} className={myAccbtnStyle}><FaRegUser className="" /> My Account</button>
+                  <Link to={"/account/overview"} className={myAccbtnStyle}><FaRegUser className="" /> My Account</Link>
                   <button to={"/"} className={myAccbtnStyle}><CiLocationOn className="text-black" /> Order Tracking</button>
                   <button to={"/"} className={myAccbtnStyle}><GrTicket className="" /> My Voucher </button>
                   <Link to={"/wishlist"} className={myAccbtnStyle}><FaRegHeart className="" /> My Wishlist</Link>
@@ -221,7 +221,6 @@ const Header = () => {
 
                 <div className="relative">
                   <Nav />
-                  <VendorModal />
                   <MegaMenuConainer />
                   <PageModalsContainer />
                 </div>
@@ -243,9 +242,6 @@ const Header = () => {
       {/* Nav For sm Device */}
       <div className="block lg:hidden">
 
-        {/* <div className="fixed top-0 w-full border h-full overflow-hidden bg-white z-40">
-          ffff
-        </div> */}
 
         <div className="font-semibold text-white text-center bg-emerald-600 p-2 text-sm">
           <h1 className="font-family-primary text-xs">Grand opening, up to 15% off all items, Only 3days left</h1>
