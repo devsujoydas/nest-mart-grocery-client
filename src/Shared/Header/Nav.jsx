@@ -5,7 +5,7 @@ import { useContext } from "react";
 const Nav = () => {
     const navBtnStyle = "hover:text-emerald-500 md:active:scale-95 cursor-pointer transition-all flex justify-between lg:justify-normal items-center gap-1 font-bold lg:border-none border-b border-zinc-200 lg:pb-0 pb-3"
 
-    const { navslide, setNavSlide, megaModal, setMegaModal, setPageModal, setVendormodal } = useContext(AuthContext)
+    const { setNavSlide, setMegaModal, setPageModal } = useContext(AuthContext)
 
     return (
         <div onClick={() => setNavSlide(true)} className="flex relative lg:items-center lg:flex-row flex-col md:gap-8 gap-3 font-family-primary md:text-[15px] text-sm ">
@@ -24,7 +24,8 @@ const Nav = () => {
 
             <Link to={"/blogs"} className={navBtnStyle}>Blog <span className="md:hidden"><IoIosArrowDown className="-mb-1" /></span></Link>
 
-            <Link className={"hover:text-emerald-500 active:scale-95 transition-all flex justify-between md:justify-normal cursor-pointer items-center gap-1 font-bold md:pb-0 pb-3"}>Contact <span className="md:hidden"><IoIosArrowDown className="-mb-1" /></span></Link>
+            <Link to={"/contact"} className={"hover:text-emerald-500 active:scale-95 transition-all flex justify-between md:justify-normal cursor-pointer items-center gap-1 font-bold md:pb-0 pb-3"}>Contact</Link>
+            
         </div>
     )
 }

@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
       <span className="bg-emerald-600  text-white text-xs px-4 py-1.5 rounded-br-2xl z-20 absolute top-0 left-0">{product.status}</span>
 
       <Link to={`/products/${product.SL}`}>
-        <div className="border border-zinc-100 2xl:h-58  overflow-hidden relative mb-3 rounded-md cursor-pointer ">
+        <div className=" 2xl:h-58  overflow-hidden relative mb-3 rounded-md cursor-pointer ">
           <div className={` w-full h-full ${showImg ? 'opacity-100  z-10 transition-all duration-500' : 'opacity-0  z-0 transition-all duration-500'} `}><img className="w-full " src={product.img1} alt="" /></div>
           <div className={` absolute top-0 w-full h-full ${showImg ? 'opacity-0  z-0 transition-all duration-500 ' : 'opacity-100  z-10 transition-all duration-500'}`}><img className="w-full " src={product.img2} alt="" /></div>
         </div>

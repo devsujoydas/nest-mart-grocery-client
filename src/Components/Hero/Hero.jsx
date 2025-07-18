@@ -16,7 +16,7 @@ const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className='max-w-screen-2xl md:mx-auto mt-6 md:mt-0'>
+    <div className='max-w-screen-2xl md:mx-auto mt-6'>
       <Swiper
         spaceBetween={30}
         effect={'fade'}

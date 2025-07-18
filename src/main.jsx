@@ -23,6 +23,8 @@ import AccountSettings from './Pages/Account/AccountSettings.jsx'
 import Addresses from './Pages/Account/Addresses.jsx'
 import Stores from './Pages/Stores/Stores.jsx'
 import Store from './Pages/Stores/Store.jsx'
+import Contact from './Pages/Contact/Contact.jsx'
+import OrderTracking from './Pages/OrderTracking/OrderTracking.jsx'
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <AboutUs />
+      },
+      {
+        path: '/contact',
+        element: <Contact />
+      },
+      {
+        path: '/order/tracking',
+        element: <OrderTracking />
       },
       {
         path: '/signup',

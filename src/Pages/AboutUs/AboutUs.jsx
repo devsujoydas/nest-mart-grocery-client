@@ -15,7 +15,7 @@ const AboutUs = () => {
 
     return (
         <div className='font-family-secondary'>
-            <NavigationPage path1={"Pages"} path2={"About us"} />
+            <NavigationPage path1={"About us"} />
 
             <div className='max-w-7xl mx-auto md:py-14 py-5 md:space-y-14 space-y-5 '>
                 {/* ✅ Welcome to Nest */}

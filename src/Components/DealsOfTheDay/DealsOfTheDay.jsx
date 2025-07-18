@@ -15,7 +15,7 @@ const DealsOfTheDay = () => {
       days: "42",
       hours: "12",
       mins: "53",
-      sec: "23",
+      sec: 23,
     },
     {
       SL: "product 2",
@@ -28,7 +28,7 @@ const DealsOfTheDay = () => {
       days: "56",
       hours: "21",
       mins: "54",
-      sec: "21",
+      sec: 5,
     },
     {
       SL: "product 3",
@@ -41,7 +41,7 @@ const DealsOfTheDay = () => {
       days: "12",
       hours: "05",
       mins: "45",
-      sec: "36",
+      sec: 36,
     },
     {
       SL: "product 4",
@@ -54,7 +54,7 @@ const DealsOfTheDay = () => {
       days: "68",
       hours: "07",
       mins: "54",
-      sec: "01",
+      sec: 51,
     },
   ];
 
@@ -91,7 +91,7 @@ const DealsOfTheDay = () => {
               <DealsProduct product={product} />
             </motion.div>
           ))}
-        </motion.div> 
+        </motion.div>
       </div>
     </div>
   );

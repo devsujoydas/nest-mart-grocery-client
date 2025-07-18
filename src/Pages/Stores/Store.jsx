@@ -39,8 +39,8 @@ const Store = () => {
                     <h1 className='font-family-primary font-bold md:text-7xl text-3xl text-zinc-700'>{store?.name}</h1>
                     <div className='flex items-center justify-between gap-5 border border-zinc-200 px-5 md:py-2 py-1 rounded-full md:w-1/2 mt-5 md:mt-10 shadow-xl'>
                         <input type="text" className="py-2 pl-2 w-full outline-none
-                        " placeholder=" Search for items..." />
-                        <div className=" text-xl text-zinc-300">
+                        " placeholder="Search for items..." />
+                        <div className=" text-xl ">
                             <SlMagnifier />
                         </div>
                     </div>

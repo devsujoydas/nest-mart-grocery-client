@@ -3,9 +3,7 @@ import StayHome from '../../Components/StayHome/StayHome'
 import { Link } from 'react-router-dom'
 import NavigationPage from '../../Shared/NavigationPage/NavigationPage'
 import { motion } from 'framer-motion'
-import { FaFacebook } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
-import { FaApple } from "react-icons/fa";
+ 
 
 const Login = () => {
   return (

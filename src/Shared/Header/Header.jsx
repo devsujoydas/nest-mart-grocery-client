@@ -54,10 +54,10 @@ const Header = () => {
           <div className="md:mx-10 2xl:mx-0 mx-3">
             <div className="max-w-screen-2xl font-family-secondary md:mx-auto   mx-10 flex justify-between items-center text-zinc-400">
               <div className="flex gap-2 ">
-                <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">About Us</Link>
-                <Link to={"/"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">My Account</Link>
+                <Link to={"/about"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">About Us</Link>
+                <Link to={"/account/overview"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">My Account</Link>
                 <Link to={"/wishlist"} className="pr-2 border-r border-zinc-300 hover:text-black transition-all">Wishlist</Link>
-                <Link to={"/"} className=" hover:text-black transition-all">Order Tracking</Link>
+                <Link to={"/order/tracking"} className=" hover:text-black transition-all">Order Tracking</Link>
               </div>
 
               <div className=" h-3 overflow-hidden text-emerald-600 font-semibold">
@@ -131,7 +131,7 @@ const Header = () => {
         </div>
 
         <div className="md:mx-10 2xl:mx-0 mx-3">
-          <div className="max-w-screen-2xl  mx-auto flex gap-10 justify-between items-center py-8">
+          <div className="max-w-screen-2xl  mx-auto flex gap-10 justify-between items-center py-6">
             <div className="flex  items-center gap-10 w-full">
               <Link to={"/"}>
                 <img src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/logo.svg" alt="" />
@@ -191,7 +191,7 @@ const Header = () => {
 
                 <div onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className={`absolute  ${showAccModal ? "opacity-0 -z-30  top-20" : "opacity-100 z-30  top-12 "} right-5 bg-white py-4 px-3  w-46 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all`}>
                   <Link to={"/account/overview"} className={myAccbtnStyle}><FaRegUser className="" /> My Account</Link>
-                  <button to={"/"} className={myAccbtnStyle}><CiLocationOn className="text-black" /> Order Tracking</button>
+                  <Link to={"/order/tracking"} className={myAccbtnStyle}><CiLocationOn className="text-black" /> Order Tracking</Link>
                   <button to={"/"} className={myAccbtnStyle}><GrTicket className="" /> My Voucher </button>
                   <Link to={"/wishlist"} className={myAccbtnStyle}><FaRegHeart className="" /> My Wishlist</Link>
                   <button to={"/"} className={myAccbtnStyle}><CiSettings className="" /> Settings</button>
@@ -235,7 +235,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-
       </div>
 
 

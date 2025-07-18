@@ -2,10 +2,34 @@ import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
 import { BsCart3 } from "react-icons/bs";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 const DealsProduct = ({ product }) => {
     const { notify } = useContext(AuthContext)
+
+
+    const [countDown, setCountDown] = useState(product?.sec || 59);
+    const [minute, setMinute] = useState(product?.mins || 59);
+
+    useEffect(() => {
+        if (countDown <= 1) {
+            setCountDown(59)
+            setMinute(minute - 1)
+            return
+        };
+
+        const interval = setInterval(() => {
+            setCountDown(prev => {
+                if (prev > 1) return prev - 1;
+                clearInterval(interval);
+                return 1;
+            });
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, [countDown]);
+
+
 
     return (
         <div className="group cursor-pointer">
@@ -27,11 +51,11 @@ const DealsProduct = ({ product }) => {
                         <p className="text-zinc-700">Hours</p>
                     </div>
                     <div className="bg-white text-center p-3 rounded-md">
-                        <h1 className="text-emerald-500 text-2xl ">{product?.mins}</h1>
+                        <h1 className="text-emerald-500 text-2xl ">{minute}</h1>
                         <p className="text-zinc-700">Mins</p>
                     </div>
                     <div className="bg-white text-center p-3 rounded-md">
-                        <h1 className="text-emerald-500 text-2xl ">{product?.sec}</h1>
+                        <h1 className="text-emerald-500 text-2xl ">{countDown}</h1>
                         <p className="text-zinc-700">Sec</p>
                     </div>
                 </div>
@@ -52,7 +76,7 @@ const DealsProduct = ({ product }) => {
                             <h1 className="text-emerald-500  font-bold md:text-xl text-sm">${product?.price}</h1>
                             <h1 className="text-xs text-zinc-400 line-through font-bold ">${product?.prevPrice}</h1>
                         </div>
-                        <button onClick={() => notify()}  className="bg-emerald-100 hover:bg-emerald-500 text-emerald-600 hover:text-white font-semibold px-3 lg:px-6 md:py-2 py-1 rounded-md flex justify-between items-center gap-1 hover:-translate-y-1 transition duration-300 md:text-sm text-xs cursor-pointer active:scale-95">
+                        <button onClick={() => notify()} className="bg-emerald-100 hover:bg-emerald-500 text-emerald-600 hover:text-white font-semibold px-3 lg:px-6 md:py-2 py-1 rounded-md flex justify-between items-center gap-1 hover:-translate-y-1 transition duration-300 md:text-sm text-xs cursor-pointer active:scale-95">
                             <BsCart3 />
                             <h1 className="">Add</h1>
                         </button>
