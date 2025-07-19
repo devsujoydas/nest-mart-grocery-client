@@ -7,6 +7,9 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
+import bgSlider1 from '/assets/slider/slider-1.png';
+import bgSlider2 from '/assets/slider/slider-2.png';
+
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -29,13 +32,13 @@ const Hero = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="lg:p-20 w-full hero-slide-1 md:p-10 p-9 rounded-3xl overflow-hidden md:mt-8 flex flex-col items-start gap-8">
+          <div className="lg:p-20 w-full bg-center bg-no-repeat bg-cover md:p-10 p-9 rounded-3xl overflow-hidden md:mt-8 flex flex-col items-start gap-8" style={{ backgroundImage: `url(${bgSlider1})` }}>
             <motion.h1
               key={`title-1-${activeIndex}`}
               initial="hidden"
               animate="visible"
               variants={fadeUpVariant}
-              className="lg:text-7xl text-2xl font-family-primary font-bold text-black"
+              className="lg:text-7xl text-2xl font-family-primary font-bold text-black text-left"
             >
               Dont miss amazing <br /> grocery deals
             </motion.h1>
@@ -77,13 +80,13 @@ const Hero = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="lg:p-20 w-full hero-slide-2 md:p-10 p-9 rounded-3xl overflow-hidden md:mt-8 flex flex-col items-start gap-8">
+          <div className="lg:p-20 w-full bg-center bg-no-repeat bg-cover md:p-10 p-9 rounded-3xl overflow-hidden md:mt-8 flex flex-col items-start gap-8" style={{ backgroundImage: `url(${bgSlider2})`, }}>
             <motion.h1
               key={`title-2-${activeIndex}`}
               initial="hidden"
               animate="visible"
               variants={fadeUpVariant}
-              className="lg:text-7xl text-2xl font-bold text-black font-family-primary"
+              className="lg:text-7xl text-2xl font-bold text-black font-family-primary text-left"
             >
               Fresh Vegetables <br /> Big Discounts
             </motion.h1>

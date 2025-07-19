@@ -21,17 +21,3 @@
   object-fit: cover;
 }
 
-.hero-slide-2 {
-  text-align: left;
-  background-image: url('../../../assets/slider/slider-2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.hero-slide-1 {
-  text-align: left;
-  background-image: url('../../../assets/slider/slider-1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}

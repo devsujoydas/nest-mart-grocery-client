@@ -1,5 +1,6 @@
-
-import './FeaturedCategories.css'
+import bgOnion from '/assets/banner/banner-1.png';
+import bgStroberry from '/assets/banner/banner-2.png';
+import bgVegetable from '/assets/banner/banner-3.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -82,16 +83,16 @@ const FeaturedCategories = () => {
 
                 {/* Shop Now */}
                 <div className="md:pt-10 pt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-3 gap-4">
-                    <div className="bg-cover bgOnion  rounded-xl md:p-12 p-10 hover:shadow-lg  transition-all ">
+                    <div className="bg-cover bgOnion  rounded-xl md:p-12 p-10 hover:shadow-lg  transition-all " style={{ backgroundImage: `url(${bgOnion})` }}>
                         <h1 className="font-bold md:text-2xl text-xl my-8md: tex my-5 text-black hover:-translate-y-1 transition-all  ">Everyday Fresh & <br /> Clean with Our <br /> Products</h1>
                         <Link to={"/products"} className="w-fit bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></Link>
                     </div>
-                    <div className="bg-cover bgStroberry  rounded-xl md:p-12 p-10 hover:shadow-lg transition-all">
+                    <div className="bg-cover bgStroberry  rounded-xl md:p-12 p-10 hover:shadow-lg transition-all" style={{ backgroundImage: `url(${bgStroberry})` }}>
                         <h1 className="font-bold md:text-2xl text-xl md:my-8 my-5 text-black hover:-translate-y-1 transition-all">Make your Breakfast <br /> Healthy and Easy </h1>
                         <Link to={"/products"} className="w-fit bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></Link>
                     </div>
                     <div className=" bg-cover bgVegetable rounded-xl md:p-12 p-10  
-                        hover:shadow-lg transition-all">
+                        hover:shadow-lg transition-all" style={{ backgroundImage: `url(${bgVegetable})` }}>
                         <h1 className="font-bold md:text-2xl text-xl md:my-8 my-5 text-black hover:-translate-y-1 transition-all">The best Organic <br /> Products Online</h1>
                         <Link to={"/products"} className="w-fit bg-emerald-500 hover:bg-orange-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer md:text-sm text-xs">Shop Now <FaArrowRight className='text-xs' /></Link>
                     </div>

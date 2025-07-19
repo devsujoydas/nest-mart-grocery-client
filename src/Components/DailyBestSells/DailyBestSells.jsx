@@ -3,6 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 import { Autoplay, FreeMode } from 'swiper/modules';
 import DailyProductCard from './DailyProductCard';
+import bgLeaf from '/assets/banner/banner-4.png';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -55,8 +56,9 @@ const [topRatedProducts, setTopRatedProducts] = useState([])
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true, amount: 0.2 }}
-          id='bgLeaf'
+          id=''
           className="bg-cover rounded-xl p-10 lg:col-span-1 flex justify-between flex-col"
+          style={{ backgroundImage: `url(${bgLeaf})` }}
         >
           <h1 className="font-bold text-4xl my-8 text-black hover:-translate-y-1 transition-all">
             Bring nature into your home

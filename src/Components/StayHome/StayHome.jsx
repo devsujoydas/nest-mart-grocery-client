@@ -1,6 +1,7 @@
-import './StayHome.css'
+
 import { FaRegPaperPlane } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import bgStayHome from '/assets/banner/banner-10.png';
 
 const StayHome = () => {
   return (
@@ -12,9 +13,9 @@ const StayHome = () => {
         viewport={{ once: true, amount: 0.01 }}  // animate once when 30% visible
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div id="stay-home" className="md:my-10 my-5 relative overflow-hidden stay-home-bg rounded-3xl md:flex lg:flex-row justify-between items-end">
+        <div className="md:my-10 my-5 relative overflow-hidden rounded-3xl md:flex lg:flex-row justify-between items-end" style={{ backgroundImage: `url(${bgStayHome})` }}>
 
-          <img className="absolute w-full h-full -z-20 transition" src="../../../assets/banner/banner-10.png" alt="" />
+          <img className="absolute w-full h-full -z-20 transition" src={bgStayHome} alt="" />
 
           <div className="flex flex-col items-start justify-center gap-4 md:p-10 p-8 lg:p-20">
             <h1 className="lg:text-5xl text-2xl font-semibold">

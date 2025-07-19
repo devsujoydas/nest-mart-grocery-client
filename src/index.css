@@ -14,21 +14,6 @@
   font-family: "Lato", sans-serif;
 }
 
-.bgLeaf {
-  background-image: url('./src/assets/banner/banner-4.png');
-  background-position: center;
-}
-
-.bgOrganic {
-  background-image: url('https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-11.png');
-  background-position: center;
-}
-
-#stay-home {
-  background-image: url('./src/assets/banner/banner-10.png');
-  background-position: center center;
-  background-size: contain;
-}
 
 .daily-best-sells {
   grid-template-columns: 1fr 3fr;
