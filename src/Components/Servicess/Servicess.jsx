@@ -50,14 +50,14 @@ const Servicess = () => {
   };
 
   return (
-    <div className="md:mx-10 2xl:mx-0 mx-3 ">
+    <div className="md:mx-10  mx-3 ">
       <div className="max-w-screen-2xl lg:mx-auto">
         <motion.div
           id="services"
           className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-5 gap-3 md:gap-3 font-family-primary"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={containerVariants}
         >
           {serviceData.map((service, idx) => (

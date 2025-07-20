@@ -29,7 +29,7 @@ const [topRatedProducts, setTopRatedProducts] = useState([])
     }, [products]);
 
   return (
-    <div id='nav-for-daily-best-sell' className="max-w-screen-2xl lg:mx-auto font-family-primary">
+    <div id='nav-for-daily-best-sell' className="max-w-screen-2xl lg:mx-auto  font-family-primary">
 
       {/* Heading and Category Filter */}
       <motion.div
@@ -71,7 +71,7 @@ const [topRatedProducts, setTopRatedProducts] = useState([])
         {/* Product Slider */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.2 }}
           className='lg:col-span-3'

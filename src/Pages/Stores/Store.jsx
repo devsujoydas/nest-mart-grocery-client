@@ -12,9 +12,9 @@ import { AuthContext } from '../../AuthProvider/AuthProvider'
 import NavigationPage from '../../Shared/NavigationPage/NavigationPage'
 import Servicess from '../../Components/Servicess/Servicess'
 import StayHome from '../../Components/StayHome/StayHome'
-import { useParams } from 'react-router-dom';
-import ProductCard from '../../Components/Products/ProductCard';
+import { useParams } from 'react-router-dom'; 
 import CategorySide from '../../Components/CategorySide/CategorySide';
+import ProductCard from '../Products/ProductCard';
 
 
 const Store = () => {
@@ -127,7 +127,7 @@ const Store = () => {
                                     >
                                         <option value="10">Sort: Featured</option>
                                         <option value="20">Sort: Newest</option>
-                                        <option value="50">Sort: Most comments</option>
+                                        <option value="50">Sort: Oldest</option>
                                         <option value="50">Sort: Release Date</option>
                                     </select>
                                 </div>

@@ -13,11 +13,11 @@ import DescStore from './DescStore'
 const ProductDetails = () => {
   const { products } = useContext(AuthContext)
   const paramsId = useParams()
-  const product = products.find(product => product.SL == paramsId.id)
+  const product = products.find(product => product.path == paramsId.id)
   const { img1, img2, productDetails } = product;
   const [descOrVendor, setDescOrVendor] = useState(true);
-  const [imgBanner, setImgBanner] = useState(img1)
- 
+  const [imgBanner, setImgBanner] = useState(true)
+
   return (
     <>
       <NavigationPage path1={`Product`} path2={`${product.title}`} />
@@ -29,13 +29,18 @@ const ProductDetails = () => {
             <div className='grid md:grid-cols-2 gap-3 md:gap-10'>
               {/* img Container  */}
               <div className='flex flex-col gap-3 md:gap-5'>
+
                 <div className=' border h-fit border-zinc-200 rounded-3xl overflow-hidden'>
-                  <img src={imgBanner} className='hover:scale-125 duration-500 transition-all cursor-zoom-in active:scale-200' alt="" />
+                  <img src={imgBanner ? img1 : img2} className='hover:scale-125 duration-500 transition-all cursor-zoom-in active:scale-200' alt="" />
                 </div>
 
                 <div className=' flex gap-3 cursor-pointer '>
-                  <div onMouseEnter={() => setImgBanner(img1)} className='border  hover:border-emerald-300 duration-500 transition-all border-zinc-200 rounded-lg overflow-hidden'><img className='md:w-26 w-20' src={img1} alt="" /></div>
-                  <div onMouseEnter={() => setImgBanner(img2)} className='border hover:border-emerald-300 duration-500 transition-all border-zinc-200 rounded-lg overflow-hidden'><img className='md:w-26 w-20' src={img2} alt="" /></div>
+                  <div onClick={() => setImgBanner(true)} className={`border ${imgBanner ? "border-emerald-300" : "border-zinc-200"}  hover:border-emerald-300 duration-500 transition-all  rounded-lg overflow-hidden`}>
+                    <img className='md:w-26 w-20' src={img1} alt="" />
+                  </div>
+                  <div onClick={() => setImgBanner(false)} className={`border ${imgBanner ? "border-zinc-200" : "border-emerald-300"}  hover:border-emerald-300 duration-500 transition-all  rounded-lg overflow-hidden`}>
+                    <img className='md:w-26 w-20' src={img2} alt="" />
+                  </div>
                 </div>
               </div>
 

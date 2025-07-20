@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { SlMagnifier } from "react-icons/sl";
 import { FaRegUser } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
@@ -11,7 +11,7 @@ import { IoHeadsetSharp } from "react-icons/io5";
 import { CiSettings } from "react-icons/ci";
 import { PiSignOutLight } from "react-icons/pi";
 import { GrTicket } from "react-icons/gr";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import Nav from "./Nav";
@@ -26,24 +26,49 @@ import BrowesCatContainer from "./NavModals/BrowesCatContainer";
 import MegaMenuConainer from "./NavModals/MegaMenuConainer";
 import PageModalsContainer from "./NavModals/PageModalsContainer";
 
+const MAX_COUNT_DISPLAY = 99;
 
 const Header = () => {
-  const { navslide, setNavSlide, } = useContext(AuthContext)
+  const { navslide, setNavSlide, getWishlistIds, getCartIds } = useContext(AuthContext);
 
-  const [showAccModal, setShowAccModal] = useState(true)
+  const [showAccModal, setShowAccModal] = useState(true);
 
-  const socialBtnStyle = "text-white text-3xl cursor-pointer hover:bg-emerald-400 active:scale-95 transition-all bg-emerald-500 rounded-full p-1.5"
-  const compareBtnStyle = "flex justify-center items-end gap-1 cursor-pointer active:scale-95 hover:text-emerald-600 transition-all"
-  const myAccbtnStyle = "flex cursor-pointer hover:text-emerald-600 active:scale-95 transition-all items-center gap-2 hover:bg-zinc-200 w-full  px-2 py-2 rounded-sm"
+  const socialBtnStyle = "text-white text-3xl cursor-pointer hover:bg-emerald-400 active:scale-95 transition-all bg-emerald-500 rounded-full p-1.5";
+  const compareBtnStyle = "flex justify-center items-end gap-1 cursor-pointer active:scale-95 hover:text-emerald-600 transition-all";
+  const myAccbtnStyle = "flex cursor-pointer hover:text-emerald-600 active:scale-95 transition-all items-center gap-2 hover:bg-zinc-200 w-full  px-2 py-2 rounded-sm";
 
-
+  const navigate = useNavigate();
 
   const [category, setCategory] = useState("All Categories");
   const [locationStatus, setLocationStatus] = useState("Your Location");
   const [browserModal, setBrowserModal] = useState(true);
 
+  // State for wishlist and cart counts that update on add/remove
+  const [wishlistCount, setWishlistCount] = useState(0);
+  const [cartCount, setCartCount] = useState(0);
 
+  // Update wishlist and cart counts whenever their contents change
+  useEffect(() => {
+    // Defensive: getWishlistIds/getCartIds may be undefined or not a function
+    let wishlistArr = [];
+    let cartArr = [];
+    if (typeof getWishlistIds === "function") {
+      const ids = getWishlistIds();
+      wishlistArr = Array.isArray(ids) ? ids : [];
+    }
+    if (typeof getCartIds === "function") {
+      const ids = getCartIds();
+      cartArr = Array.isArray(ids) ? ids : [];
+    }
+    setWishlistCount(wishlistArr.length);
+    setCartCount(cartArr.length);
+  }, [getWishlistIds, getCartIds]);
 
+  // Helper to display fixed length for badge
+  const getDisplayCount = (count) => {
+    if (count > MAX_COUNT_DISPLAY) return `${MAX_COUNT_DISPLAY}+`;
+    return count;
+  };
 
   return (
     <div className="">
@@ -60,17 +85,8 @@ const Header = () => {
                 <Link to={"/order/tracking"} className=" hover:text-black transition-all">Order Tracking</Link>
               </div>
 
-              <div className=" h-3 overflow-hidden text-emerald-600 font-semibold">
+              <div className="xl:block hidden h-3 overflow-hidden text-emerald-600 font-semibold">
                 <ul className="animate-slideUp">
-                  <li className="">100% Secure delivery without contacting the courier </li>
-                  <li className="">Supper Value Deals - Save more with coupons</li>
-                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
-                  <li className="">100% Secure delivery without contacting the courier </li>
-                  <li className="">Supper Value Deals - Save more with coupons</li>
-                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
-                  <li className="">100% Secure delivery without contacting the courier </li>
-                  <li className="">Supper Value Deals - Save more with coupons</li>
-                  <li className="">Trendy 25silver jewelry, save up 35% off today</li>
                   <li className="">100% Secure delivery without contacting the courier </li>
                   <li className="">Supper Value Deals - Save more with coupons</li>
                   <li className="">Trendy 25silver jewelry, save up 35% off today</li>
@@ -109,6 +125,8 @@ const Header = () => {
                   <li className="">Trendy 25silver jewelry, save up 35% off today</li>
                 </ul>
               </div>
+
+              <h1 className="font-family-primary hidden font-bold text-emerald-700 text-xs">Grand opening, up to 15% off all items, Only 3days left</h1>
 
               <div className="flex items-center gap-2">
                 <h1 className="pr-2 border-r border-zinc-300">Need help? </h1>
@@ -182,11 +200,27 @@ const Header = () => {
 
               <div className="flex justify-between relative items-center gap-8">
                 <button to={"/"} className={compareBtnStyle}><IoGitCompareOutline className="text-2xl" /> Compare</button>
-                <Link to={"/wishlist"} className={compareBtnStyle}><FaRegHeart className="text-2xl" /> Wishlist</Link>
-                <Link to={"/cart"} className={compareBtnStyle}><TiShoppingCart className="text-2xl" /> Cart</Link>
+                <Link to={"/wishlist"} className="relative flex items-center">
+                  <FaRegHeart className="text-2xl" />
+                  <span className="ml-1">Wishlist</span>
+                  {wishlistCount > 0 && (
+                    <span className="absolute -top-2.5 left-18 text-xs bg-emerald-500 text-white rounded-full px-1.5   py-0.5 z-10  text-center">
+                      {getDisplayCount(wishlistCount)}
+                    </span>
+                  )}
+                </Link>
+                <Link to={"/cart"} className="relative flex items-center">
+                  <TiShoppingCart className="text-2xl" />
+                  <span className="ml-1">Cart</span>
+                  {cartCount > 0 && (
+                    <span className="absolute -top-2.5 left-12 text-xs bg-emerald-500 text-white rounded-full px-1.5   py-0.5 z-10  text-center">
+                      {getDisplayCount(cartCount)}
+                    </span>
+                  )}
+                </Link>
 
-                <button onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="w-12 h-12 p-0.5 cursor-pointer rounded-full bg-emerald-400 active:scale-95 transition-all duration-200" >
-                  <img className="rounded-full bg-white" src="./default.jpg" alt="" />
+                <button onClick={() => { navigate("/account/overview") }} onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className="w-12 h-12 p-0.5 cursor-pointer rounded-full bg-emerald-400 active:scale-95 transition-all duration-200" >
+                  <img className="rounded-full bg-white" src="/default.jpg" alt="" />
                 </button>
 
                 <div onMouseEnter={() => setShowAccModal(false)} onMouseLeave={() => setShowAccModal(true)} className={`absolute  ${showAccModal ? "opacity-0 -z-30  top-20" : "opacity-100 z-30  top-12 "} right-5 bg-white py-4 px-3  w-46 border space-y-1 border-zinc-200 rounded-md shadow-md text-sm duration-300 transition-all`}>
@@ -209,12 +243,19 @@ const Header = () => {
 
                 <div className="relative font-family-primary">
 
-                  <button onClick={() => setBrowserModal(!browserModal)} className="flex items-center gap-2 border py-2.5 px-4 rounded-md bg-emerald-500 hover:bg-emerald-600 cursor-pointer active:scale-95 transition-all text-white font-semibold  ">
+                  <button
+                    onClick={() => setBrowserModal(!browserModal)}
+                    onMouseEnter={() => setBrowserModal(false)}
+                    onMouseLeave={() => setBrowserModal(true)}
+                    className="flex items-center gap-2 border py-2.5 px-4 rounded-md bg-emerald-500 hover:bg-emerald-600 cursor-pointer active:scale-95 transition-all text-white font-semibold  ">
                     <MdOutlineGridView className="text-xl font-bold text-white" />Browse All Categories <IoIosArrowDown />
                   </button>
 
                   {/* Browse Btns container  */}
-                  <div onClick={() => setBrowserModal(!browserModal)} className={`absolute ${browserModal ? "-z-50 top-22 opacity-0" : "top-18 z-50 opacity-100"}  left-0 w-[480px]  grid grid-cols-2 gap-5 bg-white p-8 transition-all duration-500 border border-emerald-300 rounded-lg`}>
+                  <div
+                    onMouseEnter={() => setBrowserModal(false)}
+                    onMouseLeave={() => setBrowserModal(true)}
+                    className={`absolute ${browserModal ? "-z-50 top-22 opacity-0" : "top-18 z-50 opacity-100"}  left-0 w-[480px]  grid grid-cols-2 gap-5 bg-white p-8 transition-all duration-500 border border-emerald-300 rounded-lg`}>
                     <BrowesCatContainer />
                   </div>
                 </div>
@@ -241,24 +282,33 @@ const Header = () => {
       {/* Nav For sm Device */}
       <div className="block lg:hidden">
 
-
         <div className="font-semibold text-white text-center bg-emerald-600 p-2 text-sm">
           <h1 className="font-family-primary text-xs">Grand opening, up to 15% off all items, Only 3days left</h1>
         </div>
 
 
-        <div className="shadow px-3 py-4 flex justify-between items-center">
+        <div className="shadow px-3 py-3 flex justify-between items-center">
           <div onClick={() => setNavSlide(false)}>
             <RxHamburgerMenu className="text-3xl cursor-pointer active:scale-95 transition-all" />
           </div>
           <Link to={"/"}><img className="w-33" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/logo.svg" alt="" /></Link >
           <div className="flex items-center gap-2 text-zinc-600 ">
 
-            <Link to={"/wishlist"}>
+            <Link to={"/wishlist"} className="relative">
               <FaRegHeart className="text-2xl active:scale-95 hover:text-black transition-all cursor-pointer" />
+              {wishlistCount > 0 && (
+                <span className="absolute -top-3 -right-2 text-[10px] bg-emerald-500 text-white rounded-full px-1.5  py-0.5 z-10  text-center">
+                  {getDisplayCount(wishlistCount)}
+                </span>
+              )}
             </Link>
-            <Link to={"/cart"}>
+            <Link to={"/cart"} className="relative">
               <TiShoppingCart className="text-3xl active:scale-95 hover:text-black transition-all cursor-pointer" />
+              {cartCount > 0 && (
+                <span className="absolute -top-2 -right-2 text-[10px] bg-emerald-500 text-white rounded-full  px-1.5 py-0.5  z-10  text-center">
+                  {getDisplayCount(cartCount)}
+                </span>
+              )}
             </Link>
             <Link to={"/account/overview"} className="w-7 rounded-full overflow-hidden border border-zinc-200">
               <img src="/default.jpg" alt="" />
@@ -273,15 +323,15 @@ const Header = () => {
 
             <div className="w-9/12 bg-white">
               <div className="flex justify-between items-center border-y border-zinc-300 px-5 py-4">
-                <Link to={"/"}><img className="w-33" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/logo.svg" alt="" /></Link >
+                <Link onClick={() => setNavSlide(true)} to={"/"}><img className="w-33" src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/logo.svg" alt="" /></Link >
                 <IoMdClose onClick={() => setNavSlide(true)} className="text-zinc-500 text-2xl p-1 rounded-full bg-emerald-100 cursor-pointer" />
               </div>
 
               <div className="p-7 flex flex-col justify-between h-[85vh]  ">
                 <div>
                   <div className="flex justify-between items-center border border-zinc-200 bg-zinc-200  rounded-md p-2 ">
-                    <input type="text" className="outline- w-5/6 placeholder:text-sm   border-zinc-300" placeholder=" Search for items..." />
-                    <div className="cursor-pointer text-zinc-500 active:scale-95 transition-all hover:bg-emerald-500 p-2 rounded-md hover:text-white">
+                    <input type="text" className="outline-none w-5/6 placeholder:text-sm px-2  border-zinc-300" placeholder="Search for items..." />
+                    <div className="cursor-pointer text-zinc-500 active:scale-95 transition-all hover:bg-emerald-500 md:p-2 p-1 rounded-md hover:text-white">
                       <SlMagnifier className="w-full h-full" />
                     </div>
                   </div>
@@ -290,7 +340,7 @@ const Header = () => {
                     <Nav />
                   </div>
 
-                  <div className="border grid gap-3 border-zinc-200 rounded-md p-5 mt-6 font-family-secondary">
+                  <div className="border grid gap-3 border-zinc-200 rounded-md p-5 mt-6  font-family-primary font-semibold">
                     <div className="flex items-center text-sm gap-2">
                       <CiLocationOn className="text-lg text-emerald-600" /> <h1>Our location</h1>
                     </div>

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { AuthContext } from '../../AuthProvider/AuthProvider';
-import ProductCard from '../../Components/Products/ProductCard';
-import { motion } from "framer-motion";
+import { AuthContext } from '../../AuthProvider/AuthProvider'; 
+import { motion } from "framer-motion"; 
+import ProductCard from '../Products/ProductCard';
 
 
 const RelatedProducts = ({ product }) => {
@@ -9,7 +9,7 @@ const RelatedProducts = ({ product }) => {
     const [displayProducts, setDisplayProducts] = useState([]);
 
     useEffect(() => {
-        const remaining = products.filter((pro, idx) => pro.SL != product.SL)
+        const remaining = products.filter((pro) => pro.path != product.path)
         if (remaining.length > 0) {
             const initialProducts = remaining.slice(1, 5);
             setDisplayProducts(initialProducts);
@@ -19,9 +19,9 @@ const RelatedProducts = ({ product }) => {
     return (
         <div>
             <h1 className='text-2xl font-family-primary font-bold text-zinc-600'>Related products</h1>
-            <hr className='text-zinc-300 mt-5' />
-
-            <div className="grid grid-cols-2 md:mt-0 mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-5 gap-3">
+ 
+ 
+            <div className="grid grid-cols-2 md:mt-5 mt-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-5 gap-3">
                 {displayProducts.map((product, idx) => (
                     <motion.div
                         key={idx}

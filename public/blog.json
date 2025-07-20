@@ -1,112 +1,196 @@
 [
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-1.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-19.png",
     "type": "Side Dish",
-    "titile": "The Intermediate Guide to Healthy Food",
+    "title": "The Intermediate Guide to Healthy Food",
+    "path": "the-intermediate-guide-to-healthy-food",
+    "content": [
+      "Healthy eating is a journey, not a destination, and understanding the basics is the first step toward a balanced lifestyle. The intermediate guide to healthy food goes beyond simply choosing fruits and vegetables; it’s about understanding food groups, portion sizes, and the importance of variety. Start by incorporating more whole grains, lean proteins, and healthy fats into your meals. Whole grains like brown rice, quinoa, and oats provide sustained energy and are rich in fiber, which aids digestion. Lean proteins such as chicken, fish, beans, and tofu help build and repair tissues, while healthy fats from avocados, nuts, and olive oil support brain function and hormone production. Don’t forget to hydrate—water is essential for every bodily function. Planning your meals ahead of time can help you avoid unhealthy choices and ensure you’re getting a range of nutrients. Try to fill half your plate with vegetables, a quarter with lean protein, and a quarter with whole grains. Experiment with herbs and spices to add flavor without extra calories or sodium. Remember, moderation is key; it’s okay to enjoy treats occasionally, but focus on making healthy choices most of the time. By gradually making these changes, you’ll develop habits that support long-term health and well-being.",
+      "One of the most important aspects of healthy eating is learning to listen to your body’s hunger and fullness cues. Mindful eating encourages you to slow down and savor your food, which can prevent overeating and improve digestion. Pay attention to how different foods make you feel—do you have more energy after a balanced meal, or do you feel sluggish after eating processed foods? Keeping a food journal can help you identify patterns and make adjustments as needed. It’s also important to be aware of hidden sugars and unhealthy fats in packaged foods. Reading nutrition labels can help you make informed choices. Cooking at home gives you control over ingredients and portion sizes, and it can be a fun way to try new recipes and flavors. Don’t be afraid to experiment with plant-based meals, which can be both nutritious and delicious. Remember, healthy eating isn’t about perfection; it’s about making better choices most of the time and finding a balance that works for you. With patience and persistence, you’ll find that healthy food can be both satisfying and enjoyable."
+    ],
     "date": "25 April 2024",
     "views": "126",
     "readtime": "4"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-2.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-17.png",
     "type": "Breakfast",
-    "titile": "10 Quick and Healthy Breakfast Ideas",
+    "title": "10 Quick and Healthy Breakfast Ideas",
+    "path": "10-quick-and-healthy-breakfast-ideas",
+    "content": [
+      "Breakfast is often called the most important meal of the day, and for good reason. It kickstarts your metabolism, provides energy for the morning, and can set the tone for healthy choices throughout the day. If you’re short on time, there are plenty of quick and healthy breakfast options that don’t require much preparation. Overnight oats are a popular choice—simply combine rolled oats, milk or a dairy-free alternative, chia seeds, and your favorite fruits in a jar and let it sit in the fridge overnight. In the morning, you’ll have a delicious and nutritious meal ready to go. Greek yogurt parfaits are another easy option; layer yogurt with granola, berries, and a drizzle of honey for a balanced breakfast. Whole grain toast with avocado and a poached egg provides healthy fats and protein to keep you full until lunch. Smoothies are perfect for busy mornings—blend spinach, banana, protein powder, and almond milk for a nutrient-packed drink. Don’t forget about classic options like scrambled eggs with vegetables or cottage cheese with sliced peaches. The key is to include a mix of protein, fiber, and healthy fats to keep you satisfied and energized.",
+      "If you’re looking to add variety to your morning routine, try making breakfast burritos with whole wheat tortillas, scrambled eggs, black beans, and salsa. You can prepare them in advance and freeze for a quick grab-and-go meal. Chia pudding is another make-ahead option—mix chia seeds with milk and let it thicken overnight, then top with nuts and fruit. For a savory twist, try a vegetable frittata or egg muffins baked in a muffin tin with spinach, tomatoes, and cheese. Peanut butter and banana on whole grain toast is a classic combination that provides lasting energy. If you prefer something lighter, a bowl of fresh fruit with a handful of nuts can be both refreshing and satisfying. Remember, breakfast doesn’t have to be complicated or time-consuming. With a little planning, you can enjoy a variety of healthy and delicious meals that fuel your day and support your overall well-being."
+    ],
     "date": "29 April 2024",
     "views": "310",
     "readtime": "5"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-3.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-20.png",
     "type": "Lunch",
-    "titile": "Power-Packed Lunches to Keep You Going",
+    "title": "Power-Packed Lunches to Keep You Going",
+    "path": "power-packed-lunches-to-keep-you-going",
+    "content": [
+      "A nutritious lunch is essential for maintaining energy and focus throughout the afternoon. Power-packed lunches combine lean proteins, whole grains, and plenty of vegetables to provide sustained energy and prevent the mid-afternoon slump. One great option is a grain bowl—start with a base of brown rice, quinoa, or farro, then add grilled chicken, roasted vegetables, and a drizzle of tahini or vinaigrette. Salads can be hearty and satisfying when you include ingredients like chickpeas, avocado, nuts, and seeds. Try a Mediterranean-inspired salad with mixed greens, cherry tomatoes, cucumber, feta cheese, olives, and grilled shrimp or chicken. Wraps are another convenient choice; fill a whole wheat tortilla with turkey, hummus, spinach, and shredded carrots for a balanced meal. Don’t forget to include a serving of fruit or a small handful of nuts for a sweet and satisfying finish. Preparing your lunch at home allows you to control the ingredients and portion sizes, making it easier to stick to your health goals.",
+      "Meal prepping is a great way to ensure you have healthy lunches ready to go throughout the week. Spend some time on the weekend roasting vegetables, cooking grains, and grilling proteins so you can quickly assemble meals during busy weekdays. Mason jar salads are perfect for meal prep—layer your favorite ingredients in a jar, starting with the dressing at the bottom and ending with the greens on top. When you’re ready to eat, just shake and enjoy. Leftovers from dinner can also make excellent lunches; try repurposing roasted chicken into a salad or using cooked vegetables in a wrap. If you’re eating out, look for options that include plenty of vegetables, lean proteins, and whole grains, and avoid fried or heavily processed foods. Remember, a balanced lunch not only fuels your body but also supports mental clarity and productivity, helping you make the most of your day."
+    ],
     "date": "2 May 2024",
     "views": "189",
     "readtime": "6"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-4.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-18.png",
     "type": "Vegan",
-    "titile": "Beginner's Guide to a Plant-Based Diet",
+    "title": "Beginner's Guide to a Plant-Based Diet",
+    "path": "beginners-guide-to-a-plant-based-diet",
+    "content": [
+      "Switching to a plant-based diet can be a rewarding journey for your health and the environment. As a beginner, it’s important to focus on variety and balance to ensure you’re getting all the nutrients your body needs. Start by incorporating more fruits, vegetables, whole grains, legumes, nuts, and seeds into your meals. These foods are rich in fiber, vitamins, and minerals, and can help reduce the risk of chronic diseases. Try replacing meat with plant-based proteins like lentils, chickpeas, tofu, and tempeh. Experiment with new recipes, such as vegetable stir-fries, grain bowls, and hearty soups. Don’t forget to include sources of vitamin B12, iron, and omega-3 fatty acids, which can be found in fortified foods or supplements. Planning your meals ahead of time can help you stay on track and avoid the temptation of processed foods. Remember, transitioning to a plant-based diet is a process—start with small changes and gradually increase the number of plant-based meals you eat each week.",
+      "One of the keys to success on a plant-based diet is learning to cook with a variety of ingredients and flavors. Explore different cuisines, such as Mediterranean, Indian, or Asian, which often feature plant-based dishes. Stock your pantry with staples like beans, lentils, whole grains, and spices to make meal preparation easier. Batch cooking and meal prepping can save time and ensure you always have healthy options available. Don’t be afraid to try new foods—there are countless plant-based alternatives to traditional favorites, from veggie burgers to dairy-free cheeses. Eating out can also be enjoyable; many restaurants now offer vegan options or are willing to modify dishes to suit your needs. Listen to your body and make adjustments as needed to ensure you’re feeling your best. With a little creativity and planning, a plant-based diet can be both delicious and satisfying, supporting your health and well-being for years to come."
+    ],
     "date": "5 May 2024",
     "views": "275",
     "readtime": "7"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-5.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-16.png",
     "type": "Snack",
-    "titile": "Easy Snacks to Make in Under 10 Minutes",
+    "title": "Easy Snacks to Make in Under 10 Minutes",
+    "path": "easy-snacks-to-make-in-under-10-minutes",
+    "content": [
+      "Snacking can be part of a healthy diet when you choose nutrient-dense options that provide energy and satisfy hunger between meals. The key is to focus on snacks that combine protein, fiber, and healthy fats. For a quick and easy option, try apple slices with almond butter or Greek yogurt with berries and a sprinkle of granola. Hummus with carrot sticks, cucumber, and bell pepper is another nutritious choice that’s ready in minutes. Rice cakes topped with avocado and a dash of sea salt make for a satisfying and crunchy snack. If you’re craving something sweet, try frozen grapes or a banana with a drizzle of dark chocolate. Preparing snacks in advance can help you avoid reaching for less healthy options when you’re short on time.",
+      "Homemade energy balls are a great make-ahead snack—combine oats, nut butter, honey, and your favorite mix-ins like chia seeds or dried fruit, then roll into bite-sized balls and refrigerate. Trail mix made with nuts, seeds, and a small amount of dried fruit is perfect for on-the-go snacking. For a savory option, try roasted chickpeas seasoned with your favorite spices or air-popped popcorn with a sprinkle of nutritional yeast. Cheese sticks with whole grain crackers or a hard-boiled egg with cherry tomatoes are also quick and satisfying. The key to healthy snacking is to keep nutritious options readily available and to listen to your body’s hunger cues. With a little creativity, you can enjoy a variety of delicious snacks that support your health and keep you energized throughout the day."
+    ],
     "date": "8 May 2024",
     "views": "198",
     "readtime": "3"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-6.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-20.png",
     "type": "Dessert",
-    "titile": "Top 5 Guilt-Free Desserts",
+    "title": "Top 5 Guilt-Free Desserts",
+    "path": "top-5-guilt-free-desserts",
+    "content": [
+      "Enjoying dessert doesn’t have to mean sacrificing your health goals. There are plenty of guilt-free desserts that satisfy your sweet tooth while providing nutritional benefits. Fresh fruit is always a great option—try a fruit salad with a squeeze of lime or a bowl of mixed berries with a dollop of Greek yogurt. For something a little more indulgent, make chocolate-dipped strawberries or banana slices. Chia seed pudding is another healthy dessert that’s easy to prepare; mix chia seeds with almond milk and a touch of honey, then let it sit overnight. Top with fresh fruit and nuts for added flavor and texture. Baked apples with cinnamon and a sprinkle of oats make for a warm and comforting treat. The key is to use natural sweeteners and whole food ingredients whenever possible.",
+      "If you’re craving something chocolatey, try making avocado chocolate mousse by blending ripe avocados with cocoa powder and a bit of maple syrup. It’s rich, creamy, and packed with healthy fats. Frozen yogurt bark is another fun and easy dessert—spread Greek yogurt on a baking sheet, sprinkle with berries and nuts, and freeze until firm. Cut into pieces and enjoy as a refreshing treat. Oatmeal cookies made with mashed bananas, oats, and dark chocolate chips are a healthier alternative to traditional cookies. Remember, portion control is important even with healthier desserts. By choosing recipes that use wholesome ingredients and natural sweeteners, you can enjoy dessert as part of a balanced diet without the guilt."
+    ],
     "date": "10 May 2024",
     "views": "342",
     "readtime": "5"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-7.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-17.png",
     "type": "Dinner",
-    "titile": "Light Dinner Ideas for Better Sleep",
+    "title": "Light Dinner Ideas for Better Sleep",
+    "path": "light-dinner-ideas-for-better-sleep",
+    "content": [
+      "Eating a light dinner can improve your sleep quality and help you wake up feeling refreshed. Heavy or rich meals late at night can disrupt digestion and make it harder to fall asleep. Instead, focus on meals that are easy to digest and include a balance of protein, healthy fats, and complex carbohydrates. Grilled fish with steamed vegetables and quinoa is a light yet satisfying option. Stir-fried tofu with broccoli, bell peppers, and brown rice provides plant-based protein and fiber. Soups and salads are also great choices—try a lentil soup with a side of mixed greens or a spinach salad with grilled chicken and a light vinaigrette. Avoid spicy or fatty foods close to bedtime, as they can cause discomfort and interfere with sleep.",
+      "Incorporating sleep-promoting foods into your dinner can also be beneficial. Foods rich in tryptophan, such as turkey, eggs, and nuts, can help your body produce melatonin, a hormone that regulates sleep. Whole grains like brown rice and oats provide complex carbohydrates that support steady blood sugar levels. Herbal teas, such as chamomile or peppermint, can help you relax and unwind after a long day. Try to eat dinner at least two to three hours before bedtime to give your body time to digest. Creating a calming evening routine, including a light meal and relaxation techniques, can set the stage for restful sleep and better overall health."
+    ],
     "date": "12 May 2024",
     "views": "224",
     "readtime": "6"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-8.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-18.png",
     "type": "Smoothie",
-    "titile": "Detox Smoothies to Kickstart Your Morning",
+    "title": "Detox Smoothies to Kickstart Your Morning",
+    "path": "detox-smoothies-to-kickstart-your-morning",
+    "content": [
+      "Smoothies are a convenient and delicious way to pack a variety of nutrients into your morning routine. Detox smoothies, in particular, can help flush out toxins, boost energy, and support digestion. Start with a base of leafy greens like spinach or kale, which are rich in vitamins and antioxidants. Add fruits such as banana, pineapple, or berries for natural sweetness and fiber. Incorporate healthy fats from avocado or chia seeds, and add a scoop of protein powder or Greek yogurt for staying power. A splash of coconut water or almond milk can help achieve the desired consistency. For an extra detox boost, try adding fresh ginger, turmeric, or a squeeze of lemon juice. Blend until smooth and enjoy as a quick breakfast or post-workout snack.",
+      "Experimenting with different ingredients can keep your smoothie routine exciting and ensure you’re getting a range of nutrients. Try a green detox smoothie with cucumber, celery, apple, and parsley for a refreshing and hydrating option. A berry beet smoothie combines antioxidants and fiber for a vibrant and satisfying drink. If you’re looking to support gut health, add a spoonful of flaxseed or probiotic-rich kefir. Remember to watch portion sizes and avoid adding too much fruit juice or sweeteners, which can increase the sugar content. Preparing smoothie packs in advance—by portioning out ingredients and freezing them—can save time on busy mornings. With endless combinations, detox smoothies are a simple and effective way to start your day on a healthy note."
+    ],
     "date": "14 May 2024",
     "views": "311",
     "readtime": "4"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-9.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-19.png",
     "type": "Fitness",
-    "titile": "Best Pre-Workout Meals for Energy",
+    "title": "Best Pre-Workout Meals for Energy",
+    "path": "best-pre-workout-meals-for-energy",
+    "content": [
+      "Fueling your body with the right foods before a workout can enhance performance, increase endurance, and support muscle recovery. The best pre-workout meals combine complex carbohydrates, lean protein, and a small amount of healthy fat. Oatmeal with sliced banana and a spoonful of almond butter provides sustained energy and is easy to digest. A whole grain wrap with turkey and spinach is another balanced option. If you prefer something lighter, try a smoothie made with Greek yogurt, berries, and a handful of oats. Timing is important—aim to eat your pre-workout meal 1-3 hours before exercise to allow for proper digestion. Hydration is also key; drink plenty of water before, during, and after your workout.",
+      "Experiment with different foods to find what works best for your body and the type of exercise you’re doing. For high-intensity workouts, focus on easily digestible carbohydrates like rice cakes with peanut butter or a banana with a small handful of nuts. For longer endurance sessions, include more complex carbs and a bit of protein, such as brown rice with grilled chicken or a quinoa salad with chickpeas. Avoid high-fat or high-fiber foods right before exercise, as they can cause discomfort. Listen to your body and adjust your pre-workout nutrition as needed to support your fitness goals and maximize your performance."
+    ],
     "date": "17 May 2024",
     "views": "200",
     "readtime": "5"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-10.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-16.png",
     "type": "Keto",
-    "titile": "Keto-Friendly Dishes That Actually Taste Good",
+    "title": "Keto-Friendly Dishes That Actually Taste Good",
+    "path": "keto-friendly-dishes-that-actually-taste-good",
+    "content": [
+      "The ketogenic diet focuses on high-fat, moderate-protein, and low-carbohydrate foods to promote fat burning and support weight loss. Finding keto-friendly dishes that are both satisfying and delicious can be a challenge, but there are plenty of options to explore. Start with simple meals like grilled salmon with asparagus and a side of cauliflower mash. Zucchini noodles with pesto and grilled chicken make for a light yet flavorful dish. Egg-based recipes, such as omelets with spinach and cheese or frittatas with mushrooms and peppers, are quick and versatile. For snacks, try cheese sticks, olives, or a handful of nuts. The key is to use fresh, whole ingredients and experiment with herbs and spices to add flavor without extra carbs.",
+      "If you’re craving comfort food, there are keto-friendly alternatives to many traditional favorites. Cauliflower can be used to make pizza crust, rice, or even mac and cheese. Almond flour and coconut flour are great substitutes for baking low-carb bread, muffins, and pancakes. Avocado is a staple on the keto diet, providing healthy fats and a creamy texture to salads and smoothies. Don’t forget about desserts—try making chocolate mousse with avocado and cocoa powder or cheesecake bites with almond flour crust. Planning your meals ahead of time and keeping keto-friendly staples on hand can make it easier to stick to your goals and enjoy a variety of tasty dishes."
+    ],
     "date": "20 May 2024",
     "views": "154",
     "readtime": "4"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-11.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-17.png",
     "type": "Gluten-Free",
-    "titile": "Top Gluten-Free Alternatives for Your Diet",
+    "title": "Top Gluten-Free Alternatives for Your Diet",
+    "path": "top-gluten-free-alternatives-for-your-diet",
+    "content": [
+      "Adopting a gluten-free diet can be necessary for those with celiac disease or gluten sensitivity, but it can also be a healthy choice for anyone looking to reduce processed foods. The key is to focus on naturally gluten-free whole foods, such as fruits, vegetables, lean proteins, and most dairy products. For grains, choose options like quinoa, brown rice, millet, and buckwheat. Gluten-free oats are also widely available and can be used in a variety of recipes. When baking, almond flour, coconut flour, and chickpea flour are excellent substitutes for wheat flour. Be sure to read labels carefully, as gluten can be hidden in sauces, dressings, and processed foods.",
+      "There are plenty of delicious gluten-free alternatives to traditional favorites. Try making pizza with a cauliflower crust or pasta with spiralized zucchini or gluten-free noodles. Rice paper wraps are a great substitute for wheat-based wraps, and corn tortillas can be used for tacos and quesadillas. For snacks, choose popcorn, rice cakes, or homemade granola bars made with gluten-free oats. Eating out can be challenging, but many restaurants now offer gluten-free options or are willing to accommodate dietary needs. With a little creativity and planning, a gluten-free diet can be both enjoyable and nutritious, supporting your health and well-being."
+    ],
     "date": "22 May 2024",
     "views": "134",
     "readtime": "6"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-12.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-18.png",
     "type": "Meal Prep",
-    "titile": "Weekly Meal Prep for Busy People",
+    "title": "Weekly Meal Prep for Busy People",
+    "path": "weekly-meal-prep-for-busy-people",
+    "content": [
+      "Meal prepping is a game-changer for anyone with a busy schedule who wants to eat healthy and save time during the week. The process involves planning and preparing meals in advance, so you always have nutritious options ready to go. Start by choosing a few recipes that use similar ingredients to minimize waste and simplify shopping. Cook large batches of grains, proteins, and vegetables, then portion them into containers for easy grab-and-go meals. Mason jar salads, sheet pan dinners, and slow cooker recipes are all great options for meal prep. Label your containers with the date and contents to keep track of freshness. Investing in quality storage containers can help keep your meals organized and prevent spoilage.",
+      "Variety is key to preventing meal prep burnout. Mix and match different proteins, grains, and vegetables to create new combinations throughout the week. Try making a big batch of roasted chicken, then use it in salads, wraps, and grain bowls. Cook a pot of quinoa or brown rice to serve as a base for different meals. Pre-cut vegetables and store them in the fridge for quick snacks or stir-fries. Don’t forget about breakfast—overnight oats, egg muffins, and smoothie packs can all be prepared in advance. Meal prepping not only saves time and money but also helps you make healthier choices and reduce food waste. With a little planning and creativity, you can enjoy delicious, homemade meals all week long."
+    ],
     "date": "24 May 2024",
     "views": "277",
     "readtime": "7"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-13.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-19.png",
     "type": "Healthy",
-    "titile": "How to Eat Healthy on a Budget",
+    "title": "How to Eat Healthy on a Budget",
+    "path": "how-to-eat-healthy-on-a-budget",
+    "content": [
+      "Eating healthy doesn’t have to be expensive. With a little planning and smart shopping, you can enjoy nutritious meals without breaking the bank. Start by making a weekly meal plan and shopping list to avoid impulse purchases. Focus on whole foods like beans, lentils, rice, oats, and seasonal produce, which are often more affordable than processed foods. Buy in bulk when possible, and look for sales and discounts on staple items. Frozen fruits and vegetables are just as nutritious as fresh and can be more budget-friendly. Cooking at home allows you to control ingredients and portion sizes, saving money and supporting your health.",
+      "Reducing food waste is another way to save money while eating healthy. Use leftovers creatively—turn roasted vegetables into a frittata or add cooked grains to soups and salads. Store perishable items properly to extend their shelf life, and freeze extra portions for later. Preparing meals in advance can help you avoid the temptation of takeout or convenience foods. Don’t be afraid to try new recipes that use inexpensive ingredients, such as vegetable stir-fries, bean soups, or grain bowls. With a little creativity and resourcefulness, you can enjoy a variety of healthy meals on any budget."
+    ],
     "date": "26 May 2024",
     "views": "309",
     "readtime": "5"
   },
   {
     "img": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-14.png",
+    "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/blog/blog-20.png",
     "type": "Beverages",
-    "titile": "Best Hydrating Drinks for Summer",
+    "title": "Best Hydrating Drinks for Summer",
+    "path": "best-hydrating-drinks-for-summer",
+    "content": [
+      "Staying hydrated is especially important during the hot summer months, when your body loses more fluids through sweat. While water is always the best choice, there are plenty of other hydrating drinks that can help you stay cool and refreshed. Infused water is a simple and flavorful option—add slices of cucumber, lemon, mint, or berries to a pitcher of water and let it chill in the fridge. Coconut water is naturally rich in electrolytes and can help replenish fluids after exercise. Herbal teas, served iced, are another great way to stay hydrated without added sugar or caffeine. Try making a big batch of hibiscus or peppermint tea and keep it in the fridge for a refreshing drink anytime.",
+      "Smoothies and homemade fruit juices can also contribute to your daily fluid intake. Blend watermelon, strawberries, and a splash of lime juice for a hydrating and vitamin-rich drink. Avoid sugary sodas and energy drinks, which can actually dehydrate you. If you’re looking for a little fizz, try sparkling water with a squeeze of citrus or a splash of 100% fruit juice. Sports drinks can be helpful after intense exercise, but look for options with minimal added sugar. Remember to listen to your body’s thirst cues and drink regularly throughout the day, especially when spending time outdoors. With a variety of hydrating drinks to choose from, staying cool and refreshed all summer long is easy and delicious."
+    ],
     "date": "28 May 2024",
     "views": "233",
     "readtime": "3"

@@ -1,46 +1,75 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { AuthContext } from '../../../AuthProvider/AuthProvider'
 import { Link } from 'react-router-dom'
 
 const MegaMenuConainer = () => {
     const megaMenuBtnStyle = "hover:text-emerald-500 font-bold text-zinc-500 text-lg transition text-sm active:scale-95 duration-300"
-    const { megaModal, setMegaModal, } = useContext(AuthContext)
+    const { megaModal, setMegaModal, products } = useContext(AuthContext)
+
+
+    const [topSellProducts, setTopSellProducts] = useState([])
+    const [trendingProducts, setTrendingProducts] = useState([])
+    const [recentlyProducts, setRecentlyProducts] = useState([]) 
+
+    useEffect(() => {
+        if (products.length > 0) {
+            const initialProducts = products.slice(0, 6);
+            setTopSellProducts(initialProducts);
+        }
+    }, [products]);
+
+    useEffect(() => {
+        if (products.length > 0) {
+            const initialProducts = products.slice(6, 12);
+            setTrendingProducts(initialProducts);
+        }
+    }, [products]);
+
+    useEffect(() => {
+        if (products.length > 0) {
+            const initialProducts = products.slice(12, 18);
+            setRecentlyProducts(initialProducts);
+        }
+    }, [products]);
+
+ 
+
 
     return (
         <>
             <div onMouseEnter={() => setMegaModal(false)} onMouseLeave={() => setMegaModal(true)} className={`absolute ${megaModal ? "-z-50 top-20 opacity-0 transition-all duration-500" : " top-14 z-50 opacity-100 transition-all duration-500"} 2xl:-left-46 -left-56 xl:-left-68 md:w-4xl xl:w-7xl mx-5 bg-white p-10  border border-emerald-200 rounded-lg font-family-primary `}>
 
                 <div>
-                    <div className="flex items-center justify-center gap-8 ">
+                    <div className="flex items-start justify-between gap-8 ">
 
                         <div className="flex flex-col gap-2 md:gap-3 w-full">
-                            <h1 className="text-xl text-emerald-500 font-bold mb-3">Fruit & Vegetables</h1>
-                            <Link to="/products" className={megaMenuBtnStyle}>Meat & Poultry </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Fresh Vegetables </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Herbs & Seasonings </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Cuts & Sprouts </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Exotic Fruits & Veggies </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Packaged Produce </Link>
+                            <h1 className="text-xl text-emerald-500 font-bold mb-3">Top Selling</h1>
+                            {
+                                topSellProducts.length > 0 &&
+                                topSellProducts.map((product, idx) => (
+                                    <Link key={idx} to={`/products/${product.path}`} className={megaMenuBtnStyle}>{product.title.slice(0, 15) + "..."}</Link>
+                                ))
+                            }
                         </div>
 
                         <div className="flex flex-col gap-4 md:gap-3 w-full">
-                            <h1 className="text-xl text-emerald-500 font-bold mb-3">Breakfast & Dairy </h1>
-                            <Link to="/products" className={megaMenuBtnStyle}>Milk & Flavoured Milk </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Butter and Margarine </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Eggs Substitutes </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Marmalades </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Sour Cream </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Cheese </Link>
+                            <h1 className="text-xl text-emerald-500 font-bold mb-3">Trending</h1>
+                            {
+                                trendingProducts.length > 0 &&
+                                trendingProducts.map((product, idx) => (
+                                    <Link key={idx} to={`/products/${product.path}`} className={megaMenuBtnStyle}>{product.title.slice(0, 15) + "..."}</Link>
+                                ))
+                            }
                         </div>
 
                         <div className="flex flex-col gap-4 md:gap-3 w-full">
-                            <h1 className="text-xl text-emerald-500 font-bold mb-3"> Meat & Seafood </h1>
-                            <Link to="/products" className={megaMenuBtnStyle}>Breakfast Sausage </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Dinner Sausage </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Chicken </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Sliced Deli Meat </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Wild Caught Fillets </Link>
-                            <Link to="/products" className={megaMenuBtnStyle}>Crab and Shellfish </Link>
+                            <h1 className="text-xl text-emerald-500 font-bold mb-3">Recently Viewed</h1>
+                            {
+                                recentlyProducts.length > 0 &&
+                                recentlyProducts.map((product, idx) => (
+                                    <Link key={idx} to={`/products/${product.path}`} className={megaMenuBtnStyle}>{product.title.slice(0, 15) + "..."}</Link>
+                                ))
+                            }
                         </div>
 
                         <div

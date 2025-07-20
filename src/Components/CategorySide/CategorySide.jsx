@@ -1,3 +1,4 @@
+import TrandingProductsTemplate from "../TopSelling/TrandingProductsTemplate"
 import Category from "./Category"
 import FillByPrice from "./FillByPrice"
 import Organic from "./Organic"
@@ -6,9 +7,10 @@ import Organic from "./Organic"
 
 const CategorySide = () => {
     return (
-        <div className='grid gap-5 sticky top-0 h-fit'>
+        <div className='grid gap-5 sticky top-[2vh] h-fit'>
             <Category />
             <FillByPrice />
+            <TrandingProductsTemplate />
             <Organic /> 
         </div>
     )

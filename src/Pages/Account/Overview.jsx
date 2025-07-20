@@ -17,22 +17,22 @@ const Overview = () => {
 
 
             <div className='grid lg:grid-cols-3 gap-5'>
-                <div className='flex flex-col items-center gap-1.5 md:gap-3 p-5 md:p-8 rounded-md border border-zinc-200'>
-                    <h1 className='font-bold font-family-primary text-xl'>View Orders</h1>
+                <div className='flex flex-col items-center justify-between gap-1.5 md:gap-3 p-5 xl:p-8 rounded-md border border-zinc-200'>
+                    <h1 className='font-bold font-family-primary text-xl xl:text-left text-center'>View Orders</h1>
                     <p className='text-zinc-500 text-sm text-center'>Track your recent orders and order history </p>
                     <Link to={"/account/orders"} className="bg-emerald-500 w-fit hover:bg-yellow-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer text-sm font-family-primary">
                         View Orders <FaArrowRight className='text-xs' />
                     </Link>
                 </div>
-                <div className='flex flex-col items-center gap-1.5 md:gap-3 p-5 md:p-8 rounded-md border border-zinc-200'>
-                    <h1 className='font-bold font-family-primary text-xl'>Manage Addresses</h1>
+                <div className='flex flex-col items-center justify-between gap-1.5 md:gap-3 p-5 xl:p-8 rounded-md border border-zinc-200'>
+                    <h1 className='font-bold font-family-primary text-xl xl:text-left text-center'>Manage Addresses</h1>
                     <p className='text-zinc-500 text-sm text-center'>Update your shipping and billing addresses </p>
                     <Link to={"/account/address"} className="bg-emerald-500 w-fit hover:bg-yellow-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer text-sm font-family-primary">
                         Manage Address <FaArrowRight className='text-xs' />
                     </Link>
                 </div>
-                <div className='flex flex-col items-center gap-1.5 md:gap-3 p-5 md:p-8 rounded-md border border-zinc-200'>
-                    <h1 className='font-bold font-family-primary text-xl'>Account Settings</h1>
+                <div className='flex flex-col items-center justify-between gap-1.5 md:gap-3 p-5 xl:p-8 rounded-md border border-zinc-200'>
+                    <h1 className='font-bold font-family-primary text-xl xl:text-left text-center'>Account Settings</h1>
                     <p className='text-zinc-500 text-sm text-center'>Update your shipping and billing addresses </p>
                     <Link to={"/account/accountSettings"} className="bg-emerald-500 w-fit hover:bg-yellow-400 hover:px-5 active:scale-95 transition-all px-4 py-2 rounded-sm flex items-center gap-1 text-white font-semibold cursor-pointer text-sm font-family-primary">
                         Edit Account <FaArrowRight className='text-xs' />

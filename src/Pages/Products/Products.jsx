@@ -6,37 +6,24 @@ import { useState } from 'react'
 import { TbArrowsSort } from "react-icons/tb";
 import { MdOutlineGridView } from "react-icons/md";
 
-import { useContext, useEffect } from "react"
+import { useContext } from "react"
 import { AuthContext } from "../../AuthProvider/AuthProvider"
 import { motion } from "framer-motion";
-import ProductCard from '../../Components/Products/ProductCard'
 import CategorySide from '../../Components/CategorySide/CategorySide'
+import ProductCard from './ProductCard'
 
 
 const Products = () => {
+
   const [show, setShow] = useState("");
   const [sort, setSort] = useState("");
-
   const { products } = useContext(AuthContext)
-  const [displayProducts, setDisplayProducts] = useState([]);
-  const [showAll, setShowAll] = useState(false);
 
 
-  useEffect(() => {
-    if (products.length > 0) {
-      const initialProducts = products.slice(0, 8);
-      setDisplayProducts(initialProducts);
-    }
-  }, [products]);
-
-  const handleViewAll = () => {
-    setShowAll(true);
-    setDisplayProducts(products);
-  };
 
   return (
     < >
-      <div className='max-w-screen-2xl 2xl:mx-auto  md:mx-10 mx-3 my-10'>
+      <div className='max-w-screen-2xl 2xl:mx-auto  md:mx-10 mx-3 md:my-10 my-5'>
 
         <div
           className='md:px-20 md:p-0 px-5 pt-5 pb-3 md:pt-16 md:pb-10 rounded-xl bg-center bg-cover flex flex-col justify-center md:items-baseline items-center' style={{ backgroundImage: `url("https://nest-frontend-v6.vercel.app/assets/imgs/blog/header-bg.png")` }}>
@@ -48,8 +35,8 @@ const Products = () => {
           </div>
         </div>
 
-        <div className='grid lg:grid-cols-9 gap-6 md:my-10 my-5'>
-          <div className='lg:col-span-7 '>
+        <div className='grid xl:grid-cols-9 gap-6 md:my-10 my-5'>
+          <div className='xl:col-span-7 '>
             <div className=' flex md:flex-row flex-col justify-between items-center'>
               {/* Recips Articles */}
               <div className=''>
@@ -62,7 +49,7 @@ const Products = () => {
                   <select
                     value={show}
                     onChange={(e) => setShow(e.target.value)}
-                    className="bg-white text-sm font-semibold px-3  rounded-md  outline-none transition duration-200 cursor-pointer"
+                    className="bg-white md:text-sm text-xs font-semibold px-3  rounded-md  outline-none transition duration-200 cursor-pointer"
                   >
                     <option value="10">Show: 10</option>
                     <option value="20">Show: 20</option>
@@ -71,16 +58,21 @@ const Products = () => {
                 </div>
 
                 <div className='flex  items-center  justify-center text-zinc-500 border border-zinc-200 rounded-md p-2 md:p-3  bg-white  transition'>
-                  <TbArrowsSort className="text-xl text-emerald-600" />
+
+                  <div className='flex items-center gap-2'>
+                    <TbArrowsSort className="text-xl text-emerald-600" />
+                    <p className='text-sm font-semibold'>Sort:</p>
+                  </div>
                   <select
                     value={sort}
                     onChange={(e) => setSort(e.target.value)}
-                    className="bg-white text-sm font-semibold px-3  rounded-md  outline-none transition duration-200 cursor-pointer"
+                    className="bg-white md:text-sm text-xs font-semibold pl-1  rounded-md  outline-none transition duration-200 cursor-pointer"
                   >
-                    <option value="10">Sort: Featured</option>
-                    <option value="20">Sort: Newest</option>
-                    <option value="50">Sort: Most comments</option>
-                    <option value="50">Sort: Release Date</option>
+                    <option value="10">Featured</option>
+                    <option value="20">Newest</option>
+                    <option value="50">Oldest</option>
+                    <option value="50">Release Date</option>
+                    <option value="50">Most comments</option>
                   </select>
                 </div>
               </div>
@@ -88,7 +80,7 @@ const Products = () => {
 
             <div className='pt-5'>
               <div className="grid grid-cols-2 md:mt-0 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-5 gap-3">
-                {displayProducts.map((product, idx) => (
+                {products.map((product, idx) => (
                   <motion.div
                     key={idx}
                     initial={{ opacity: 0, y: 40 }}
@@ -100,28 +92,20 @@ const Products = () => {
                 ))}
               </div>
 
-              {!showAll && products.length > 8 && (
-                <div className="flex justify-center mt-6">
-                  <motion.button
-                    initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.3 }} onClick={handleViewAll}
-                    className="bg-emerald-500 active:scale-95 cursor-pointer duration-300 text-white px-5 py-2 rounded-md hover:bg-emerald-600 transition"
-                  >
-                    View All
-                  </motion.button>
-                </div>
-              )}
+
             </div>
           </div>
 
-          <div className='lg:col-span-2 relative  '>
+          <div className='xl:col-span-2  '>
             <CategorySide />
           </div>
         </div>
 
       </div>
 
-
-      <DealsOfTheDay />
+      <div className='md:mx-10 mx-3'>
+        <DealsOfTheDay />
+      </div>
       <StayHome />
       <Servicess />
     </ >

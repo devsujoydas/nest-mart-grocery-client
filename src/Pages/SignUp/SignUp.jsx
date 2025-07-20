@@ -7,10 +7,13 @@ import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { motion } from 'framer-motion'
+import Servicess from '../../Components/Servicess/Servicess';
 
 const SignUp = () => {
+const inputStyle = "border border-zinc-200 px-4 md:py-4.5 py-2 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500"
+
   return (
-    <>
+    <div>
       <NavigationPage path1={"My Account"} path2={"Sign Up"} />
 
       <motion.div
@@ -18,17 +21,17 @@ const SignUp = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className='font-family-primary md:w-7xl mx-auto md:p-30 p-3 grid gap-5'
+        className='font-family-primary xl:w-7xl mx-auto lg:p-30 md:px-10 2xl:px-0 md:pt-10 pt-3 px-3 grid gap-5'
       >
         <h1 className='md:text-5xl text-2xl text-zinc-700 font-bold'>Create an Account</h1>
         <h1 className='-mt-2 text-zinc-600 md:text-[16px] text-xs font-medium font-family-secondary'>
           Already have an account?{" "}
-          <Link className='font-semibold text-emerald-500 hover:text-emerald-400 transition-all' to={"/login"}>
+          <Link className='font-semibold text-emerald-500 font-family-primary hover:text-emerald-400 transition-all' to={"/login"}>
             Login
           </Link>
         </h1>
 
-        <div className='grid md:grid-cols-2 gap-10'>
+        <div className='grid lg:grid-cols-2 md:gap-10 gap-3'>
           <motion.form
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -36,10 +39,10 @@ const SignUp = () => {
             viewport={{ once: true }}
           >
             <div className='space-y-4 md:text-sm text-xs'>
-              <input className='border border-zinc-200 px-4 md:py-4.5 py-2 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Username' name='username' />
-              <input className='border border-zinc-200 px-4 md:py-4.5 py-2 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Email' name='email' />
-              <input className='border border-zinc-200 px-4 md:py-4.5 py-2 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Password' name='password' />
-              <input className='border border-zinc-200 px-4 md:py-4.5 py-2 w-full rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Confirm password' name='confirmPass' />
+              <input type="email" className={inputStyle} placeholder='Username' name='username' />
+              <input type="password" className={inputStyle} placeholder='Email' name='email' />
+              <input type="password" className={inputStyle} placeholder='Password' name='password' />
+              <input type="password" className={inputStyle} placeholder='Confirm password' name='confirmPass' />
 
               <div className='flex justify-between items-center'>
                 <input className='w-1/3 border border-zinc-200 px-4 md:py-4.5 py-2 rounded-lg outline-none focus:border-emerald-300 transition-all duration-500' type="text" placeholder='Security code *' name='securityCode' />
@@ -69,7 +72,7 @@ const SignUp = () => {
               </div>
             </div>
 
-            <div className='text-xs mt-8'>
+            <div className='text-xs md:mt-8 mt-3'>
               <h1>
                 Note: Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.
               </h1>
@@ -78,30 +81,29 @@ const SignUp = () => {
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className='md:p-10 p-3 h-fit border border-zinc-200 md:w-8/9 md:rounded-lg rounded-md flex flex-col md:gap-5 gap-3'
+            className='md:p-8 p-3 h-fit border border-zinc-200 xl:w-8/9 md:rounded-lg rounded-md flex flex-col md:gap-5 gap-3'
           >
-            <button className='flex items-center bg-blue-500 hover:bg-blue-400 transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold md:py-3.5 py-2 md:px-4 px-4 gap-4 rounded-sm md:rounded-lg md:text-xl active:scale-95 '>
+            <button className='flex items-center bg-blue-500 hover:bg-blue-400 transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold md:py-3.5 py-2 md:px-4 px-4 gap-2 rounded-sm md:rounded-lg md:text-lg active:scale-95 '>
               <FaFacebook className='md:text-3xl text-xl' />Continue with Facebook
             </button>
 
-            <button className='flex items-center transition-all duration-300 hover:-translate-y-1 border border-zinc-200 cursor-pointer text-zinc-600 font-bold md:py-3.5 py-2 md:px-4 px-4 gap-4 rounded-sm md:rounded-lg md:text-xl active:scale-95'>
+            <button className='flex items-center transition-all duration-300 hover:-translate-y-1 border border-zinc-200 cursor-pointer text-zinc-600 font-bold md:py-3.5 py-2 md:px-4 px-4 gap-2 rounded-sm md:rounded-lg md:text-lg active:scale-95'>
               <FcGoogle className='md:text-3xl text-xl' />Continue with Google
             </button>
 
-            <button className='flex items-center bg-black transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold md:py-3.5 py-2 md:px-4 px-4 gap-4 rounded-sm md:rounded-lg md:text-xl active:scale-95'>
+            <button className='flex items-center bg-black transition-all duration-300 hover:-translate-y-1 cursor-pointer text-white font-bold md:py-3.5 py-2 md:px-4 px-4 gap-2 rounded-sm md:rounded-lg md:text-lg active:scale-95'>
               <FaApple className='md:text-3xl text-xl' />Continue with Apple
             </button>
           </motion.div>
         </div>
       </motion.div>
 
-      <div className='md:mx-0 mx-3'>
-        <StayHome />
-      </div>
-    </>
+      <StayHome />
+      <Servicess />
+    </div>
   )
 }
 

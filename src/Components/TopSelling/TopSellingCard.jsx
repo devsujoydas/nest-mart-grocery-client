@@ -2,7 +2,7 @@
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
 import { Link } from "react-router-dom";
-const TopSelling = ({ titile, product }) => {
+const TopSellingCard = ({ titile, product }) => {
 
 
   return (
@@ -18,7 +18,7 @@ const TopSelling = ({ titile, product }) => {
             ">
               <img className="md:w-22 w-18 rounded-lg" src={pro.img1} alt="" />
               <div>
-                <Link to={`/products/${pro.SL}`}>
+                <Link to={`/products/${pro.path}`}>
                   <h1 className="font-bold cursor-pointer hover:text-emerald-500 active:text-emerald-500 transition-all duration-500 md:mb-1 md:text-[16px] text-sm">{pro.title}</h1>
                 </Link>
                 <div className="flex text-orange-300 text-sm">
@@ -38,4 +38,4 @@ const TopSelling = ({ titile, product }) => {
   )
 }
 
-export default TopSelling
+export default TopSellingCard

@@ -35,7 +35,7 @@ const Stores = () => {
 
 
                 {/* Sorting and filter */}
-                <div className='md:my-10 my-5 flex md:flex-row flex-col justify-between items-center'>
+                <div className='md:my-10 my-5  flex md:flex-row flex-col justify-between items-center'>
                     {/* Recips Articles */}
                     <div className=''>
                         <h1 className='font-family-primary'>We found <span className='font-bold text-emerald-500'>{stores?.length}</span> vendors now</h1>
@@ -47,7 +47,7 @@ const Stores = () => {
                             <select
                                 value={show}
                                 onChange={(e) => setShow(e.target.value)}
-                                className="bg-white text-sm font-semibold px-3  rounded-md  outline-none transition duration-200 cursor-pointer"
+                                className="bg-white md:text-sm text-xs font-semibold px-3  rounded-md  outline-none transition duration-200 cursor-pointer"
                             >
                                 <option value="10">Show: 10</option>
                                 <option value="20">Show: 20</option>
@@ -56,23 +56,28 @@ const Stores = () => {
                         </div>
 
                         <div className='flex  items-center  justify-center text-zinc-500 border border-zinc-200 rounded-md p-2 md:p-3  bg-white  transition'>
-                            <TbArrowsSort className="text-xl text-emerald-600" />
+
+                            <div className='flex items-center gap-2'>
+                                <TbArrowsSort className="text-xl text-emerald-600" />
+                                <p className='text-sm font-semibold'>Sort:</p>
+                            </div>
                             <select
                                 value={sort}
                                 onChange={(e) => setSort(e.target.value)}
-                                className="bg-white text-sm font-semibold px-3  rounded-md  outline-none transition duration-200 cursor-pointer"
+                                className="bg-white md:text-sm text-xs font-semibold pl-1  rounded-md  outline-none transition duration-200 cursor-pointer"
                             >
-                                <option value="10">Sort: Featured</option>
-                                <option value="20">Sort: Newest</option>
-                                <option value="50">Sort: Most comments</option>
-                                <option value="50">Sort: Release Date</option>
+                                <option value="10">Featured</option>
+                                <option value="20">Newest</option>
+                                <option value="50">Oldest</option>
+                                <option value="50">Release Date</option>
+                                <option value="50">Most comments</option>
                             </select>
                         </div>
                     </div>
                 </div>
 
                 {/* Vendor Sections */}
-                <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5   '>
+                <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-5   '>
 
                     {stores.map((store, idx) => (
                         <StoreCard key={idx} store={store} />

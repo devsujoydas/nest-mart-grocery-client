@@ -6,6 +6,7 @@
     "status": "Organic",
     "categories": "Grains & Rice",
     "title": "Seeds of Change Organic Quinoa, Brown, & Red Rice",
+    "path": "seeds-of-change-organic-quinoa-brown-red-rice",
     "ratings": "4.8",
     "by": "Seeds of Change",
     "price": 3.99,
@@ -23,7 +24,11 @@
       "tags": "Organic, Quinoa, Rice, Microwavable, Non-GMO",
       "stock": 120,
       "TypeOfPacking": "BPA-Free Pouch",
-      "Color": ["Dark Brown", "Red", "Tan"],
+      "Color": [
+        "Dark Brown",
+        "Red",
+        "Tan"
+      ],
       "QuantityPerCase": "8.5 oz (241g)",
       "Alcohol": "0%",
       "PieceInOne": "Pouch",
@@ -38,7 +43,7 @@
         "warranty": "N/A"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-1.png",
         "name": "Seeds of Change",
         "reviews": "1250",
         "address": "Rancho Dominguez, CA 90220, United States",
@@ -57,6 +62,7 @@
     "status": "Hot",
     "categories": "Frozen Foods",
     "title": "All Natural Italian-Style Chicken Meatballs",
+    "path": "all-natural-italian-style-chicken-meatballs",
     "ratings": "4.6",
     "by": "Bellina's Kitchen",
     "price": 2.49,
@@ -74,7 +80,10 @@
       "tags": "Meatballs, Chicken, Italian, Frozen, All-Natural",
       "stock": 75,
       "TypeOfPacking": "Resealable Bag",
-      "Color": ["Light Brown", "Speckled Green"],
+      "Color": [
+        "Light Brown",
+        "Speckled Green"
+      ],
       "QuantityPerCase": "12 oz (340g)",
       "Alcohol": "0%",
       "PieceInOne": "Bag",
@@ -89,7 +98,7 @@
         "warranty": "Quality Guaranteed"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-2.png",
         "name": "Bellina's Kitchen",
         "reviews": "850",
         "address": "123 Pasta Lane, Trenton, NJ 08608, United States",
@@ -107,7 +116,8 @@
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-3-2.jpg",
     "status": "Sale",
     "categories": "Snacks",
-    "title": "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
+    "title": "Angie’s Boomchickapop Sweet & Salty Corn",
+    "path": "angies-boomchickapop-sweet-salty-corn",
     "ratings": "4.9",
     "by": "Angie's",
     "price": 1.79,
@@ -125,7 +135,10 @@
       "tags": "Popcorn, Kettle Corn, Snack, Gluten-Free, Non-GMO",
       "stock": 150,
       "TypeOfPacking": "Bag",
-      "Color": ["White", "Light Yellow"],
+      "Color": [
+        "White",
+        "Light Yellow"
+      ],
       "QuantityPerCase": "7 oz (198g)",
       "Alcohol": "0%",
       "PieceInOne": "Bag",
@@ -140,7 +153,7 @@
         "warranty": "N/A"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-3.png",
         "name": "Conagra Brands",
         "reviews": "5400",
         "address": "222 W Merchandise Mart Plaza, Chicago, IL 60654, United States",
@@ -159,6 +172,7 @@
     "status": "Hot",
     "categories": "Frozen Foods",
     "title": "Foster Farms Takeout Crispy Buffalo Wings",
+    "path": "foster-farms-takeout-crispy-buffalo-wings",
     "ratings": "4.5",
     "by": "Foster Farms",
     "price": 4.99,
@@ -176,7 +190,10 @@
       "tags": "Chicken Wings, Buffalo, Frozen, Spicy, Appetizer",
       "stock": 90,
       "TypeOfPacking": "Bag",
-      "Color": ["Orange-Red", "Golden Brown"],
+      "Color": [
+        "Orange-Red",
+        "Golden Brown"
+      ],
       "QuantityPerCase": "22 oz (624g)",
       "Alcohol": "0%",
       "PieceInOne": "Bag",
@@ -191,7 +208,7 @@
         "warranty": "Satisfaction Guaranteed"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-4.png",
         "name": "Foster Farms",
         "reviews": "3200",
         "address": "1000 Foster Farms Rd, Livingston, CA 95334, United States",
@@ -210,6 +227,7 @@
     "status": "Best Seller",
     "categories": "Nuts & Snacks",
     "title": "Blue Diamond Almonds Lightly Salted",
+    "path": "blue-diamond-almonds-lightly-salted",
     "ratings": "4.9",
     "by": "Blue Diamond",
     "price": 2.99,
@@ -227,7 +245,9 @@
       "tags": "Almonds, Nuts, Snack, Healthy, Lightly Salted",
       "stock": 150,
       "TypeOfPacking": "Resealable Can",
-      "Color": ["Brown"],
+      "Color": [
+        "Brown"
+      ],
       "QuantityPerCase": "16 oz (454g)",
       "Alcohol": "0%",
       "PieceInOne": "Can",
@@ -242,7 +262,7 @@
         "warranty": "Freshness Guaranteed"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-5.png",
         "name": "Blue Diamond Growers",
         "reviews": "8500",
         "address": "1802 C St, Sacramento, CA 95811, United States",
@@ -261,6 +281,7 @@
     "status": "New",
     "categories": "Dairy & Yogurt",
     "title": "Chobani Complete Vanilla Greek Yogurt",
+    "path": "chobani-complete-vanilla-greek-yogurt",
     "ratings": "4.7",
     "by": "Chobani",
     "price": 2.44,
@@ -278,7 +299,10 @@
       "tags": "Yogurt, Greek Yogurt, Protein, Lactose-Free, Vanilla",
       "stock": 150,
       "TypeOfPacking": "Tub",
-      "Color": ["Off-white", "Cream"],
+      "Color": [
+        "Off-white",
+        "Cream"
+      ],
       "QuantityPerCase": "32 oz (907g)",
       "Alcohol": "0%",
       "PieceInOne": "Tub",
@@ -293,7 +317,7 @@
         "warranty": "Freshness Guaranteed"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-6.png",
         "name": "Chobani",
         "reviews": "9800",
         "address": "147 State Hwy 320, Norwich, NY 13815, United States",
@@ -312,6 +336,7 @@
     "status": "Classic",
     "categories": "Beverages",
     "title": "Canada Dry Ginger Ale - 2 L Bottle",
+    "path": "canada-dry-ginger-ale-2-l-bottle",
     "ratings": "4.9",
     "by": "Canada Dry",
     "price": 2.49,
@@ -329,7 +354,10 @@
       "tags": "Soda, Ginger Ale, Beverage, Mixer, Caffeine-Free",
       "stock": 180,
       "TypeOfPacking": "Plastic Bottle",
-      "Color": ["Pale Gold", "Champagne"],
+      "Color": [
+        "Pale Gold",
+        "Champagne"
+      ],
       "QuantityPerCase": "2 Liters",
       "Alcohol": "0%",
       "PieceInOne": "Bottle",
@@ -344,7 +372,7 @@
         "warranty": "N/A"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-7.png",
         "name": "Keurig Dr Pepper",
         "reviews": "15000",
         "address": "53 South Ave, Burlington, MA 01803, United States",
@@ -362,7 +390,8 @@
     "img2": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-8-2.jpg",
     "status": "Gourmet",
     "categories": "Seafood",
-    "title": "Encore Seafoods Stuffed Alaskan Salmon",
+    "title": "Encore Seafoods Stuffed Alaskan",
+    "path": "encore-seafoods-stuffed-alaskan",
     "ratings": "4.7",
     "by": "Encore Seafoods",
     "price": 2.35,
@@ -380,7 +409,11 @@
       "tags": "Salmon, Seafood, Stuffed, Frozen, Gourmet",
       "stock": 55,
       "TypeOfPacking": "Oven-Safe Tray in Box",
-      "Color": ["Pink", "Orange", "Golden Brown"],
+      "Color": [
+        "Pink",
+        "Orange",
+        "Golden Brown"
+      ],
       "QuantityPerCase": "12 oz (340g) - 2 portions",
       "Alcohol": "0%",
       "PieceInOne": "Box",
@@ -414,6 +447,7 @@
     "status": "Family Favorite",
     "categories": "Seafood",
     "title": "Gorton’s Beer Battered Fish Fillets",
+    "path": "gortons-beer-battered-fish-fillets",
     "ratings": "4.8",
     "by": "Gorton's",
     "price": 3.47,
@@ -431,7 +465,10 @@
       "tags": "Fish Fillets, Frozen, Beer Battered, Seafood, Wild-Caught",
       "stock": 120,
       "TypeOfPacking": "Cardboard Box",
-      "Color": ["Golden Brown", "White"],
+      "Color": [
+        "Golden Brown",
+        "White"
+      ],
       "QuantityPerCase": "18.3 oz (519g) - 10 fillets",
       "Alcohol": "<0.5% from batter",
       "PieceInOne": "Box",
@@ -446,7 +483,7 @@
         "warranty": "Trust the Gorton's Fisherman Guarantee"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-9.png",
         "name": "Gorton's of Gloucester",
         "reviews": "4100",
         "address": "128 Rogers St, Gloucester, MA 01930, United States",
@@ -465,6 +502,7 @@
     "status": "Family Size",
     "categories": "Breakfast & Cereal",
     "title": "General Mills Honey Nut Cheerios Cereal",
+    "path": "general-mills-honey-nut-cheerios-cereal",
     "ratings": "4.9",
     "by": "General Mills",
     "price": 5.99,
@@ -482,7 +520,10 @@
       "tags": "Cereal, Breakfast, Honey, Oats, Gluten-Free",
       "stock": 150,
       "TypeOfPacking": "Cardboard Box",
-      "Color": ["Golden Brown", "Yellow"],
+      "Color": [
+        "Golden Brown",
+        "Yellow"
+      ],
       "QuantityPerCase": "19.5 oz (552g)",
       "Alcohol": "0%",
       "PieceInOne": "Box",
@@ -497,7 +538,7 @@
         "warranty": "N/A"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-10.png",
         "name": "General Mills",
         "reviews": "12000",
         "address": "1 General Mills Blvd, Minneapolis, MN 55426, United States",
@@ -516,6 +557,7 @@
     "status": "Plant-Based",
     "categories": "Meat Alternatives",
     "title": "Beyond Burger Plant-Based Patties",
+    "path": "beyond-burger-plant-based-patties",
     "ratings": "4.7",
     "by": "Beyond Meat",
     "price": 6.99,
@@ -533,7 +575,10 @@
       "tags": "Vegan, Plant-Based, Burger, Non-GMO, Soy-Free",
       "stock": 70,
       "TypeOfPacking": "Tray with Film Seal",
-      "Color": ["Red", "Brown"],
+      "Color": [
+        "Red",
+        "Brown"
+      ],
       "QuantityPerCase": "8 oz (226g) - 2 patties",
       "Alcohol": "0%",
       "PieceInOne": "Pack",
@@ -548,7 +593,7 @@
         "warranty": "Quality Guaranteed"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-11.png",
         "name": "Beyond Meat",
         "reviews": "7500",
         "address": "888 N Douglas St, El Segundo, CA 90245, United States",
@@ -567,6 +612,7 @@
     "status": "No.1 Best Seller",
     "categories": "Condiments",
     "title": "Heinz Tomato Ketchup iconic taste",
+    "path": "heinz-tomato-ketchup-iconic-taste",
     "ratings": "5.0",
     "by": "Heinz",
     "price": 4.49,
@@ -584,7 +630,9 @@
       "tags": "Ketchup, Condiment, Heinz, Tomato",
       "stock": 150,
       "TypeOfPacking": "Squeezable Bottle",
-      "Color": ["Red"],
+      "Color": [
+        "Red"
+      ],
       "QuantityPerCase": "32 oz (907g)",
       "Alcohol": "0%",
       "PieceInOne": "Bottle",
@@ -599,7 +647,7 @@
         "warranty": "N/A"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-12.png",
         "name": "The Kraft Heinz Company",
         "reviews": "25000",
         "address": "200 E Randolph St, Chicago, IL 60601, United States",
@@ -618,6 +666,7 @@
     "status": "Premium",
     "categories": "Ice Cream",
     "title": "Häagen-Dazs Vanilla Bean Ice Cream",
+    "path": "haagen-dazs-vanilla-bean-ice-cream",
     "ratings": "4.9",
     "by": "Häagen-Dazs",
     "price": 5.49,
@@ -635,7 +684,10 @@
       "tags": "Ice Cream, Dessert, Vanilla, Premium, Gluten-Free",
       "stock": 90,
       "TypeOfPacking": "Pint Container",
-      "Color": ["Cream", "Off-white"],
+      "Color": [
+        "Cream",
+        "Off-white"
+      ],
       "QuantityPerCase": "14 fl oz (414mL)",
       "Alcohol": "0%",
       "PieceInOne": "Pint",
@@ -650,7 +702,7 @@
         "warranty": "Satisfaction Guaranteed"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-13.png",
         "name": "Häagen-Dazs (Dreyer's)",
         "reviews": "6000",
         "address": "5929 College Ave, Oakland, CA 94618, United States",
@@ -669,6 +721,7 @@
     "status": "Italy's #1 Brand",
     "categories": "Pasta & Noodles",
     "title": "Barilla Penne Pasta Dry Pasta",
+    "path": "barilla-penne-pasta-dry-pasta",
     "ratings": "4.9",
     "by": "Barilla",
     "price": 1.99,
@@ -686,7 +739,10 @@
       "tags": "Pasta, Penne, Italian, Pantry, Barilla",
       "stock": 300,
       "TypeOfPacking": "Cardboard Box",
-      "Color": ["Pale Yellow", "Straw"],
+      "Color": [
+        "Pale Yellow",
+        "Straw"
+      ],
       "QuantityPerCase": "16 oz (1 lb) 454g",
       "Alcohol": "0%",
       "PieceInOne": "Box",
@@ -701,7 +757,7 @@
         "warranty": "N/A"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-14.png",
         "name": "Barilla Group",
         "reviews": "9500",
         "address": "1 Barilla Blvd, Northbrook, IL 60062, United States",
@@ -720,6 +776,7 @@
     "status": "Organic",
     "categories": "Beverages",
     "title": "GT's Synergy Raw Kombucha - Gingerade",
+    "path": "gts-synergy-raw-kombucha-gingerade",
     "ratings": "4.8",
     "by": "GT's Living Foods",
     "price": 3.49,
@@ -737,7 +794,10 @@
       "tags": "Kombucha, Organic, Probiotic, Beverage, Vegan",
       "stock": 90,
       "TypeOfPacking": "Glass Bottle",
-      "Color": ["Cloudy Gold", "Amber"],
+      "Color": [
+        "Cloudy Gold",
+        "Amber"
+      ],
       "QuantityPerCase": "16.2 fl oz (480mL)",
       "Alcohol": "Non-alcoholic (contains trace amounts from fermentation)",
       "PieceInOne": "Bottle",
@@ -752,7 +812,7 @@
         "warranty": "N/A"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-15.png",
         "name": "GT's Living Foods",
         "reviews": "8100",
         "address": "PO Box 2352, Beverly Hills, CA 90213, United States",
@@ -771,6 +831,7 @@
     "status": "Natural",
     "categories": "Deli",
     "title": "Applegate Naturals Oven Roasted Turkey Breast",
+    "path": "applegate-naturals-oven-roasted-turkey-breast",
     "ratings": "4.8",
     "by": "Applegate",
     "price": 7.99,
@@ -788,7 +849,10 @@
       "tags": "Deli, Turkey, Natural, No Antibiotics, Sliced",
       "stock": 60,
       "TypeOfPacking": "Resealable Plastic Tub",
-      "Color": ["Light Pink", "White"],
+      "Color": [
+        "Light Pink",
+        "White"
+      ],
       "QuantityPerCase": "7 oz (198g)",
       "Alcohol": "0%",
       "PieceInOne": "Tub",
@@ -803,7 +867,7 @@
         "warranty": "Quality Guaranteed"
       },
       "stores": {
-        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-8.png",
+        "logo": "https://nest-frontend-v6.vercel.app/assets/imgs/vendor/vendor-16.png",
         "name": "Applegate Farms, LLC",
         "reviews": "4500",
         "address": "750 US Highway 202, Bridgewater, NJ 08807, United States",

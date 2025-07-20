@@ -76,11 +76,11 @@ const DealsOfTheDay = () => {
 
   return (
     <div className=" ">
-      <div className="max-w-screen-2xl 2xl:mx-auto md:mx-10 mx-3">
+      <div className="max-w-screen-2xl lg:mx-auto md:mx-10">
         <h1 className="md:text-4xl text-2xl font-bold font-family-primary">Deals Of The Day</h1>
 
         <motion.div
-          className="grid md:grid-cols-2 xl:grid-cols-4 gap-5 md:py-10 py-5"
+          className="grid sm:grid-cols-2 xl:grid-cols-4 gap-5 md:py-10 py-5"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

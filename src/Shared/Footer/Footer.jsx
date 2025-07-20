@@ -87,7 +87,7 @@ const Footer = () => {
             {/* Company */}
             <motion.div className="flex flex-col gap-2 md:gap-3" variants={sectionVariants}>
               <h1 className="text-2xl font-semibold">Company</h1>
-              <Link to="/blogs  " className={footerBtnStyle}>Blogs</Link>
+              <Link to="/blogs" className={footerBtnStyle}>Blogs</Link>
               <Link to="/stores" className={footerBtnStyle}>Stores</Link>
               <Link to="/products" className={footerBtnStyle}>Products</Link>
               <Link to="/about" className={footerBtnStyle}>About Us</Link>

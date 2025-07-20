@@ -69,7 +69,7 @@ const FeaturedCategories = () => {
                     >
                         {categories?.map((category, idx) => (
                             <SwiperSlide key={idx}>
-                                <div id="card" className={`group hover:shadow-xl w-full border border-transparent hover:border-emerald-100 transition-all text-black p-4 rounded-lg flex justify-center items-center flex-col ${bgColors[idx % bgColors.length]}`}>
+                                <div id="card" className={`group hover:shadow-xl w-full border border-transparent hover:border-emerald-100 transition-all text-black p-3 rounded-lg flex justify-center items-center flex-col ${bgColors[idx % bgColors.length]}`}>
                                     <Link to={"/products"}>
                                         <img id='categoriesImg' className="block  cursor-pointer group-hover:scale-110 duration-500 transition" src={category.imgUrl} alt="" />
                                     </Link>

@@ -3,9 +3,10 @@ import { IoIosStarHalf } from "react-icons/io";
 import { BsCart3 } from "react-icons/bs";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const DealsProduct = ({ product }) => {
-    const { notify } = useContext(AuthContext)
+    const { notify, addToWishlist, removeFromWishlist, addToCart, removeFromCart, getWishlistIds, getCartIds } = useContext(AuthContext)
 
 
     const [countDown, setCountDown] = useState(product?.sec || 59);
@@ -34,7 +35,7 @@ const DealsProduct = ({ product }) => {
     return (
         <div className="group cursor-pointer">
 
-            <div className="border border-zinc-100 min-h-82 rounded-xl overflow-hidden">
+            <div className="border border-zinc-50 md:border-zinc-100 min-h-82 rounded-xl overflow-hidden">
                 <img className='' src={product.img} alt="" />
             </div>
 
@@ -43,27 +44,27 @@ const DealsProduct = ({ product }) => {
                 <div className="grid grid-cols-4 gap-3 mx-2
                  mb-5">
                     <div className="bg-white text-center p-3 rounded-md">
-                        <h1 className="text-emerald-500 text-2xl ">{product?.days}</h1>
-                        <p className="text-zinc-700">Days</p>
+                        <h1 className="text-emerald-500 text-lg md:text-3xl ">{product?.days}</h1>
+                        <p className="text-zinc-700 text-sm md:text-base">Days</p>
                     </div>
                     <div className="bg-white text-center p-3 rounded-md">
-                        <h1 className="text-emerald-500 text-2xl ">{product?.hours}</h1>
-                        <p className="text-zinc-700">Hours</p>
+                        <h1 className="text-emerald-500 text-lg md:text-3xl ">{product?.hours}</h1>
+                        <p className="text-zinc-700 text-sm md:text-base">Hours</p>
                     </div>
                     <div className="bg-white text-center p-3 rounded-md">
-                        <h1 className="text-emerald-500 text-2xl ">{minute}</h1>
-                        <p className="text-zinc-700">Mins</p>
+                        <h1 className="text-emerald-500 text-lg md:text-3xl ">{minute}</h1>
+                        <p className="text-zinc-700 text-sm md:text-base">Mins</p>
                     </div>
                     <div className="bg-white text-center p-3 rounded-md">
-                        <h1 className="text-emerald-500 text-2xl ">{countDown}</h1>
-                        <p className="text-zinc-700">Sec</p>
+                        <h1 className="text-emerald-500 text-lg md:text-3xl ">{countDown}</h1>
+                        <p className="text-zinc-700 text-sm md:text-base">Sec</p>
                     </div>
                 </div>
 
                 <div className="bg-white shadow-lg p-6 rounded-md ">
                     <div className="flex flex-col mb-1">
-                        <a href="#"
-                            className=" my-1 leading-none hover:text-emerald-500 font-family-primary font-bold transition-colors md:text-[17px] text-zinc-700 text-sm">{product?.title}</a>
+                        <Link to={`/product/${product.path}`}
+                            className=" my-1 leading-none hover:text-emerald-500 font-family-primary font-bold transition-colors md:text-[17px] text-zinc-700 text-sm">{product?.title}</Link>
                     </div>
                     <div className="flex text-orange-300 text-sm">
                         <IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStarHalf />
@@ -73,10 +74,10 @@ const DealsProduct = ({ product }) => {
                     </h1>
                     <div className="flex justify-between items-center mt-3 font-family-primary">
                         <div className="flex items-center  gap-1">
-                            <h1 className="text-emerald-500  font-bold md:text-xl text-sm">${product?.price}</h1>
-                            <h1 className="text-xs text-zinc-400 line-through font-bold ">${product?.prevPrice}</h1>
+                            <h1 className="text-emerald-500  font-bold md:text-xl text-lg">${product?.price}</h1>
+                            <h1 className="text-sm text-zinc-400 line-through font-bold ">${product?.prevPrice}</h1>
                         </div>
-                        <button onClick={() => notify()} className="bg-emerald-100 hover:bg-emerald-500 text-emerald-600 hover:text-white font-semibold px-3 lg:px-6 md:py-2 py-1 rounded-md flex justify-between items-center gap-1 hover:-translate-y-1 transition duration-300 md:text-sm text-xs cursor-pointer active:scale-95">
+                            <button onClick={() => addToCart(product.path)} className="bg-emerald-100 hover:bg-emerald-500 text-emerald-600 hover:text-white font-semibold px-4 lg:px-6 md:py-2 py-1 md:rounded-md rounded-sm flex justify-between items-center gap-1 hover:-translate-y-1 transition duration-300 text-sm cursor-pointer active:scale-95">
                             <BsCart3 />
                             <h1 className="">Add</h1>
                         </button>

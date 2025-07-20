@@ -4,7 +4,7 @@ import { BsTrash } from "react-icons/bs";
 
 const AccountSettings = () => {
 
-  const inputStyle = "focus:outline-emerald-500 outline-transparent transition-all duration-500 outline-1  mt-1 border border-zinc-200 rounded-md px-4 py-2.5"
+  const inputStyle = "focus:outline-emerald-500 outline-transparent transition-all duration-500 outline-1 w-full mt-1 border border-zinc-200 rounded-md px-4 py-2.5"
 
 
   return (
@@ -24,11 +24,11 @@ const AccountSettings = () => {
           <form className="grid gap-3 md:gap-5 text-sm md:text-[16px]">
             <div className='grid '>
               <label htmlFor="fullName">Full Name</label>
-              <input className={inputStyle} defaultValue={"Sujoy Das"} type="text" placeholder='Enter Your Full Name' name='fullName' />
+              <input className={inputStyle} type="text" placeholder='Enter Your Full Name' name='fullName' />
             </div>
             <div className='grid '>
               <label htmlFor="email">Email</label>
-              <input disabled className={`${inputStyle} cursor-not-allowed bg-zinc-200`} value={"devsujoydas@gmail.com"} type="email" placeholder='Enter Your Email' name='email' />
+              <input disabled className={`${inputStyle} cursor-not-allowed bg-zinc-200`} type="email" placeholder='Enter Your Email' name='email' />
             </div>
             <div className='grid '>
               <label htmlFor="dob">Date of birth</label>
@@ -36,7 +36,7 @@ const AccountSettings = () => {
             </div>
             <div className='grid '>
               <label htmlFor="fullName">Phone</label>
-              <input className={inputStyle} defaultValue={"01303436299"} type="text" placeholder='Enter Your Phone' />
+              <input className={inputStyle} type="text" placeholder='Enter Your Phone' />
             </div>
             <div>
               <button className='bg-emerald-500 text-white font-family-primary font-semibold px-4 py-2 text-sm rounded-md active:scale-95 hover:bg-amber-300 hover:text-black duration-300 transition-all cursor-pointer'>Update</button>

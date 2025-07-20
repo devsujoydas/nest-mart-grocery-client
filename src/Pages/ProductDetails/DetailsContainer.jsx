@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io"
-
+import { IoHeartOutline, IoHeart } from "react-icons/io5";
 import { FaPlus } from "react-icons/fa";
 import { TiMinus } from "react-icons/ti";
 import { BsCart3 } from "react-icons/bs";
@@ -9,11 +9,11 @@ import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 
 const DetailsContainer = ({ product }) => {
-    const { notify } = useContext(AuthContext)
-    
+    const { notify, addToWishlist, removeFromWishlist, addToCart, removeFromCart, getWishlistIds, getCartIds } = useContext(AuthContext)
+
     const { title, ratings, by, price, prevPrice, discountPercent, productDetails } = product;
     const { Sale, description, type, mfg, life, sku, tags, stock, } = productDetails;
-    const [qty, setQty] = useState(1); 
+    const [qty, setQty] = useState(1);
     const handleDecrease = () => { if (qty > 1) setQty(qty - 1) };
     const handleIncrease = () => { setQty(qty + 1) };
 
@@ -69,13 +69,15 @@ const DetailsContainer = ({ product }) => {
                         </button>
                     </div>
 
-                    <button onClick={() => notify()}  className="font-bold flex justify-center items-center gap-2 bg-emerald-600 hover:bg-yellow-400  text-white px-4 md:px-6 text-lg rounded-md cursor-pointer active:scale-95 transition-all duration-300">
+                    <button onClick={() => addToCart(product.path)} className="font-bold flex justify-center items-center gap-2 bg-emerald-600 hover:bg-yellow-400  text-white px-4 lg:px-6 text-lg rounded-md cursor-pointer active:scale-95 transition-all duration-300">
                         <BsCart3 />
-                        <h1 className="">Add to cart</h1>
+                        <h1 className="lg:text-[16px] text-xs">Add to cart</h1>
                     </button>
-                    {/* <button onClick={() => notify()}  className="font-bold flex justify-center items-center gap-2 bg-blue-600 hover:bg-yellow-400  text-white px-4 md:px-6 text-lg rounded-md cursor-pointer active:scale-95 transition-all duration-300">
-                        <h1 className="">Buy Now</h1>
-                    </button> */}
+
+                    <button onClick={() => addToWishlist(product.path)} className="bg-emerald-600 text-white px-5 rounded-lg md:text-2xl text-xl active:scale-95 transition-all duration-300 hover:bg-yellow-400 cursor-pointer hover:-translate-y-1">
+                        <IoHeartOutline />
+                    </button>
+
                 </div>
             </div>
 

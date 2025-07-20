@@ -5,10 +5,11 @@ import './Hero.css';
 import { FaRegPaperPlane } from "react-icons/fa6";
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 import bgSlider1 from '/assets/slider/slider-1.png';
 import bgSlider2 from '/assets/slider/slider-2.png';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 30 },
@@ -17,6 +18,17 @@ const fadeUpVariant = {
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const { notify } = useContext(AuthContext)
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const email = e.target.email.value
+    if (email == "") {
+      notify('Email is required')
+    } else {
+      notify('Email is sent')
+    }
+  }
 
   return (
     <div className='max-w-screen-2xl md:mx-auto mt-6'>
@@ -60,21 +72,23 @@ const Hero = () => {
               animate="visible"
               variants={fadeUpVariant}
               transition={{ delay: 0.4 }}
-              className="font-family-primary p-1 bg-white flex rounded-full justify-between items-center lg:gap-4 gap-1 md:mt-8 mt-3 overflow-hidden"
             >
-              <div className='lg:ml-5 ml-3 mr-1'>
-                <FaRegPaperPlane className='text-zinc-400 md:text-lg text-sm' />
-              </div>
-              <input
-                className="focus:outline-none text-sm lg:text-lg font-semibold bg-white text-black w-4/6"
-                type="email"
-                placeholder="Your email address"
-              />
-              <button
-                className="bg-emerald-500 cursor-pointer text-white lg:px-8 px-3 text-sm md:text-lg py-2 lg:py-4 rounded-full font-semibold hover:bg-emerald-400 active:scale-95 transition"
-              >
-                Subscribe
-              </button>
+              <form onSubmit={handleSubmit} className="font-family-primary p-1 bg-white flex rounded-full justify-between items-center lg:gap-4 gap-1 md:mt-8 mt-3 overflow-hidden">
+                <div className='lg:ml-5 ml-3 mr-1'>
+                  <FaRegPaperPlane className='text-zinc-400 md:text-lg text-sm' />
+                </div>
+                <input
+                  name="email"
+                  className="focus:outline-none text-sm lg:text-lg font-semibold bg-white text-black w-4/6"
+                  type="email"
+                  placeholder="Your email address"
+                />
+                <button
+                  className="bg-emerald-500 cursor-pointer text-white lg:px-8 px-3 text-sm md:text-lg py-2 lg:py-4 rounded-full font-semibold hover:bg-emerald-400 active:scale-95 transition"
+                >
+                  Subscribe
+                </button>
+              </form>
             </motion.div>
           </div>
         </SwiperSlide>
@@ -108,21 +122,24 @@ const Hero = () => {
               animate="visible"
               variants={fadeUpVariant}
               transition={{ delay: 0.4 }}
-              className="font-family-primary p-1 bg-white flex rounded-full justify-center items-center lg:gap-4 gap-1 md:mt-8 mt-3 overflow-hidden"
             >
-              <div className='lg:ml-5 ml-3 mr-1'>
-                <FaRegPaperPlane className='text-zinc-400 md:text-lg text-sm' />
-              </div>
-              <input
-                className="focus:outline-none text-sm lg:text-lg font-semibold bg-white text-black w-4/6"
-                type="email"
-                placeholder="Your email address"
-              />
-              <button
-                className="bg-emerald-500 cursor-pointer text-white lg:px-8 px-3 text-sm md:text-lg py-2 lg:py-4 rounded-full font-semibold hover:bg-emerald-400 active:scale-95 transition"
+              <form onSubmit={handleSubmit} className="font-family-primary p-1 bg-white flex rounded-full justify-center items-center lg:gap-4 gap-1 md:mt-8 mt-3 overflow-hidden"
               >
-                Subscribe
-              </button>
+                <div className='lg:ml-5 ml-3 mr-1'>
+                  <FaRegPaperPlane className='text-zinc-400 md:text-lg text-sm' />
+                </div>
+                <input
+                  name="email"
+                  className="focus:outline-none text-sm lg:text-lg font-semibold bg-white text-black w-4/6"
+                  type="email"
+                  placeholder="Your email address"
+                />
+                <button
+                  className="bg-emerald-500 cursor-pointer text-white lg:px-8 px-3 text-sm md:text-lg py-2 lg:py-4 rounded-full font-semibold hover:bg-emerald-400 active:scale-95 transition"
+                >
+                  Subscribe
+                </button>
+              </form>
             </motion.div>
           </div>
         </SwiperSlide>

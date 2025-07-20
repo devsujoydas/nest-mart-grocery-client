@@ -38,29 +38,23 @@ const Blogs = () => {
             {/* Recips Articles */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className='flex items-center gap-5'
+              className='flex items-center md:gap-5 gap-2'
             >
               <img className='md:w-10 w-5' src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-1.svg" alt="" />
               <h1 className='md:text-4xl text-2xl font-bold font-family-primary'>Recips Articles</h1>
             </motion.div>
 
             {/* Filtering Section */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className='flex items-center md:flex-row flex-col md:mt-0 mt-2 gap-2'
-            >
-              <div className='flex items-center justify-center text-zinc-500 border border-zinc-200 rounded-md p-2 md:p-3 bg-white transition'>
+            <div className='flex items-center  md:mt-0 mt-2 gap-2'>
+              <div className='flex  items-center  justify-center text-zinc-500 border border-zinc-200 rounded-md p-2 md:p-3  bg-white  transition'>
                 <MdOutlineGridView className="text-xl text-emerald-600" />
                 <select
                   value={show}
                   onChange={(e) => setShow(e.target.value)}
-                  className="bg-white text-sm font-semibold px-3 rounded-md outline-none transition duration-200 cursor-pointer"
+                  className="bg-white md:text-sm text-xs font-semibold px-3  rounded-md  outline-none transition duration-200 cursor-pointer"
                 >
                   <option value="10">Show: 10</option>
                   <option value="20">Show: 20</option>
@@ -68,20 +62,25 @@ const Blogs = () => {
                 </select>
               </div>
 
-              <div className='flex items-center justify-center text-zinc-500 border border-zinc-200 rounded-md p-2 md:p-3 bg-white transition'>
-                <TbArrowsSort className="text-xl text-emerald-600" />
+              <div className='flex  items-center  justify-center text-zinc-500 border border-zinc-200 rounded-md p-2 md:p-3  bg-white  transition'>
+
+                <div className='flex items-center gap-2'>
+                  <TbArrowsSort className="text-xl text-emerald-600" />
+                  <p className='text-sm font-semibold'>Sort:</p>
+                </div>
                 <select
                   value={sort}
                   onChange={(e) => setSort(e.target.value)}
-                  className="bg-white text-sm font-semibold px-3 rounded-md outline-none transition duration-200 cursor-pointer"
+                  className="bg-white md:text-sm text-xs font-semibold pl-1  rounded-md  outline-none transition duration-200 cursor-pointer"
                 >
-                  <option value="10">Sort: Featured</option>
-                  <option value="20">Sort: Newest</option>
-                  <option value="50">Sort: Most comments</option>
-                  <option value="60">Sort: Release Date</option>
+                  <option value="10">Featured</option>
+                  <option value="20">Newest</option>
+                  <option value="50">Oldest</option>
+                  <option value="50">Release Date</option>
+                  <option value="50">Most comments</option> 
                 </select>
               </div>
-            </motion.div>
+            </div>
           </div>
 
           {/* Blog Cards */}
@@ -90,7 +89,7 @@ const Blogs = () => {
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: idx * 0.05 }}
                 viewport={{ once: true }}
               >
