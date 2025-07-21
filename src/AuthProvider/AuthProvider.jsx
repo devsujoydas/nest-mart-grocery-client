@@ -4,13 +4,13 @@ import toast from 'react-hot-toast';
 
 export const AuthContext = createContext();
 
-import { 
-    saveToWishlist, 
-    getStoredWishlist, 
-    removeFromWishlist as removeFromWishlistLS, 
-    saveToCart, 
-    getStoredCart, 
-    removeFromCart as removeFromCartLS 
+import {
+    saveToWishlist,
+    getStoredWishlist,
+    removeFromWishlist as removeFromWishlistLS,
+    saveToCart,
+    getStoredCart,
+    removeFromCart as removeFromCartLS
 } from '../utils/LocalStorage';
 
 const AuthProvider = ({ children }) => {
@@ -32,7 +32,6 @@ const AuthProvider = ({ children }) => {
     const [wishlistCount, setWishlistCount] = useState(0);
     const [cartCount, setCartCount] = useState(0);
 
-    // Helper: update counts from localStorage
     const updateCounts = useCallback(() => {
         const wishlistArr = getStoredWishlist();
         const cartArr = getStoredCart();
@@ -89,7 +88,7 @@ const AuthProvider = ({ children }) => {
         notify('Removed from wishlist!');
         updateCounts();
     };
-    
+
     // Add to cart
     const addToCart = (path) => {
         const addedCart = saveToCart(path);
@@ -130,7 +129,7 @@ const AuthProvider = ({ children }) => {
         addToCart,
         removeFromCart,
         getWishlistIds,
-        getCartIds, 
+        getCartIds,
         wishlistCount,
         cartCount,
         updateCounts
