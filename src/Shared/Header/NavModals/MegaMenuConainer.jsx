@@ -67,7 +67,7 @@ const MegaMenuConainer = () => {
                             {
                                 recentlyProducts.length > 0 &&
                                 recentlyProducts.map((product, idx) => (
-                                    <Link key={idx} to={`/products/${product.path}`} className={megaMenuBtnStyle}>{product.title.slice(0, 15) + "..."}</Link>
+                                    <Link key={idx}     to={`/products/${product.path}`} className={megaMenuBtnStyle}>{product.title.slice(0, 15) + "..."}</Link>
                                 ))
                             }
                         </div>
