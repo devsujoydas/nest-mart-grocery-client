@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, { createContext, useEffect, useState, useCallback } from 'react'
 import toast from 'react-hot-toast';
+import { createUserWithEmailAndPassword, deleteUser, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, EmailAuthProvider, linkWithCredential } from 'firebase/auth'
+
+
 
 export const AuthContext = createContext();
 
@@ -12,6 +15,7 @@ import {
     getStoredCart,
     removeFromCart as removeFromCartLS
 } from '../utils/LocalStorage';
+import auth from '../Firebase/firebase.config';
 
 const AuthProvider = ({ children }) => {
 
@@ -66,12 +70,9 @@ const AuthProvider = ({ children }) => {
             .then((res) => setBlogsData(res.data))
     }, [])
 
-    // On mount, initialize counts
     useEffect(() => {
         updateCounts();
     }, [updateCounts]);
-
-    // Add to wishlist
     const addToWishlist = (path) => {
         const added = saveToWishlist(path);
         if (added) {
@@ -81,15 +82,11 @@ const AuthProvider = ({ children }) => {
         }
         updateCounts();
     };
-
-    // Remove from wishlist
     const removeFromWishlist = (path) => {
         removeFromWishlistLS(path);
         notify('Removed from wishlist!');
         updateCounts();
     };
-
-    // Add to cart
     const addToCart = (path) => {
         const addedCart = saveToCart(path);
         if (addedCart) {
@@ -99,13 +96,10 @@ const AuthProvider = ({ children }) => {
         }
         updateCounts();
     };
-    // Remove from cart
     const removeFromCart = (path) => {
         removeFromCartLS(path);
         updateCounts();
     };
-
-    // Get all wishlist/cart IDs
     const getWishlistIds = () => {
         return getStoredWishlist();
     };
@@ -113,26 +107,53 @@ const AuthProvider = ({ children }) => {
         return getStoredCart();
     };
 
+
+
+
+    const signUpUser = (email, password) => {
+        setLoading(true)
+        return createUserWithEmailAndPassword(auth, email, password)
+    }
+
+    const logInUser = (email, password) => {
+        setLoading(true)
+        return signInWithEmailAndPassword(auth, email, password)
+    }
+
+    const provider = new GoogleAuthProvider();
+    const signInWithGoogle = () => {
+        setLoading(true)
+        return signInWithPopup(auth, provider)
+    }
+
+    const signOutUser = async () => {
+        setLoading(true)
+        try {
+            await signOut(auth);;
+            navigate("/login");
+        } catch (error) {
+            console.error("Logout error:", error);
+        }
+    }
+
+    useEffect(() => {
+        const unSubscribe = onAuthStateChanged(auth, currentUser => {
+            if (currentUser) {
+                setUser(currentUser);
+                setLoading(false);
+            }
+        });
+
+        return () => {
+            unSubscribe();
+        };
+    }, []);
+
+
+
     const value = {
-        navslide, setNavSlide,
-        megaModal, setMegaModal,
-        pageModal, setPageModal,
-        products, setProducts,
-        vendormodal, setVendormodal,
-        provideData, setProvideData,
-        blogsData, setBlogsData,
-        stores, setStores,
-        loading, setLoading,
-        notify,
-        addToWishlist,
-        removeFromWishlist,
-        addToCart,
-        removeFromCart,
-        getWishlistIds,
-        getCartIds,
-        wishlistCount,
-        cartCount,
-        updateCounts
+        navslide, setNavSlide, megaModal, setMegaModal, pageModal, setPageModal, products, setProducts, vendormodal, setVendormodal, provideData, setProvideData, blogsData, setBlogsData, stores, setStores, loading, setLoading, notify, addToWishlist, removeFromWishlist, addToCart, removeFromCart, getWishlistIds, getCartIds, wishlistCount, cartCount, updateCounts,
+        signUpUser, logInUser, signInWithGoogle, signOutUser
     };
 
     return (
